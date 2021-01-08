@@ -1,0 +1,19 @@
+{
+  "name": "AuroraOSS",
+  "version": "0.0.1",
+  "description": "An alternate  website for the official AuroraOSS website.",
+  "main": "index.js",
+  "authors": {
+    "name": "Austin Hornhead",
+    "email": "augustthegreat.cool@gmail.com"
+  },
+  "repository": "https://github.com/marchingon12/AuroraOSS.git/AuroraOSS",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
