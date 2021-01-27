@@ -13,20 +13,20 @@
                     <div v-for="(helpItem, index) in data.help" :key="index" class="column helpItem">
                         <a v-if="helpItem.link" :href="helpItem.link" tabindex="1">
                             <div class="card" :class="'card__' + helpItem.title">
-                                <header v-if="helptItem.Apps">
+                                <header v-if="helptItem.apps">
                                     <app-icon />
                                     <h3>{{ helpItem.title }}</h3>
                                 </header>
-                                <header v-else-if="helptItem.Faqs">
+                                <header v-else-if="helptItem.faqs">
+                                    <trash-icon />
+                                    <h3>{{ helpItem.title }}</h3>
+                                </header>
+                                <header v-else-if="helptItem.guides">
                                     <trash-icon />
                                     <h3>{{ helpItem.title }}</h3>
                                 </header>
                                 <header v-else-if="helptItem.contribution">
-                                    <trash-icon />
-                                    <h3>{{ helpItem.title }}</h3>
-                                </header>
-                                <header v-else-if="helptItem.Apps">
-                                    <trash-icon />
+                                    <git-pull-request-icon />
                                     <h3>{{ helpItem.title }}</h3>
                                 </header>
                                 <!-- Fallback icon-->
@@ -45,6 +45,10 @@
                             tabindex="1"
                         >
                             <div class="card" :class="'card__' + helpItem.title">
+                                <header v-else-if="helptItem.contribution">
+                                    <cloud-download-icon />
+                                    <h3>{{ helpItem.title }}</h3>
+                                </header>
                                 <header v-if="helpItem.telegram">
 									<brand-telegram-icon />
 									<span>

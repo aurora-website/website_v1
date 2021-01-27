@@ -1,28 +1,34 @@
 const navBarConfig = require("./config/navBar");
+const navBarDEConfig = require("./config/navBarDE");
 const sideBarConfig = require("./config/sideBar");
 const pluginsConfig = require("./config/plugins");
 
 module.exports = {
-  /**
-   * Ref：https://v1.vuepress.vuejs.org/config/#title
-   */
-  title: 'AuroraOSS',
-  /**
-   * Ref：https://v1.vuepress.vuejs.org/config/#description
-   */
-  description: "An organization that aims to build applications that are easy to use & beautiful to look at. Aurora Apps Open-Source Software. Inspired by you. Built for the community.",
-
-  /**
-   * Extra tags to be injected to the page HTML `<head>`
-   *
-   * ref：https://v1.vuepress.vuejs.org/config/#head
-   */
-  head: [
-    ["link", { rel: "icon", href: "/favicon.ico" }],
-    ['meta', { name: 'theme-color', content: '#f50057' }],
-    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
-  ],
+  locales: {
+    '/': {
+      lang: 'en-GB', // this will be set as the lang attribute on <html>
+      title: 'AuroraOSS',
+      description: 'An organization that aims to build applications that are easy to use & beautiful to look at. Aurora Apps Open-Source Software. Inspired by you. Built for the community.',
+      // Extra tags to be injected to the page HTML `<head>`
+      head: [
+        ["link", { rel: "icon", href: "/favicon.ico" }],
+        ['meta', { name: 'theme-color', content: '#f50057' }],
+        ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+        ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+      ],
+    },
+    '/de/': {
+      lang: 'de',
+      title: 'AuroraOSS',
+      description: 'Eine Organization mit dem Ziel Apps zu erstellen die einfach zu benuzten sind und schön aussehen. Aurora Apps Open-Source-Software. Von euch inspiriert. Für die Community gebaut.',
+      head: [
+        ["link", { rel: "icon", href: "/favicon.ico" }],
+        ['meta', { name: 'theme-color', content: '#f50057' }],
+        ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+        ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+      ],
+    }
+  },
 
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
@@ -30,10 +36,10 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    logo: '/assets/sample.jpg',
-    repo: '',
+    logo: '/icons/aurora_store.png',
+    repo: 'https://github.com/marchingon12/AuroraOSS.git',
     editLinks: false,
-    docsRepo: "AuroraOSS/docs",
+    docsRepo: "/marchingon12/AuroraOSS",
     docsDir: 'src',
     lastUpdated: false,
     smoothScroll: true,
@@ -59,12 +65,13 @@ module.exports = {
         nav: navBarConfig,
         sidebar: {
           "/help/guides": sideBarConfig.guides
-        }
+        },
+        plugins: pluginsConfig
       },
-      'lang/de/': {
+      '/de/': {
         selectText: 'Sprachen',
-        lable: 'Deutsch',
-        ariaLabel: 'Sprachen',
+        label: 'Deutsch',
+        ariaLabel: 'Language Menu',
         editLinkText: 'Seite auf GitHub bearbeiten',
         serviceWorker: {
           updatePopup: {
@@ -72,14 +79,12 @@ module.exports = {
             buttonText: "Aktualisieren"
           }
         },
-        nav: navBarConfig,
-        sidebar: sideBarConfig,
+        nav: navBarDEConfig,
+        sidebar: {
+          "/de/help/guides": sideBarConfig.guides
+        },
+        plugins: pluginsConfig
       }
     }
   },
-
-  /**
-   * Apply plugins，ref：https://v1.vuepress.vuejs.org/plugin/
-   */
-  plugins: pluginsConfig
 }
