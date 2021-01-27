@@ -12,11 +12,7 @@ module.exports = {
         {
             title: 'Guide',
             collapsable: false,
-            sidebarDepth: 2,
-            children: [
-            '',
-            'using-vue',
-        ]
+            sidebarDepth: 2
         }
   ],
 }
