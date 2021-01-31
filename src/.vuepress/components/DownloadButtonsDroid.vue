@@ -1,7 +1,7 @@
 <template>
 	<div id="DownloadButtonsDroid">
 		<ElButton type="success" @click="downloadStable" @keyup.enter="downloadStable">
-      <cloud-download-icon size="19"/>
+      		<cloud-download-icon size="19"/>
 			<span class="spacing">Stable</span>
 			<br />
 			<span class="downloadTag">{{ this.$data.tagName }}</span>

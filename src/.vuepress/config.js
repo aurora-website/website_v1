@@ -65,8 +65,7 @@ module.exports = {
         nav: navBarConfig,
         sidebar: {
           "/help/guides": sideBarConfig.guides
-        },
-        plugins: pluginsConfig
+        }
       },
       '/de/': {
         selectText: 'Sprachen',
@@ -83,8 +82,14 @@ module.exports = {
         sidebar: {
           "/de/help/guides": sideBarConfig.guides
         },
-        plugins: pluginsConfig
       }
-    }
+    },
   },
+  plugins: pluginsConfig,
+  extraWatchFiles: [
+    ".vuepress/config/plugins.js",
+    ".vuepress/config/navBar.js",
+    ".vuepress/config/navBarDE.js",
+    ".vuepress/config/sideBar.js"
+  ]
 }

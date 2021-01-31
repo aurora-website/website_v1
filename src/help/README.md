@@ -7,11 +7,11 @@ hideSearch: true
 help:
     - title: Application
       description: Applications
-      link: /apps/#AuroraStore
+      link: /downloads/#AuroraStore
       apps: true
     - title: Faq
       description: Frequently asked questions
-      link: /help/faq/#extensions
+      link: /help/faq/
       faqs: true
     - title: Guides
       description: Extensive guides written for you
@@ -24,7 +24,7 @@ help:
       contribution: true
     - title: Downloads
       description: Download AuroraOSS apps
-      link: /help/guides/getting-started/
+      link: /downloads/
       guides: true
       extensions: true
     - title: Telegram
@@ -44,8 +44,6 @@ help:
 # Help Center
 
 ::: slot center
-
 ### Need help? We've got your back.
-
 From common questions to guides, find help for everything about AuroraOSS.
 :::

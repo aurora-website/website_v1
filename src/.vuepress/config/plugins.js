@@ -1,4 +1,4 @@
-module.export = [
+module.exports = [
     ["@vuepress/plugin-back-to-top"],
     ["@vuepress/plugin-medium-zoom"],
     ["vuepress-plugin-element-ui"],
