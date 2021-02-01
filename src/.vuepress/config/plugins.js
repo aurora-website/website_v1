@@ -1,8 +1,8 @@
 module.exports = [
-    ["@vuepress/plugin-back-to-top"],
-    ["@vuepress/plugin-medium-zoom"],
-    ["vuepress-plugin-element-ui"],
-    [
+	["@vuepress/plugin-back-to-top"],
+	["@vuepress/plugin-medium-zoom"],
+	["vuepress-plugin-element-ui"],
+	[
 		"vuepress-plugin-zooming",
 		{
 			selector: ".theme-default-content img.zoomable",
@@ -80,5 +80,13 @@ module.exports = [
 			before: "<div class='note'><p>",
 			after: "</div></p>",
 		},
+	],
+	[
+		"vuepress-plugin-code-copy",
+		{
+			color: "#696969",
+			backgroundColor: "#696969",
+			staticIcon: true
+		}
 	]
 ];

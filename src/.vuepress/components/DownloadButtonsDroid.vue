@@ -83,8 +83,7 @@ export default {
 		.spacing
 			margin-right 16px
 		.downloadTag
-			font-size .75em
-			font-weight bold
+			font-size .7em
 			margin-top 2px
 	.versionNotice
 		display block

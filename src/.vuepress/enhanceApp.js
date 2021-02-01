@@ -5,6 +5,7 @@ import VueSweetalert2 from "vue-sweetalert2";
 import VueMoment from "vue-moment";
 import Element from "element-ui";
 import VueTablerIcons from 'vue-tabler-icons';
+import Vuetify from 'vuetify'
 
 import store from "./store";
 
@@ -14,10 +15,11 @@ export default ({
   router, // the router instance for the app
   siteData // site metadata
 }) => {
+  Vue.use(Vuetify);
   Vue.use(VueTablerIcons);
-	Vue.use(VueSweetalert2);
+  Vue.use(VueSweetalert2);
   Vue.use(Element);
   Vue.use(VueMoment);
-	Vue.mixin({ store });
+  Vue.mixin({ store });
   // ...apply enhancements for the site.
 }

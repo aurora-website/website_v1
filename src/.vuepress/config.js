@@ -36,8 +36,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    logo: '/icons/aurora_store.png',
-    repo: 'https://github.com/marchingon12/AuroraOSS.git',
+    logo: '/icons/auroralogo.png',
     editLinks: false,
     docsRepo: "/marchingon12/AuroraOSS",
     docsDir: 'src',
@@ -64,7 +63,11 @@ module.exports = {
         },
         nav: navBarConfig,
         sidebar: {
-          "/help/guides": sideBarConfig.guides
+          "/help/guides": sideBarConfig.guides,
+          "/help/contact": sideBarConfig.contact,
+          "/help/faq/": sideBarConfig.faq,
+          "/help/contribution/": sideBarConfig.contribution,
+          "/download/": sideBarConfig.download
         }
       },
       '/de/': {
@@ -80,7 +83,11 @@ module.exports = {
         },
         nav: navBarDEConfig,
         sidebar: {
-          "/de/help/guides": sideBarConfig.guides
+          "/de/help/guides": sideBarConfig.guides,
+          "/de/help/contact": sideBarConfig.contact,
+          "/de/help/faq/": sideBarConfig.faq,
+          "/de/help/contribution/": sideBarConfig.contribution,
+          "/de/download/": sideBarConfig.download
         },
       }
     },

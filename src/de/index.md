@@ -4,10 +4,12 @@ meta:
     - name: keywords
       content: Download, Official, Android app, App Store
 lang: de
-heroImage: /icons/aurora_store.png
+heroImage: /icons/auroralogo.png
 tagline: Aurora Apps Open-Source-Software. Von euch inspiriert. Für die Community gebaut.
-actionText: Downloads →
-actionLink: /download/
+downloadText: Downloads
+downloadLink: /download/
+faqText: FAQs
+faqLink: /help/faq/
 features:
     - title: Design
       details: Aurora Apps werden mit Design als Hauptaspekt erstellt. Alle unsere Apps bieten eine einzigartige und saubere, frisch aussehende Benutzeroberfläche. Wir befolgen alle Designrichtlinien, auch wenn diejenigen, die Richtlinien erstellt haben, dies nicht tun. :P
