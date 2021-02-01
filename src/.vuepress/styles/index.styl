@@ -31,6 +31,13 @@ body,
 	font-size .9rem
 	text-align right
 
+// Navbar Changes
+.navbar
+	.site-name.can-hide
+		/* Display navbar-name even for small screens */
+		@media (max-width: $MQMobile)
+			display inherit
+
 // Guide container
 .guide
 	background-color $containerBackground
