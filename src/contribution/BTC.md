@@ -1,4 +1,5 @@
 ---
+layout: DonationPage
 title: Bitcoin Donation
 description: Donate Bitcoin to AuroraOSS!
 lang: en-GB

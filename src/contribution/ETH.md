@@ -1,4 +1,5 @@
 ---
+layout: DonationPage
 title: Etherum Donation
 description: Donate Etherum to AuroraOSS!
 lang: en-GB

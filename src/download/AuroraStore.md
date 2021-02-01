@@ -1,5 +1,5 @@
 ---
-layout: Downloads
+layout: DownloadPage
 title: Aurora Store
 metaTitle: Aurora Store
 description: An open source alternative Google Play Store frontend with privacy features and clean UI.
@@ -52,6 +52,6 @@ As per [**Google Play Terms of Service §4**](https://play.google.com/intl/en-us
 
 ## Support Group
 
-#### Telegram
-
-<img class="zoomable" :src="$withBase('/assets/tg-aurorasupport-qr.png')" width="175px"/>
+<p align="center">
+	<img class="zoomable" :src="$withBase('/assets/tg-aurorasupport-qr.png')" width="175px"/>
+</p>

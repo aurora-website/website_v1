@@ -1,5 +1,5 @@
 ---
-layout: Downloads
+layout: DownloadPage
 title: Aurora Droid
 metaTitle: Aurora Droid
 description: An open source F-Droid client with modern UI.
@@ -43,5 +43,6 @@ The developer of this application is not responsible for getting your device mal
 
 ## Support Group
 
-#### Telegram: 
-<img class="zoomable" :src="$withBase('/assets/tg-auroradroid-qr.png')" width="175px" />
+<p align="center">
+	<img class="zoomable" :src="$withBase('/assets/tg-auroradroid-qr.png')" width="175px"/>
+</p>

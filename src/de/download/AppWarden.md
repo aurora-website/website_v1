@@ -1,5 +1,5 @@
 ---
-layout: Downloads
+layout: DownloadPage
 title: App Warden
 metaTitle: Aurora Warden
 description: An open source app utility manager for all your installed apps.
@@ -43,5 +43,6 @@ The developer of this application is not responsible for getting your device bri
 
 ## Support Group
 
-#### Telegram: 
-<img class="zoomable" :src="$withBase('/assets/tg-auroraofficial-qr.png')" width="175px" />
+<p align="center">
+	<img class="zoomable" :src="$withBase('/assets/tg-auroraofficial-qr.png')" width="175px"/>
+</p>
