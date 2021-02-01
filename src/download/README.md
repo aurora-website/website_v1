@@ -13,7 +13,7 @@ lang: en-GB
 
 Download our latest apps here.
 
-## <img class="headerLogo" :src="$withBase('/icons/aurora_store.png')"> [Aurora Store](/download/AuroraStore)
+## <img class="headerLogo" :src="$withBase('/icons/aurora_store.png')"> [Aurora Store](/download/AuroraStore.md)
 
 The latest version of Aurora Store was uploaded <ReleaseDateStore stable /> and released **7 months ago**.
 
@@ -23,7 +23,7 @@ Note: all current nightly builds have been paused until further notice.
 
 <ChangelogStore />
 
-## <img class="headerLogo" :src="$withBase('/icons/aurora_droid.png')"> [Aurora Droid](/download/AuroraDroid)
+## <img class="headerLogo" :src="$withBase('/icons/aurora_droid.png')"> [Aurora Droid](/download/AuroraDroid.md)
 
 The latest version of Aurora Droid was uploaded <ReleaseDateDroid stable /> and released **6 months ago**.
 
@@ -31,7 +31,7 @@ The latest version of Aurora Droid was uploaded <ReleaseDateDroid stable /> and 
 
 <ChangelogDroid />
 
-## <img class="headerLogo" :src="$withBase('/icons/app_warden.png')"> [App Warden](/download/AppWarden)
+## <img class="headerLogo" :src="$withBase('/icons/app_warden.png')"> [App Warden](/download/AppWarden.md)
 
 The latest version of App Warden was released <ReleaseDateWarden stable />.
 
@@ -39,7 +39,7 @@ The latest version of App Warden was released <ReleaseDateWarden stable />.
 
 <ChangelogWarden />
 
-## <img class="headerLogo" :src="$withBase('/icons/aurora_wallpapers.png')"> [Aurora Wallpapers](/download/AuroraWallpapers)
+## <img class="headerLogo" :src="$withBase('/icons/aurora_wallpapers.png')"> [Aurora Wallpapers](/download/AuroraWallpapers.md)
 
 The latest version of Aurora Wallpapers was released <ReleaseDateWalls stable />
 
