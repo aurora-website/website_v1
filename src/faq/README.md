@@ -155,7 +155,7 @@ For anonymous logins, following data is sent to Aurora Dispenser Server:
 - AuroraOSS follows a strict policy of no-logging, so no data is stored on the Dispenser Server.
 
 ::: guide Tip 👀
-For more info read​ [Anonymous Logins](/help/anonymous-logins).
+For more info read​ [Anonymous Logins](/guides/anonymous-logins).
 :::
 ***
 #### Do I need to use my own Google account to log in?

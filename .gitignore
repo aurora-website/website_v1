@@ -1,2 +1,8 @@
+# VSCode stuff
 .vscode
+
+# Node
 node_modules
+
+# Planned stuff for .vuepress/components
+misc

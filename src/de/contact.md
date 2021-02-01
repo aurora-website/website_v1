@@ -13,9 +13,11 @@ sidebar: true
 
 ## Our Team
 
-<ContactsPage />
+<!-- <ContactsPage /> -->
 
 Any questions our FAQs can't answer, problems that you want to discuss discreetly or trust issues with our apps? No worries! Feel free to contact us on any of the following platforms below.
+
+## Support
 
 ### Telegram
 
@@ -69,5 +71,5 @@ We're planning on starting a Reddit subreddit after we stabilized things a bit. 
 ***
 
 ::: danger EDIT PAGE
-do a vue page for icons for each title
+do a vue contacts page for vue-tabler-icons for each on title
 :::

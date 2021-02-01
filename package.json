@@ -26,12 +26,14 @@
     "vuepress-plugin-zooming": "^1.1.8"
   },
   "dependencies": {
+    "@vuepress/plugin-back-to-top": "^1.8.0",
     "axios": "^0.21.1",
     "core-js": "^2.6.4",
     "element-ui": "^2.15.0",
     "marked": "^1.2.8",
     "oh-vue-icons": "^0.1.7",
     "vue": "^2.6.12",
+    "vue-good-table": "^2.21.3",
     "vue-moment": "^4.1.0",
     "vue-sweetalert2": "^4.1.1",
     "vue-tabler-icons": "^1.7.0",

@@ -9,7 +9,7 @@ tagline: Aurora Apps Open-Source-Software. Von euch inspiriert. Für die Communi
 downloadText: Downloads
 downloadLink: /download/
 faqText: FAQs
-faqLink: /help/faq/
+faqLink: /faq/
 features:
     - title: Design
       details: Aurora Apps werden mit Design als Hauptaspekt erstellt. Alle unsere Apps bieten eine einzigartige und saubere, frisch aussehende Benutzeroberfläche. Wir befolgen alle Designrichtlinien, auch wenn diejenigen, die Richtlinien erstellt haben, dies nicht tun. :P

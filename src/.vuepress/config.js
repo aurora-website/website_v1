@@ -37,6 +37,7 @@ module.exports = {
    */
   themeConfig: {
     logo: '/icons/auroralogo.png',
+    //repo: "https://gitlab.com/auroraoss/",
     editLinks: false,
     docsRepo: "/marchingon12/AuroraOSS",
     docsDir: 'src',
@@ -63,10 +64,10 @@ module.exports = {
         },
         nav: navBarConfig,
         sidebar: {
-          "/help/guides": sideBarConfig.guides,
-          "/help/contact": sideBarConfig.contact,
-          "/help/faq/": sideBarConfig.faq,
-          "/help/contribution/": sideBarConfig.contribution,
+          "/guides": sideBarConfig.guides,
+          "/contact": sideBarConfig.contact,
+          "/faq/": sideBarConfig.faq,
+          "/contribution/": sideBarConfig.contribution,
           "/download/": sideBarConfig.download
         }
       },
@@ -83,10 +84,10 @@ module.exports = {
         },
         nav: navBarDEConfig,
         sidebar: {
-          "/de/help/guides": sideBarConfig.guides,
-          "/de/help/contact": sideBarConfig.contact,
-          "/de/help/faq/": sideBarConfig.faq,
-          "/de/help/contribution/": sideBarConfig.contribution,
+          "/de/guides": sideBarConfig.guides,
+          "/de/contact": sideBarConfig.contact,
+          "/de/faq/": sideBarConfig.faq,
+          "/de/contribution/": sideBarConfig.contribution,
           "/de/download/": sideBarConfig.download
         },
       }

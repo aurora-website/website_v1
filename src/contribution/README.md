@@ -12,7 +12,7 @@ Find out how to help translate or build the app and extensions.
 Skilled at code? Know how to improve something or you generally want to support the creation of our apps?
 
 ### Applications
-Applications by AuroraOSS.
+Source code of applications by AuroraOSS.
 - [aurorastore](https://gitlab.com/auroraoss/aurorastore)
 - [auroradroid](https://gitlab.com/auroraoss/auroradroid)
 - [appwarden](https://gitlab.com/auroraoss/appwarden)
@@ -38,7 +38,7 @@ Visit our translation projects:
 ## Donation
 If you can't contribute code or translations but you still wish to help, then you can choose to contribute directly to the projects founder, [whyorean](https://gitlab.com/whyorean/) by using the following sources below.
 ***
-<a href="/help/contribution/UPI/">
+<a href="/contribution/UPI/">
 	<img width="213" style="border:0px;width:213px;" src="/assets/upibutton.png" border="0" alt="Donate via UPI" />
 </a>
 <a href="http://www.paypal.me/AuroraDev" target="_blank" rel="noopener">
@@ -48,13 +48,13 @@ If you can't contribute code or translations but you still wish to help, then yo
 	<img width="213" style="border:0px;width:213px;" src="/assets/liberapaybutton.png" border="0" alt="Bitcoin accepted here" />
 </a>
 
-<a href="/help/contribution/BTC/" >
+<a href="/contribution/BTC/" >
 	<img width="213" style="border:0px;width:213px;" src="/assets/bitcoinbutton.png" border="0" alt="Bitcoin accepted here" />
 </a>
-<a href="/help/contribution/BCH/" >
+<a href="/contribution/BCH/" >
 	<img width="213" style="border:0px;width:213px;" src="/assets/btcashbutton.png" border="0" alt="Bitcoin accepted here" />
 </a>
-<a href="/help/contribution/ETH/" >
+<a href="/contribution/ETH/" >
 	<img width="213" style="border:0px;width:213px;" src="/assets/etherumbutton.png" border="0" alt="Bitcoin accepted here" />
 </a>
 

@@ -1,6 +1,6 @@
 module.exports = [
     { text: "Home", link: "/" },
-    { text: 'Help', link: '/help/' },
-    { text: 'Guide', link: '/help/guides/anonymous-logins', },
+    { text: 'Guides', link: '/guides/wiki-home' },
     { text: 'Download', link: '/download/' },
+    { text: "Contact", link: "/contact" }
 ];

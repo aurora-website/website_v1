@@ -7,19 +7,19 @@ module.exports = {
         },
         {
             title: "Frequently Asked Questions",
-            path: "/help/faq/",
+            path: "/faq/",
         },
         {
             title: "Guide",
-            path: "/help/guides/anonymous-logins"
+            path: "/guides/wiki-home"
         },
         {
             title: "Contribution",
-            path: "/help/contribution/"
+            path: "/contribution/"
         },
         {
             title: "Contact",
-            path: "/help/contact"
+            path: "/contact"
         }
     ],
     faq: [
@@ -30,19 +30,19 @@ module.exports = {
         },
         {
             title: "Frequently Asked Questions",
-            path: "/help/faq/",
+            path: "/faq/",
         },
         {
             title: "Guide",
-            path: "/help/guides/anonymous-logins"
+            path: "/guides/wiki-home"
         },
         {
             title: "Contribution",
-            path: "/help/contribution/"
+            path: "/contribution/"
         },
         {
             title: "Contact",
-            path: "/help/contact"
+            path: "/contact"
         }
     ],
     guides: [
@@ -53,29 +53,26 @@ module.exports = {
         },
         {
             title: "Frequently Asked Questions",
-            path: "/help/faq/",
+            path: "/faq/",
         },
         {
             title: "Guide",
             collapsable: false,
             children: [
-                "/help/guides/anonymous-login",
-                "/help/guides/troubleshooting-problems",
-                "/help/guides/server-status",
-                "/help/guides/roadmap",
-                "/help/guides/reading-local-manga",
-                "/help/guides/reader-settings",
-                "/help/guides/categories",
+                "/guides/wiki-home",
+                "/guides/anonymous-logins",
+                "/guides/server-status",
+                "/guides/roadmap"
             ],
             sidebarDepth: 2
         },
         {
             title: "Contribution",
-            path: "/help/contribution/"
+            path: "/contribution/"
         },
         {
             title: "Contact",
-            path: "/help/contact"
+            path: "/contact"
         }
     ],
     contribution: [
@@ -86,19 +83,19 @@ module.exports = {
         },
         {
             title: "Frequently Asked Questions",
-            path: "/help/faq/",
+            path: "/faq/",
         },
         {
             title: "Guide",
-            path: "/help/guides/anonymous-logins"
+            path: "/guides/anonymous-logins"
         },
         {
             title: "Contribution",
-            path: "/help/contribution/"
+            path: "/contribution/"
         },
         {
             title: "Contact",
-            path: "/help/contact"
+            path: "/contact"
         }
     ],
     contact: [
@@ -109,19 +106,19 @@ module.exports = {
         },
         {
             title: "Frequently Asked Questions",
-            path: "/help/faq/",
+            path: "/faq/",
         },
         {
             title: "Guide",
-            path: "/help/guides/anonymous-logins"
+            path: "/guides/anonymous-logins"
         },
         {
             title: "Contribution",
-            path: "/help/contribution/"
+            path: "/contribution/"
         },
         {
             title: "Contact",
-            path: "/help/contact"
+            path: "/contact"
         }
     ]
 }
