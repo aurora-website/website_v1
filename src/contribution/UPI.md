@@ -1,4 +1,6 @@
 ---
+title: UPI Donation
+description: Donate via UPI to AuroraOSS!
 lang: en-GB
 sidebar: false
 ---

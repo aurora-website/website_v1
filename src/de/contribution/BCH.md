@@ -1,4 +1,6 @@
 ---
+title: Bitcoin Cash Donation
+description: Donate Bitcoin Cash to AuroraOSS!
 lang: de
 sidebar: false
 ---
