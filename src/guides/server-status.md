@@ -1,7 +1,7 @@
 ---
 title: Server status
 description: Server statuses of dispensers for Aurora Store.
-lang: de
+lang: en-GB
 meta:
   - property: og:image
     content: /icons/aurora_store.png

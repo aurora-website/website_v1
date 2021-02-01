@@ -1,124 +1,124 @@
 module.exports = {
     download: [
-        "/",
+        "/de/",
         {
             title: "Downloads",
-            path: "/download/"
+            path: "/de/download/"
         },
         {
             title: "Frequently Asked Questions",
-            path: "/faq/",
+            path: "/de/faq/",
         },
         {
-            title: "Guide",
-            path: "/guides/wiki-home"
+            title: "Benutzerhandbuch",
+            path: "/de/guides/wiki-home"
         },
         {
-            title: "Contribution",
-            path: "/contribution/"
+            title: "Teilnehmen",
+            path: "/de/contribution/"
         },
         {
-            title: "Contact",
-            path: "/contact"
+            title: "Kontakt",
+            path: "/de/contact"
         }
     ],
     faq: [
-        "/",
+        "/de/",
         {
             title: "Downloads",
-            path: "/download/"
+            path: "/de/download/"
         },
         {
             title: "Frequently Asked Questions",
-            path: "/faq/",
+            path: "/de/faq/",
         },
         {
-            title: "Guide",
-            path: "/guides/wiki-home"
+            title: "Benutzerhandbuch",
+            path: "/de/guides/wiki-home"
         },
         {
-            title: "Contribution",
-            path: "/contribution/"
+            title: "Teilnehmen",
+            path: "/de/contribution/"
         },
         {
-            title: "Contact",
-            path: "/contact"
+            title: "Kontakt",
+            path: "/de/contact"
         }
     ],
     guides: [
-        "/",
+        "/de/",
         {
             title: "Downloads",
-            path: "/download/"
+            path: "/de/download/"
         },
         {
             title: "Frequently Asked Questions",
-            path: "/faq/",
+            path: "/de/faq/",
         },
         {
-            title: "Guide",
+            title: "Benutzerhandbuch",
             collapsable: false,
             children: [
-                "/guides/wiki-home",
-                "/guides/anonymous-logins",
-                "/guides/server-status",
-                "/guides/roadmap"
+                "/de/guides/wiki-home",
+                "/de/guides/anonymous-logins",
+                "/de/guides/server-status",
+                "/de/guides/roadmap"
             ],
             sidebarDepth: 2
         },
         {
-            title: "Contribution",
-            path: "/contribution/"
+            title: "Teilnehmen",
+            path: "/de/contribution/"
         },
         {
-            title: "Contact",
-            path: "/contact"
+            title: "Kontakt",
+            path: "/de/contact"
         }
     ],
     contribution: [
-        "/",
+        "/de/",
         {
             title: "Downloads",
-            path: "/download/"
+            path: "/de/download/"
         },
         {
             title: "Frequently Asked Questions",
-            path: "/faq/",
+            path: "/de/faq/",
         },
         {
-            title: "Guide",
-            path: "/guides/anonymous-logins"
+            title: "Benutzerhandbuch",
+            path: "/de/guides/wiki-home"
         },
         {
-            title: "Contribution",
-            path: "/contribution/"
+            title: "Teilnehmen",
+            path: "/de/contribution/"
         },
         {
-            title: "Contact",
-            path: "/contact"
+            title: "Kontakt",
+            path: "/de/contact"
         }
     ],
     contact: [
-        "/",
+        "/de/",
         {
             title: "Downloads",
-            path: "/download/"
+            path: "/de/download/"
         },
         {
             title: "Frequently Asked Questions",
-            path: "/faq/",
+            path: "/de/faq/",
         },
         {
-            title: "Guide",
-            path: "/guides/anonymous-logins"
+            title: "Benutzerhandbuch",
+            path: "/de/guides/wiki-home"
         },
         {
-            title: "Contribution",
-            path: "/contribution/"
+            title: "Teilnehmen",
+            path: "/de/contribution/"
         },
         {
-            title: "Contact",
-            path: "/contact"
+            title: "Kontakt",
+            path: "/de/contact"
         }
     ]
 }

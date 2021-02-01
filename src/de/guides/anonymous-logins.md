@@ -1,7 +1,7 @@
 ---
 title: Anonymous Logins
 description: A short explantion on how Anonymous Logins work.
-lang: en-GB
+lang: de
 meta:
   - property: og:image
     content: /icons/aurora_store.png

@@ -3,7 +3,7 @@ layout: Downloads
 title: App Warden
 metaTitle: Aurora Store
 description: An open source alternative Google Play Store frontend with privacy features and clean UI.
-lang: en-GB
+lang: de
 meta:
     - property: og:image
       content: /icons/app_warden.png

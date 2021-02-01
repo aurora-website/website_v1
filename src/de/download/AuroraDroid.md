@@ -3,7 +3,7 @@ layout: Downloads
 title: Aurora Droid
 metaTitle: Aurora Droid
 description: An open source F-Droid client with modern UI.
-lang: en-GB
+lang: de
 meta:
     - property: og:image
       content: /icons/aurora_droid.png

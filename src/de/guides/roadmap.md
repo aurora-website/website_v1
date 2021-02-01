@@ -1,7 +1,7 @@
 ---
 title: Roadmap
 description: Timeline of Aurora Store.
-lang: en-GB
+lang: de
 meta:
   - property: og:image
     content: /icons/aurora_store.png

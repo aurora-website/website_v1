@@ -65,8 +65,8 @@ module.exports = {
         },
         nav: navBarConfig,
         sidebar: {
-          "/guides": sideBarConfig.guides,
-          "/contact": sideBarConfig.contact,
+          "/guides/": sideBarConfig.guides,
+          "/contact/": sideBarConfig.contact,
           "/faq/": sideBarConfig.faq,
           "/contribution/": sideBarConfig.contribution,
           "/download/": sideBarConfig.download
@@ -85,8 +85,8 @@ module.exports = {
         },
         nav: navBarDEConfig,
         sidebar: {
-          "/de/guides": sideBarConfigDE.guides,
-          "/de/contact": sideBarConfigDE.contact,
+          "/de/guides/": sideBarConfigDE.guides,
+          "/de/contact/": sideBarConfigDE.contact,
           "/de/faq/": sideBarConfigDE.faq,
           "/de/contribution/": sideBarConfigDE.contribution,
           "/de/download/": sideBarConfigDE.download
@@ -99,6 +99,7 @@ module.exports = {
     ".vuepress/config/plugins.js",
     ".vuepress/config/navBar.js",
     ".vuepress/config/navBarDE.js",
-    ".vuepress/config/sideBar.js"
+    ".vuepress/config/sideBar.js",
+    ".vuepress/config/sideBarDE.js"
   ]
 }

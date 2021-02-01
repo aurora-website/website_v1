@@ -1,7 +1,7 @@
 ---
 title: Contribution
 description: Find out how to contribute to AuroraOSS!
-lang: en-GB
+lang: de
 sidebar: true
 ---
 

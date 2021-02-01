@@ -3,7 +3,7 @@ layout: Contact
 title: AuroraOSS contact
 metaTitle: AuroraOSS contact
 description: Contact the AuroraOSS Team!
-lang: en-GB
+lang: de
 meta:
   - property: og:image
     content: /icons/auroralogo.png

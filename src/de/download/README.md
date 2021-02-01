@@ -6,7 +6,7 @@ description: Download page for the latest versions of Aurora Apps.
 meta:
     - name: keywords
       content: Download, Official, Android app, App Store, APK
-lang: en-GB
+lang: de
 ---
 
 # Downloads

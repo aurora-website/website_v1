@@ -87,7 +87,7 @@ module.exports = {
         },
         {
             title: "Guide",
-            path: "/guides/anonymous-logins"
+            path: "/guides/wiki-home"
         },
         {
             title: "Contribution",
@@ -110,7 +110,7 @@ module.exports = {
         },
         {
             title: "Guide",
-            path: "/guides/anonymous-logins"
+            path: "/guides/wiki-home"
         },
         {
             title: "Contribution",

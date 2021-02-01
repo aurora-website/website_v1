@@ -3,7 +3,7 @@ layout: Downloads
 title: App Warden
 metaTitle: Aurora Warden
 description: An open source app utility manager for all your installed apps.
-lang: en-GB
+lang: de
 meta:
     - property: og:image
       content: /icons/app_warden.png

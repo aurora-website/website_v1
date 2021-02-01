@@ -1,7 +1,7 @@
 ---
 title: Aurora Wiki
 description: Read the Docs for Aurora Apps.
-lang: en-GB
+lang: de
 meta:
   - property: og:image
     content: /icons/aurora_wiki.png

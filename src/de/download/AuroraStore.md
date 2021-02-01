@@ -3,7 +3,7 @@ layout: Downloads
 title: Aurora Store
 metaTitle: Aurora Store
 description: An open source alternative Google Play Store frontend with privacy features and clean UI.
-lang: en-GB
+lang: de
 meta:
   - property: og:image
     content: /icons/aurora_store.png
