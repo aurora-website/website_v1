@@ -1,6 +1,7 @@
 const navBarConfig = require("./config/navBar");
 const navBarDEConfig = require("./config/navBarDE");
 const sideBarConfig = require("./config/sideBar");
+const sideBarConfigDE = require("./config/sideBarDE");
 const pluginsConfig = require("./config/plugins");
 
 module.exports = {
@@ -84,11 +85,11 @@ module.exports = {
         },
         nav: navBarDEConfig,
         sidebar: {
-          "/de/guides": sideBarConfig.guides,
-          "/de/contact": sideBarConfig.contact,
-          "/de/faq/": sideBarConfig.faq,
-          "/de/contribution/": sideBarConfig.contribution,
-          "/de/download/": sideBarConfig.download
+          "/de/guides": sideBarConfigDE.guides,
+          "/de/contact": sideBarConfigDE.contact,
+          "/de/faq/": sideBarConfigDE.faq,
+          "/de/contribution/": sideBarConfigDE.contribution,
+          "/de/download/": sideBarConfigDE.download
         },
       }
     },
