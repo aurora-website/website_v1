@@ -5,7 +5,6 @@ import VueSweetalert2 from "vue-sweetalert2";
 import VueMoment from "vue-moment";
 import Element from "element-ui";
 import VueTablerIcons from 'vue-tabler-icons';
-import Vuetify from 'vuetify';
 import VueGoodTablePlugin from 'vue-good-table';
 
 import store from "./store";
