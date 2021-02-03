@@ -259,7 +259,7 @@
 			&:hover
 				background-color lighten($githubAccentColor, 70%)
 		
-	@media (max-width: $MQMobile)
+	@media (max-width: $MQMobileNarrow)
 		.el-button
 			padding 0.2rem 0.2rem
 		.el-row
