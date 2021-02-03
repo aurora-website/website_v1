@@ -66,7 +66,7 @@ module.exports = {
         nav: navBarConfig,
         sidebar: {
           "/guides/": sideBarConfig.guides,
-          "/contact": sideBarConfig.contact,
+          "/contact/": sideBarConfig.contact,
           "/faq/": sideBarConfig.faq,
           "/contribution/": sideBarConfig.contribution,
           "/download/": sideBarConfig.download
@@ -86,7 +86,7 @@ module.exports = {
         nav: navBarDEConfig,
         sidebar: {
           "/de/guides/": sideBarConfigDE.guides,
-          "/de/contact": sideBarConfigDE.contact,
+          "/de/contact/": sideBarConfigDE.contact,
           "/de/faq/": sideBarConfigDE.faq,
           "/de/contribution/": sideBarConfigDE.contribution,
           "/de/download/": sideBarConfigDE.download

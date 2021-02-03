@@ -15,7 +15,6 @@ export default ({
   router, // the router instance for the app
   siteData // site metadata
 }) => {
-  Vue.use(Vuetify);
   Vue.use(VueGoodTablePlugin);
   Vue.use(VueTablerIcons);
   Vue.use(VueSweetalert2);

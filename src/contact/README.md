@@ -15,9 +15,9 @@ sidebar: true
 
 <ContactsPage />
 
-Any questions our FAQs can't answer, problems that you want to discuss discreetly or trust issues with our apps? No worries! Feel free to contact us on any of the following platforms below.
-
 ## Support
+
+Any questions our FAQs can't answer, problems that you want to discuss discreetly or trust issues with our apps? No worries! Feel free to contact us on any of the following platforms below.
 
 ### Telegram
 
@@ -26,7 +26,7 @@ Our go-to platform would be Telegram. We are almost active everyday so we won't 
 ...or click on the QR code images to open the links. (QR codes are cooler, though.)
 
 
-::: guide Important!
+::: warning Important!
 Please read the group rules, pinned messages and a few of the previous messages to see if their context is what you are looking for before 
 :::
 
@@ -48,28 +48,21 @@ Please read the group rules, pinned messages and a few of the previous messages 
 </a>
 
 
-***
 ### GitLab
 
-All the Issues and code for our apps are reported here.
+All the issues and merge requsts for the code of our apps are reported on our GitLab Organization, [AuroraOSS](https://gitlab.com/auroraoss).
 
-***
 ### XDA
 
-For those who have been in the Android community for some time might know about XDA-Developers, a great place for Android enthusiasts to 
+For those who have been in the Android community for some time might know about XDA-Developers, a great place for Android enthusiasts to tinker and explore Android. Check out our XDA-Developers Forum [Thread](https://forum.xda-developers.com/t/app-5-0-aurora-store-an-unofficial-oss-play-store-client-may-16.3739733/) for Aurora Store.
 
-***
 ### Email
 
+Want to write to us discreetly? Send us a [mail](mailto:auroraoss.dev@gmail.com)!
 
-
-***
 ### Reddit (planned)
 
-We're planning on starting a Reddit subreddit after we stabilized things a bit. Who wouldn't want their service to be on the world's most well-known forum service, eh?
+We're planning on starting a Reddit subreddit after we stabilized things a bit. Who wouldn't want their service to be on the world's most well-known forum service, right?
 
-***
-
-::: danger EDIT PAGE
-do a vue page for icons for each title
-:::
+<!-- NOTE TO SELF
+add icons from vue-tabler-icons for titles -->

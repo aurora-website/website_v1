@@ -19,7 +19,7 @@ module.exports = {
         },
         {
             title: "Contact",
-            path: "/contact"
+            path: "/contact/"
         }
     ],
     faq: [
@@ -42,7 +42,7 @@ module.exports = {
         },
         {
             title: "Contact",
-            path: "/contact"
+            path: "/contact/"
         }
     ],
     guides: [
@@ -72,7 +72,7 @@ module.exports = {
         },
         {
             title: "Contact",
-            path: "/contact"
+            path: "/contact/"
         }
     ],
     contribution: [
@@ -95,7 +95,7 @@ module.exports = {
         },
         {
             title: "Contact",
-            path: "/contact"
+            path: "/contact/"
         }
     ],
     contact: [
@@ -118,7 +118,7 @@ module.exports = {
         },
         {
             title: "Contact",
-            path: "/contact"
+            path: "/contact/"
         }
     ]
 }

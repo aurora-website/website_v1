@@ -17,7 +17,6 @@
 
 <script>
 import marked from "marked";
-import OhVueIcon from 'oh-vue-icons/components/Icon';
 
 export default {
 
