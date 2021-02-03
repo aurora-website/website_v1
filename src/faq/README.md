@@ -5,7 +5,7 @@ lang: en-GB
 sidebarDepth: 2
 ---
 
-# Frequently Asked Questions
+# Frequently Asked Questions <messages-icon size="38px"/>
 
 ## <img class="headerLogo" :src="$withBase('/icons/aurora_store.png')"> Aurora Store
 
@@ -26,7 +26,7 @@ This does not apply to anyone using their own Google account.
 :::
 
 ::: c-warning
-http://www.auroraoss.in:8080​ has been disabled. For more information, please head to our support chat on [Telegram](https://t.me/aurorasupport)
+http://www.auroraoss.in:8080​ has been disabled. All users are requested to use the main server, i.e. turn the custom tokenizer **OFF**, if not already doing so. For more information, please head to our support chat on [Telegram](https://t.me/aurorasupport)
 :::
 
 #### Installing/updating Google Chrome or Google/Android System WebView responds with "Incompatible app"!

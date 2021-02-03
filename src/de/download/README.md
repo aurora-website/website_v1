@@ -9,7 +9,7 @@ meta:
 lang: de
 ---
 
-# Downloads
+# Downloads <cloud-download-icon size="38px"/>
 
 Download our latest apps here.
 

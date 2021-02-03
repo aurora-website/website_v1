@@ -11,7 +11,7 @@ sidebar: true
 ---
 # Contact
 
-## The Team
+## The Team <users-icon />
 
 <ContactsPage />
 
@@ -19,7 +19,7 @@ sidebar: true
 
 Any questions our FAQs can't answer, problems that you want to discuss discreetly or trust issues with our apps? No worries! Feel free to contact us on any of the following platforms below.
 
-### Telegram
+### Telegram <brand-telegram-icon />
 
 Our go-to platform would be Telegram. We are almost active everyday so we won't miss a message if you chime in. Install Telegram if you don't already have it, choose any of the groups below and scan them with a QR Code scanner to get started!
 
@@ -48,19 +48,19 @@ Please read the group rules, pinned messages and a few of the previous messages 
 </a>
 
 
-### GitLab
+### GitLab <brand-gitlab-icon />
 
 All the issues and merge requsts for the code of our apps are reported on our GitLab Organization, [AuroraOSS](https://gitlab.com/auroraoss).
 
-### XDA
+### XDA <letter-x-icon />
 
 For those who have been in the Android community for some time might know about XDA-Developers, a great place for Android enthusiasts to tinker and explore Android. Check out our XDA-Developers Forum [Thread](https://forum.xda-developers.com/t/app-5-0-aurora-store-an-unofficial-oss-play-store-client-may-16.3739733/) for Aurora Store.
 
-### Email
+### Email <mail-icon />
 
 Want to write to us discreetly? Send us a [mail](mailto:auroraoss.dev@gmail.com)!
 
-### Reddit (planned)
+### Reddit (planned) <brand-reddit-icon />
 
 We're planning on starting a Reddit subreddit after we stabilized things a bit. Who wouldn't want their service to be on the world's most well-known forum service, right?
 

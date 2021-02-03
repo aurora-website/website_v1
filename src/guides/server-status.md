@@ -21,7 +21,9 @@ See the current status of the token dispenser servers below:
 
 A word from the Aurora Store team: Please do not spam our servers. If you do, we will block you _mercilessly_.
 
-Recent news: We are unable to show the status of our main dispenser with Uptimerobot as of now because of our newly implemented rate limiting. However, it is running and should there be any problems with the server you can check our Telegram group chat.
+::: c-warning Recent News!
+We are unable to show the status of our main dispenser with Uptimerobot as of now because of our newly implemented rate limiting. However, it is running and should there be any problems with the server you can check our Telegram group chat.
+:::
 
 See real-time status and history [here](https://stats.uptimerobot.com/D6QpBHB11l).
 
