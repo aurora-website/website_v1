@@ -11,7 +11,7 @@ sidebar: true
 ---
 # Contact
 
-## Our Team
+## The Team
 
 <ContactsPage />
 
@@ -26,8 +26,8 @@ Our go-to platform would be Telegram. We are almost active everyday so we won't 
 ...or click on the QR code images to open the links. (QR codes are cooler, though.)
 
 
-::: warning Important!
-Please read the group rules, pinned messages and a few of the previous messages to see if their context is what you are looking for before 
+::: guide Important!
+Please read the group rules, pinned messages and a few of the previous messages to see if their context is what you are looking for before asking any questions, you're helping us reduce spam and time! 👍
 :::
 
 
