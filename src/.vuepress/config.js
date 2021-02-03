@@ -13,6 +13,7 @@ module.exports = {
       // Extra tags to be injected to the page HTML `<head>`
       head: [
         ["link", { rel: "icon", href: "/favicon.ico" }],
+        ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
         ['meta', { name: 'theme-color', content: '#f50057' }],
         ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
         ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
@@ -24,6 +25,7 @@ module.exports = {
       description: 'Eine Organization mit dem Ziel Apps zu erstellen die einfach zu benuzten sind und schön aussehen. Aurora Apps Open-Source-Software. Von euch inspiriert. Für die Community gebaut.',
       head: [
         ["link", { rel: "icon", href: "/favicon.ico" }],
+        ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
         ['meta', { name: 'theme-color', content: '#f50057' }],
         ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
         ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
