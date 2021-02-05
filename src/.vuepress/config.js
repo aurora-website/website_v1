@@ -13,6 +13,7 @@ module.exports = {
       // Extra tags to be injected to the page HTML `<head>`
       head: [
         ["link", { rel: "icon", href: "/favicon.ico" }],
+        // not fixed in vuepress, meta tag viewport will be removed upon building
         ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
         ['meta', { name: 'theme-color', content: '#f50057' }],
         ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],

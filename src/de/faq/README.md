@@ -38,7 +38,7 @@ If you are using Android 10+ (Q and above), both of these apps are not easy to i
 > ~ Source: [androidpolice.com](https://www.androidpolice.com/2019/10/24/android-10-no-longer-uses-chrome-app-to-render-pages-inside-apps/)
 
 
-The trichrome library is split into 4 variants, just like Google Chrome: Stable, Beat, Dev, Canary.
+The trichrome library is split into 4 variants, just like Google Chrome: Stable, Beta, Dev, Canary.
 
 To install Chrome and WebView variants, follow the steps below:
 

@@ -97,7 +97,7 @@
 					gitlab: 'https://gitlab.com/marchingon12', 
 					github: 'https://github.com/marchingon12',
 					motto: 'Anime & Manga is life.',
-					about: 'Created the website.'
+					about: 'I write docs and created the website.'
 				},
 				{ name: 'Sunny Raj',
 					role: '@CheDuckevara | Privacy Enthusiast',

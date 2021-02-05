@@ -11,7 +11,7 @@ lang: en-GB
 
 # Downloads <cloud-download-icon size="38px"/>
 
-Download our latest apps here.
+Download our latest apps here. To know more about our apps, click on the app titles!
 
 ## <img class="headerLogo" :src="$withBase('/icons/aurora_store.png')"> [Aurora Store](/download/AuroraStore.md)
 

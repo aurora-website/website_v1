@@ -38,7 +38,7 @@ If you are using Android 10+ (Q and above), both of these apps are not easy to i
 > ~ Source: [androidpolice.com](https://www.androidpolice.com/2019/10/24/android-10-no-longer-uses-chrome-app-to-render-pages-inside-apps/)
 
 
-The trichrome library is split into 4 variants, just like Google Chrome: Stable, Beat, Dev, Canary.
+The trichrome library is split into 4 variants, just like Google Chrome: Stable, Beta, Dev, Canary.
 
 To install Chrome and WebView variants, follow the steps below:
 
@@ -348,7 +348,7 @@ A list of currently known trackers & loggers can be found here & here
 
 Loggers in the context of Warden means all utilities which are used to log user activity on an app or logcat in general. Not all loggers are evil. But few logging tools like ACRA, xLog are very powerful tools that can send user data to devs without user's consent. So do read the app's Privacy Policy, beforehand.
 
-### Here are some features which warden provides:
+### What features are there?
 
 #### Manual App management:
 
@@ -362,7 +362,7 @@ Note: By default only user installed apps are shown in app list, to preview syst
 
 #### Trackers search function (No Root required):
 
-Warden provides direct access to Exodus privacy scanned app Database. Use search function on main home screen & just paste the "package name" {ex: com.whatsapp for whatsapp & com.google.android.youtube for YouTube} of the app in search bar & hit search button.
+Warden provides direct access to Exodus privacy scanned app Database. Use the search function on main home screen & just paste the "package name" (e.g.: com.whatsapp for whatsapp & com.google.android.youtube for YouTube) of the app in search bar & hit search button.
 
 If No results are found try to submit app manually for analysis on exodus web portal. Submit app HERE. After 2-3 minutes from submission time results will be reflected in warden, if its successfully scanned by Exodus.
 
@@ -380,7 +380,7 @@ Warden also shows the stats like the current amount of trackers & loggers presen
 
 #### Warden LAB {Experimental}
 
-Currently it consist of 2 features i.e De-bloater & Nuke it. These features are experimental, but it will surely improve with time.
+Currently it consists of two features i.e **De-bloater** & **Nuke it!**. These features are experimental, but it will surely improve with time.
 
 #### De-bloater (Requires Root):
 
@@ -404,4 +404,4 @@ You can Revert back the Nuke it effect by toggling De-Nuke button from same sect
 
 ## Aurora Wallpapers
 
-None so far 😛
+_Wow, such empty 🐶_
