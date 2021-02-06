@@ -15,7 +15,7 @@ Download our latest apps here. To know more about our apps, click on the app tit
 
 ## <img class="headerLogo" :src="$withBase('/icons/aurora_store.png')"> [Aurora Store](/download/AuroraStore/)
 
-The latest version of Aurora Store was uploaded <ReleaseDateStore stable /> and released **7 months ago**.
+The latest version of Aurora Store was uploaded <ReleaseDate store /> and released **7 months ago**.
 
 Note: all current nightly builds have been paused until further notice.
 
@@ -25,7 +25,7 @@ Note: all current nightly builds have been paused until further notice.
 
 ## <img class="headerLogo" :src="$withBase('/icons/aurora_droid.png')"> [Aurora Droid](/download/AuroraDroid/)
 
-The latest version of Aurora Droid was uploaded <ReleaseDateDroid stable /> and released **6 months ago**.
+The latest version of Aurora Droid was uploaded <ReleaseDate droid /> and released **6 months ago**.
 
 <DownloadButtonsDroid />
 
@@ -33,7 +33,7 @@ The latest version of Aurora Droid was uploaded <ReleaseDateDroid stable /> and 
 
 ## <img class="headerLogo" :src="$withBase('/icons/app_warden.png')"> [App Warden](/download/AppWarden/)
 
-The latest version of App Warden was released <ReleaseDateWarden stable />.
+The latest version of App Warden was released <ReleaseDate.WIP warden />.
 
 <DownloadButtonsWarden />
 
@@ -41,7 +41,7 @@ The latest version of App Warden was released <ReleaseDateWarden stable />.
 
 ## <img class="headerLogo" :src="$withBase('/icons/aurora_wallpapers.png')"> [Aurora Wallpapers](/download/AuroraWallpapers/)
 
-The latest version of Aurora Wallpapers was released <ReleaseDateWalls stable />
+The latest version of Aurora Wallpapers was released <ReleaseDate.WIP walls />
 
 <DownloadButtonsWalls />
 
