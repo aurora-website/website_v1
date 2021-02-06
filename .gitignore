@@ -6,3 +6,6 @@ node_modules
 
 # Planned stuff for .vuepress/components
 misc
+
+# Local stuff for build testing
+dist
