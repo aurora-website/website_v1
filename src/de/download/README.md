@@ -13,36 +13,36 @@ lang: de
 
 Download our latest apps here. To know more about our apps, click on the app titles!
 
-## <img class="headerLogo" :src="$withBase('/icons/aurora_store.png')"> [Aurora Store](/de/download/AuroraStore/)
+## <img class="headerLogo" :src="$withBase('/icons/aurora_store.png')"> [Aurora Store](/download/AuroraStore/)
 
 The latest version of Aurora Store was uploaded <ReleaseDate store /> and released **7 months ago**.
 
 Note: all current nightly builds have been paused until further notice.
 
-<DownloadButtonsStore />
+<DownloadButtons store />
 
-<ChangelogStore />
+<AuroraChangelogs store />
 
-## <img class="headerLogo" :src="$withBase('/icons/aurora_droid.png')"> [Aurora Droid](/de/download/AuroraDroid/)
+## <img class="headerLogo" :src="$withBase('/icons/aurora_droid.png')"> [Aurora Droid](/download/AuroraDroid/)
 
 The latest version of Aurora Droid was uploaded <ReleaseDate droid /> and released **6 months ago**.
 
-<DownloadButtonsDroid />
+<DownloadButtons droid />
 
-<ChangelogDroid />
+<AuroraChangelogs droid />
 
-## <img class="headerLogo" :src="$withBase('/icons/app_warden.png')"> [App Warden](/de/download/AppWarden/)
+## <img class="headerLogo" :src="$withBase('/icons/app_warden.png')"> [App Warden](/download/AppWarden/)
 
 The latest version of App Warden was released <ReleaseDate.WIP warden />.
 
-<DownloadButtonsWarden />
+<!-- <DownloadButtons />
 
-<ChangelogWarden />
+<AuroraChangelogs warden />-->
 
-## <img class="headerLogo" :src="$withBase('/icons/aurora_wallpapers.png')"> [Aurora Wallpapers](/de/download/AuroraWallpapers/)
+## <img class="headerLogo" :src="$withBase('/icons/aurora_wallpapers.png')"> [Aurora Wallpapers](/download/AuroraWallpapers/)
 
 The latest version of Aurora Wallpapers was released <ReleaseDate.WIP walls />
 
-<DownloadButtonsWalls />
+<!-- <DownloadButtons />
 
-<ChangelogWalls />
+<AuroraChangelogs walls /> -->

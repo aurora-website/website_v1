@@ -1,27 +1,48 @@
 <template>
     <div id='DownloadButtonsStore'>
-        <ElButton round type="success" @click="downloadStable" @keyup.enter="downloadStable">
+		<ElButton v-if="store" type="success" @click="downloadStore" @keyup.enter="downloadStore">
 			<cloud-download-icon size="19"/>
 			<span class="spacing">Stable</span>
 			<br />
-			<span class="downloadTag">{{ this.$data.tagName }}</span>
+			<span class="downloadTag">{{ this.$data.astoreTagName }}</span>
+		</ElButton>
+		<ElButton v-else-if="droid" type="success" @click="downloadDroid" @keyup.enter="downloadDroid">
+			<cloud-download-icon size="19"/>
+			<span class="spacing">Stable</span>
+			<br />
+			<span class="downloadTag">{{ this.$data.adroidTagName }}</span>
 		</ElButton>
 		<span class="versionNotice">
 			Requires
 			<strong>Android 5.0</strong>
 			or higher.
 		</span>
-    </div>
+	</div>
 </template>
 
 <script>
 import { GITHUB_STABLE_RELEASE_STORE } from "../constants";
+import { GITHUB_STABLE_RELEASE_DROID } from "../constants";
 
 export default {
+
+	props: {
+		store: {
+			type: Boolean,
+			default: false,
+		},
+		droid: {
+			type: Boolean,
+			default: false,
+		},
+	},
+
 	data() {
 		return {
-			tagName: "0.0.0",
-			browserDownloadUrl: "",
+			astoreTagName: "0.0.0",
+			storeDownloadUrl: "",
+			adroidTagName: "0.0.0",
+			droidDownloadUrl: "",
 		};
 	},
 
@@ -29,15 +50,23 @@ export default {
 		try {
 			const { data } = await this.$store.dispatch("getStoreReleaseData");
 			const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
-			this.$data.tagName = data.tag_name;
-			this.$data.browserDownloadUrl = apkAsset.browser_download_url;
+			this.$data.astoreTagName = data.tag_name;
+			this.$data.storeDownloadUrl = apkAsset.browser_download_url;
+		} catch (e) {
+			console.error(e);
+		}
+		try {
+			const { data } = await this.$store.dispatch("getDroidReleaseData");
+			const apkAsset = data.assets.find(a => a.name.includes(".apk"));
+			this.$data.adroidTagName = data.tag_name;
+			this.$data.droidDownloadUrl = apkAsset.browser_download_url;
 		} catch (e) {
 			console.error(e);
 		}
 	},
 
 	methods: {
-		downloadStable() {
+		downloadStore() {
 			this.$swal({
 				title: "Downloading",
 				html: `Started downloading <strong>Aurora Store Stable</strong>`,
@@ -53,9 +82,26 @@ export default {
 					popup: "animate__animated animate__faster animate__zoomOut",
 				},
 			});
-			window.location.assign(this.$data.browserDownloadUrl || GITHUB_STABLE_RELEASE_STORE);
-			window.ga("send", "event", "Action", "Download", "AuroraStore");
-		}
+			window.location.assign(this.$data.storeDownloadUrl || GITHUB_STABLE_RELEASE_STORE);
+		},
+		downloadDroid() {
+			this.$swal({
+				title: "Downloading",
+				html: `Started downloading <strong>Aurora Droid Stable</strong>`,
+				icon: "success",
+				focusConfirm: false,
+				focusCancel: false,
+				timer: 3000,
+				timerProgressBar: true,
+				showClass: {
+					popup: "animate__animated animate__faster animate__pulse",
+				},
+				hideClass: {
+					popup: "animate__animated animate__faster animate__zoomOut",
+				},
+			});
+			window.location.assign(this.$data.droidDownloadUrl || GITHUB_STABLE_RELEASE_DROID);
+		},
 	}
 };
 </script>
