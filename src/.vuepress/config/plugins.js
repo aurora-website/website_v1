@@ -2,6 +2,19 @@ module.exports = [
 	["@vuepress/plugin-back-to-top"],
 	["vuepress-plugin-element-ui"],
 	[
+		"@vuepress/active-header-links",
+		{
+			sidebarLinkSelector: ".sidebar-link",
+			headerAnchorSelector: ".header-anchor",
+		},
+	],
+	[
+		"vuepress-plugin-clean-urls",
+		{
+			normalSuffix: "/",
+		},
+	],
+	[
 		"vuepress-plugin-zooming",
 		{
 			selector: ".theme-default-content img.zoomable",

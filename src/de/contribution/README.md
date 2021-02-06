@@ -63,7 +63,7 @@ Aurora Website
 ## Donation <coin-icon />
 If you can't contribute code or translations but you still wish to help, then you can choose to contribute directly to the projects founder, [whyorean](https://gitlab.com/whyorean/) by using the following sources below.
 ***
-<a href="/contribution/UPI.html">
+<a href="/contribution/UPI/">
 	<img width="213" style="border:0px;width:213px;" src="/assets/upibutton.png" border="0" alt="Donate via UPI" />
 </a>
 <a href="http://www.paypal.me/AuroraDev" target="_blank" rel="noopener">
@@ -73,13 +73,13 @@ If you can't contribute code or translations but you still wish to help, then yo
 	<img width="213" style="border:0px;width:213px;" src="/assets/liberapaybutton.png" border="0" alt="Bitcoin accepted here" />
 </a>
 
-<a href="/contribution/BTC.html" >
+<a href="/contribution/BTC/" >
 	<img width="213" style="border:0px;width:213px;" src="/assets/bitcoinbutton.png" border="0" alt="Bitcoin accepted here" />
 </a>
-<a href="/contribution/BCH.html" >
+<a href="/contribution/BCH/" >
 	<img width="213" style="border:0px;width:213px;" src="/assets/btcashbutton.png" border="0" alt="Bitcoin accepted here" />
 </a>
-<a href="/contribution/ETH.html" >
+<a href="/contribution/ETH/" >
 	<img width="213" style="border:0px;width:213px;" src="/assets/etherumbutton.png" border="0" alt="Bitcoin accepted here" />
 </a>
 

@@ -16,13 +16,17 @@
   "license": "MIT",
   "devDependencies": {
     "@vue/devtools": "^5.3.3",
+    "@vuepress/plugin-active-header-links": "^1.8.0",
+    "@vuepress/plugin-pwa": "^1.8.0",
     "eslint": "^7.18.0",
     "eslint-config-vuepress": "^3.1.0",
     "eslint-plugin-markdown": "^1.0.2",
     "eslint-plugin-vue": "^7.5.0",
     "vuepress": "^1.8.0",
+    "vuepress-plugin-clean-urls": "^1.1.2",
     "vuepress-plugin-container": "^2.1.5",
     "vuepress-plugin-element-ui": "^1.1.0",
+    "vuepress-plugin-robots": "^1.0.1",
     "vuepress-plugin-zooming": "^1.1.8"
   },
   "dependencies": {
@@ -31,14 +35,12 @@
     "core-js": "^2.6.4",
     "element-ui": "^2.15.0",
     "marked": "^1.2.8",
-    "oh-vue-icons": "^0.1.7",
     "vue": "^2.6.12",
     "vue-good-table": "^2.21.3",
     "vue-moment": "^4.1.0",
     "vue-sweetalert2": "^4.1.1",
     "vue-tabler-icons": "^1.7.0",
     "vuepress-plugin-code-copy": "^1.0.6",
-    "vuetify": "^2.4.3",
     "vuex": "^3.6.2"
   }
 }

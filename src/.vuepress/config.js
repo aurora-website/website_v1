@@ -10,29 +10,23 @@ module.exports = {
       lang: 'en-GB', // this will be set as the lang attribute on <html>
       title: 'AuroraOSS',
       description: 'An organization that aims to build applications that are easy to use & beautiful to look at. Aurora Apps Open-Source Software. Inspired by you. Built for the community.',
-      // Extra tags to be injected to the page HTML `<head>`
-      head: [
-        ["link", { rel: "icon", href: "/favicon.ico" }],
-        // not fixed in vuepress, meta tag viewport will be removed upon building
-        ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
-        ['meta', { name: 'theme-color', content: '#f50057' }],
-        ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-        ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
-      ],
     },
     '/de/': {
       lang: 'de',
       title: 'AuroraOSS',
       description: 'Eine Organization mit dem Ziel Apps zu erstellen die einfach zu benuzten sind und schön aussehen. Aurora Apps Open-Source-Software. Von euch inspiriert. Für die Community gebaut.',
-      head: [
-        ["link", { rel: "icon", href: "/favicon.ico" }],
-        ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
-        ['meta', { name: 'theme-color', content: '#f50057' }],
-        ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-        ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
-      ],
     }
   },
+
+  // Extra tags to be injected to the page HTML `<head>`
+  head: [
+    ["link", { rel: "icon", href: "/favicon.ico" }],
+    // not fixed in vuepress, meta tag viewport will be removed upon building
+    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
+    ['meta', { name: 'theme-color', content: '#f50057' }],
+    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+  ],
 
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
