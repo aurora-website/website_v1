@@ -9,6 +9,12 @@ module.exports = [
 		},
 	],
 	[
+		"@vuepress/pwa",
+		{
+			serviceWorker: false,
+		},
+	],
+	[
 		"vuepress-plugin-clean-urls",
 		{
 			normalSuffix: "/",

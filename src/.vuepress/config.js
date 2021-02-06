@@ -53,13 +53,6 @@ module.exports = {
         ariaLabel: 'Languages',
         // text for the edit-on-github link
         editLinkText: 'Edit this page on GitHub',
-        // config for service Worker
-        serviceWorker: {
-          updatePopup: {
-            message: "New content is available.",
-            buttonText: "Refresh"
-          }
-        },
         nav: navBarConfig,
         sidebar: {
           "/guides/": sideBarConfig.guides,
@@ -74,12 +67,6 @@ module.exports = {
         label: 'Deutsch',
         ariaLabel: 'Language Menu',
         editLinkText: 'Seite auf GitHub bearbeiten',
-        serviceWorker: {
-          updatePopup: {
-            message: "Neue Inhalt verfügbar.",
-            buttonText: "Aktualisieren"
-          }
-        },
         nav: navBarDEConfig,
         sidebar: {
           "/de/guides/": sideBarConfigDE.guides,
