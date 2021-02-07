@@ -52,8 +52,8 @@ As per [**Google Play Terms of Service §4**](https://play.google.com/intl/en-us
 
 ## Support Group
 
-#### Telegram
-
 <p align="center">
-	<img class="zoomable" :src="$withBase('/assets/tg-aurorasupport-qr.png')" width="175px"/>
+	<a href="https://t.me/aurorasupport" target="_blank" rel="noopener">
+    <img :src="$withBase('/assets/tg-aurorasupport-qr.png')" width="175px" />
+  </a>
 </p>

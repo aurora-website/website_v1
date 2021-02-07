@@ -44,5 +44,7 @@ The developer of this application is not responsible for getting your device mal
 ## Support Group
 
 <p align="center">
-	<img class="zoomable" :src="$withBase('/assets/tg-auroradroid-qr.png')" width="175px"/>
+  <a href="https://t.me/auroradroid" target="_blank" rel="noopener">
+    <img :src="$withBase('/assets/tg-auroradroid-qr.png')" width="175px" />
+  </a>
 </p>
