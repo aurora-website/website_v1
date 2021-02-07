@@ -20,12 +20,18 @@ module.exports = {
 
   // Extra tags to be injected to the page HTML `<head>`
   head: [
+    // required headers
     ["link", { rel: "icon", href: "/favicon.ico" }],
-    // not fixed in vuepress, meta tag viewport will be removed upon building
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
-    ['meta', { name: 'theme-color', content: '#f50057' }],
+    // custom headers for PWA
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ['meta', { name: 'theme-color', content: '#b071e3' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    ['link', { rel: 'apple-touch-icon', href: '/icons/apple-touch-icon-152x152.png' }],
+    ['link', { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#3eaf7c' }],
+    ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
+    ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
 
   /**
@@ -39,7 +45,9 @@ module.exports = {
     editLinks: false,
     docsRepo: "/marchingon12/AuroraOSS",
     docsDir: 'src',
-    lastUpdated: false,
+    editLinks: true,
+    editLinkText: "Help us improve this page",
+    lastUpdated: "Last updated",
     smoothScroll: true,
     search: true,
     searchPlaceholder: "Search...",
