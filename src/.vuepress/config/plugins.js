@@ -11,7 +11,17 @@ module.exports = [
 	[
 		"@vuepress/pwa",
 		{
-			serviceWorker: false,
+			serviceWorker: true,
+			updatePopup: {
+				'/': {
+					message: "New content available.",
+					buttonText: "Refresh"
+				},
+				'/de/': {
+					message: "Neuer Inhalt verfügbar.",
+					buttonTest: "Aktualisieren"
+				}
+			}
 		},
 	],
 	[
@@ -31,7 +41,6 @@ module.exports = [
 			},
 		},
 	],
-	["vuepress-plugin-element-ui"],
 	[
 		"vuepress-plugin-container",
 		{
