@@ -1,13 +1,13 @@
 <template>
-    <div id='DownloadButtonsStore'>
+	<div id="DownloadButtonsStore">
 		<ElButton v-if="store" type="success" @click="downloadStore" @keyup.enter="downloadStore">
-			<cloud-download-icon size="19"/>
+			<CloudDownloadIcon size="19" />
 			<span class="spacing">Stable</span>
 			<br />
 			<span class="downloadTag">{{ this.$data.astoreTagName }}</span>
 		</ElButton>
 		<ElButton v-else-if="droid" type="success" @click="downloadDroid" @keyup.enter="downloadDroid">
-			<cloud-download-icon size="19"/>
+			<CloudDownloadIcon size="19" />
 			<span class="spacing">Stable</span>
 			<br />
 			<span class="downloadTag">{{ this.$data.adroidTagName }}</span>
@@ -21,11 +21,9 @@
 </template>
 
 <script>
-import { GITHUB_STABLE_RELEASE_STORE } from "../constants";
-import { GITHUB_STABLE_RELEASE_DROID } from "../constants";
+import { GITHUB_STABLE_RELEASE_STORE, GITHUB_STABLE_RELEASE_DROID } from "../constants";
 
 export default {
-
 	props: {
 		store: {
 			type: Boolean,
@@ -57,7 +55,7 @@ export default {
 		}
 		try {
 			const { data } = await this.$store.dispatch("getDroidReleaseData");
-			const apkAsset = data.assets.find(a => a.name.includes(".apk"));
+			const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
 			this.$data.adroidTagName = data.tag_name;
 			this.$data.droidDownloadUrl = apkAsset.browser_download_url;
 		} catch (e) {
@@ -102,7 +100,7 @@ export default {
 			});
 			window.location.assign(this.$data.droidDownloadUrl || GITHUB_STABLE_RELEASE_DROID);
 		},
-	}
+	},
 };
 </script>
 
@@ -139,5 +137,3 @@ export default {
 			width 8.2em
 			padding 12px 28px
 </style>
-
-

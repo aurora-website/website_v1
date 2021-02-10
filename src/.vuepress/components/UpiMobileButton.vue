@@ -1,13 +1,10 @@
 <template>
-    <div id='UpiMobileButton'>
-        <ElButton type="success" @click="upiPayment" @keyup.enter="upiPayment">
-			Donate via UPI
-		</ElButton>
-    </div>
+	<div id="UpiMobileButton">
+		<ElButton type="success" @click="upiPayment" @keyup.enter="upiPayment">Donate via UPI</ElButton>
+	</div>
 </template>
 
 <script>
-
 export default {
 	data() {
 		return {
@@ -18,8 +15,8 @@ export default {
 	methods: {
 		upiPayment() {
 			window.location.assign(this.$data.browserDownloadUrl);
-		}
-	}
+		},
+	},
 };
 </script>
 
@@ -47,5 +44,3 @@ export default {
 			width 8.2em
 			padding 12px 28px
 </style>
-
-

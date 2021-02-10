@@ -96,7 +96,6 @@ const worker = (function () {
 			});
 		},
 	};
-	
 })();
 
 Vue.use(Vuex);
@@ -110,7 +109,7 @@ export default new Vuex.Store({
 		adroid: {
 			updated: null,
 			data: null,
-		}
+		},
 	},
 	mutations: {
 		setStoreReleaseData(state, { object }) {
@@ -120,7 +119,7 @@ export default new Vuex.Store({
 		setDroidReleaseData(state, { object }) {
 			// eslint-disable-next-line no-param-reassign
 			state.adroid = object;
-		}
+		},
 	},
 	actions: {
 		getStoreReleaseData() {
@@ -142,6 +141,6 @@ export default new Vuex.Store({
 			}
 
 			return worker.getDroidData(this, "adroid");
-		}
+		},
 	},
 });

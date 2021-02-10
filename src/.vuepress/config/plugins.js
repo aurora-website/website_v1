@@ -12,17 +12,17 @@ module.exports = [
 		"@vuepress/pwa",
 		{
 			serviceWorker: true,
-			popupComponent: 'MySWUpdatePopup',
+			popupComponent: "MySWUpdatePopup",
 			updatePopup: {
-				'/': {
+				"/": {
 					message: "New content available.",
-					buttonText: "Refresh"
+					buttonText: "Refresh",
 				},
-				'/de/': {
+				"/de/": {
 					message: "Neuer Inhalt verfügbar.",
-					buttonTest: "Aktualisieren"
-				}
-			}
+					buttonTest: "Aktualisieren",
+				},
+			},
 		},
 	],
 	[
@@ -114,7 +114,7 @@ module.exports = [
 		{
 			color: "#696969",
 			backgroundColor: "#696969",
-			staticIcon: true
-		}
-	]
+			staticIcon: true,
+		},
+	],
 ];

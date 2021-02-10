@@ -1,16 +1,11 @@
 <template>
 	<div id="ContactCards">
-		<el-row >
-			<el-col v-for="person in team" :key="person.name">
-				<el-card
-					:body-style="{ padding: '0px' }"
-					width="100%"
-					shadow="hover"
-				>
-					<img class="image" :src="$withBase(person.image)"/>
+		<ElRow>
+			<ElCol v-for="person in team" :key="person.name">
+				<ElCard :body-style="{ padding: '0px' }" width="100%" shadow="hover">
+					<img class="image" :src="$withBase(person.image)" />
 
-					<div style="padding: 14px;">
-
+					<div style="padding: 14px">
 						<div class="title">
 							{{ person.name }}
 						</div>
@@ -24,178 +19,228 @@
 						</div>
 
 						<div class="buttons">
-							<ElButton circle small type="facebook" @click="openFacebook(person)" @keyup.enter="openFacebook(person)" v-if="person.facebook != 0">
-								<brand-facebook-icon />
+							<ElButton
+								v-if="person.facebook != 0"
+								circle
+								small
+								type="facebook"
+								@click="openFacebook(person)"
+								@keyup.enter="openFacebook(person)"
+							>
+								<BrandFacebookIcon />
 							</ElButton>
-							<ElButton circle small type="instagram" @click="openInstagram(person)" @keyup.enter="openInstagram(person)" v-if="person.instagram != 0">
-								<brand-instagram-icon />
+							<ElButton
+								v-if="person.instagram != 0"
+								circle
+								small
+								type="instagram"
+								@click="openInstagram(person)"
+								@keyup.enter="openInstagram(person)"
+							>
+								<BrandInstagramIcon />
 							</ElButton>
-							<ElButton circle small type="telegram" @click="openTelegram(person)" @keyup.enter="openTelegram(person)" v-if="person.telegram != 0">
-								<brand-telegram-icon />
+							<ElButton
+								v-if="person.telegram != 0"
+								circle
+								small
+								type="telegram"
+								@click="openTelegram(person)"
+								@keyup.enter="openTelegram(person)"
+							>
+								<BrandTelegramIcon />
 							</ElButton>
-							<ElButton circle small type="email" @click="openEmail(person)" @keyup.enter="openEmail(person)" v-if="person.email != 0">
-								<at-icon />
+							<ElButton
+								v-if="person.email != 0"
+								circle
+								small
+								type="email"
+								@click="openEmail(person)"
+								@keyup.enter="openEmail(person)"
+							>
+								<AtIcon />
 							</ElButton>
-							<ElButton circle small type="gitlab" @click="openGitlab(person)" @keyup.enter="openGitlab(person)" v-if="person.gitlab != 0">
-								<brand-gitlab-icon />
+							<ElButton
+								v-if="person.gitlab != 0"
+								circle
+								small
+								type="gitlab"
+								@click="openGitlab(person)"
+								@keyup.enter="openGitlab(person)"
+							>
+								<BrandGitlabIcon />
 							</ElButton>
-							<ElButton circle small type="github" @click="openGithub(person)" @keyup.enter="openGithub(person)" v-if="person.github != 0">
-								<brand-github-icon />
+							<ElButton
+								v-if="person.github != 0"
+								circle
+								small
+								type="github"
+								@click="openGithub(person)"
+								@keyup.enter="openGithub(person)"
+							>
+								<BrandGithubIcon />
 							</ElButton>
 						</div>
 
-						<el-collapse accordion>
-  							<el-collapse-item title="About" :name= person.name>
+						<ElCollapse accordion>
+							<ElCollapseItem title="About" :name="person.name">
 								<span class="about">
 									{{ person.about }}
 								</span>
-							</el-collapse-item>
-						</el-collapse>
+							</ElCollapseItem>
+						</ElCollapse>
 					</div>
-				</el-card>
-			</el-col>
-		</el-row>
+				</ElCard>
+			</ElCol>
+		</ElRow>
 	</div>
 </template>
 
 <script>
+export default {
+	data: () => ({
+		team: [
+			{
+				name: "Rahul Kumar Patel",
+				role: "@whyorean | Lead Dev",
+				image: "/assets/whyorean.jpg",
+				facebook: "",
+				instagram: "https://instagram.com/whyorean",
+				telegram: "https://t.me/whyorean",
+				email: "mailto:auroraoss.dev@gmail.com",
+				gitlab: "https://gitlab.com/whyorean",
+				github: "https://github.com/whyorean",
+				motto: "To be my true self.",
+				about: "I'm the project founder of AuroraOSS.",
+			},
+			{
+				name: "Disuq3Mirroir",
+				role: "@Disqu3mirroir | Server Backend Dev",
+				image: "/assets/Disqu3mirroir.png",
+				facebook: "",
+				instagram: "",
+				telegram: "https://t.me/Disqu3mirroir ",
+				email: "",
+				gitlab: "",
+				github: "",
+				motto: "French croissant for life.",
+				about: "I'm the guy who does the server stuff behind Aurora Store.",
+			},
+			{
+				name: "Austin Hornhead",
+				image: "/assets/austin.jpg",
+				role: "@marchingon12 | Hobby Dev & Designer",
+				facebook: "",
+				instagram: "",
+				telegram: "https://t.me/austinhornhead_12",
+				email: "mailto:augustthegreat.cool@outlook.com",
+				gitlab: "https://gitlab.com/marchingon12",
+				github: "https://github.com/marchingon12",
+				motto: "Anime & Manga is life.",
+				about: "I write docs and created the website.",
+			},
+			{
+				name: "Sunny Raj",
+				role: "@CheDuckevara | Privacy Enthusiast",
+				image: "/assets/sunny.jpg",
+				facebook: "",
+				instagram: "",
+				telegram: "https://t.me/sunnyraj",
+				email: "",
+				gitlab: "",
+				github: "",
+				motto: "Quid est veritas?",
+				about: "OpenSource enthusiast and net political shiptoaster :D",
+			},
+			{
+				name: "ℂ𝕐𝕃Δℕℂ€ ✪",
+				image: "/assets/cylance.jpg",
+				role: "@CYLANC | Contributor & Moderator",
+				facebook: "",
+				instagram: "",
+				telegram: "https://t.me/cylanc",
+				email: "",
+				gitlab: "",
+				github: "",
+				motto: "...🐣",
+				about: "Moi have nothing 2 say.",
+			},
+			{
+				name: "Æïý€€ =ęę",
+				image: "/assets/shanetheawesome.jpg",
+				role: "@shanetheawesome | Contributor",
+				facebook: "",
+				instagram: "",
+				telegram: "https://t.me/shanetheawesome",
+				email: "",
+				gitlab: "",
+				github: "",
+				motto: "Sleep is all u need.",
+				about: "I'm part of the reason why Aurora Store exists.",
+			},
+			{
+				name: "Radek Błędowski",
+				image: "/assets/radek.jpg",
+				role: "@RKBDI | Designer",
+				instagram: "https://instagram.com/rkbdi",
+				facebook: "",
+				telegram: "https://t.me/RKBDI",
+				email: "",
+				gitlab: "https://gitlab.com/RKBDI",
+				github: "",
+				motto: "Make stuff for yourself and don't care about others' opinion.",
+				about: "I design app icons and cool stuff.",
+			},
+			{
+				name: "Matt Murdock",
+				image: "/assets/matt.jpg",
+				role: "@mattmurdock86 | Telegram Moderator",
+				facebook: "",
+				instagram: "",
+				telegram: "https://t.me/mattmurdock86",
+				email: "",
+				gitlab: "",
+				github: "",
+				motto: "Never Stop Trying.",
+				about: "If possible, please support your favorite FOSS apps & Linux Distro(s).",
+			},
+			{
+				name: "Marcel Alexandru Nitan",
+				image: "/assets/snoopalex.jpg",
+				role: "@snoopalex | Telegram Bot Dev",
+				facebook: "https://www.facebook.com/marcel.alexandru.3939/",
+				instagram: "https://www.instagram.com/nitan.alexandru/",
+				telegram: "https://t.me/whyorean",
+				email: "mailto:nitan.marcel@gmail.com",
+				gitlab: "https://gitlab.com/whyorean",
+				github: "https://github.com/nitanmarcel",
+				motto:
+					"Don’t limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve. ~ Mary Kay Ash",
+				about: "Created the bots for our Telegram support chat, keeping humans in check!",
+			},
+		],
+	}),
 
-  	export default {
-		data: () => ({
-			team: [
-				{ name: 'Rahul Kumar Patel',
-					role: '@whyorean | Lead Dev',
-					image: '/assets/whyorean.jpg',
-					facebook: '',
-					instagram: 'https://instagram.com/whyorean',
-					telegram: 'https://t.me/whyorean', 
-					email: 'mailto:auroraoss.dev@gmail.com', 
-					gitlab: 'https://gitlab.com/whyorean', 
-					github: 'https://github.com/whyorean', 
-					motto: 'To be my true self.',
-					about: "I'm the project founder of AuroraOSS."
-				},
-				{ name: 'Disuq3Mirroir',
-					role: '@Disqu3mirroir | Server Backend Dev', 
-					image: '/assets/Disqu3mirroir.png',
-					facebook: '',
-					instagram: '',
-					telegram: 'https://t.me/Disqu3mirroir ', 
-					email: '', 
-					gitlab: '', 
-					github: '',
-					motto: 'French croissant for life.',
-					about: "I'm the guy who does the server stuff behind Aurora Store."
-				},
-				{ name: 'Austin Hornhead',
-					image: '/assets/austin.jpg',
-					role: '@marchingon12 | Hobby Dev & Designer', 
-					facebook: '',
-					instagram: '',
-					telegram: 'https://t.me/austinhornhead_12', 
-					email: 'mailto:augustthegreat.cool@outlook.com', 
-					gitlab: 'https://gitlab.com/marchingon12', 
-					github: 'https://github.com/marchingon12',
-					motto: 'Anime & Manga is life.',
-					about: 'I write docs and created the website.'
-				},
-				{ name: 'Sunny Raj',
-					role: '@CheDuckevara | Privacy Enthusiast',
-					image: '/assets/sunny.jpg',
-					facebook: '',
-					instagram: '',
-					telegram: 'https://t.me/sunnyraj', 
-					email: '', 
-					gitlab: '', 
-					github: '', 
-					motto: 'Quid est veritas?',
-					about: 'OpenSource enthusiast and net political shiptoaster :D'
-				},
-				{ name: 'ℂ𝕐𝕃Δℕℂ€ ✪',
-					image: '/assets/cylance.jpg',
-					role: '@CYLANC | Contributor & Moderator',
-					facebook: '',
-					instagram: '',
-					telegram: 'https://t.me/cylanc', 
-					email: '', 
-					gitlab: '', 
-					github: '',
-					motto: '...🐣',
-					about: 'Moi have nothing 2 say.'
-				},
-				{ name: 'Æïý€€ =ęę',
-					image: '/assets/shanetheawesome.jpg',
-					role: '@shanetheawesome | Contributor',
-					facebook: '',
-					instagram: '',
-					telegram: 'https://t.me/shanetheawesome', 
-					email: '', 
-					gitlab: '', 
-					github: '', 
-					motto: 'Sleep is all u need.',
-					about: "I'm part of the reason why Aurora Store exists."
-				},
-				{ name: 'Radek Błędowski',
-					image: '/assets/radek.jpg',
-					role: '@RKBDI | Designer',
-					instagram: 'https://instagram.com/rkbdi',
-					facebook: '',
-					telegram: 'https://t.me/RKBDI', 
-					email: '', 
-					gitlab: 'https://gitlab.com/RKBDI', 
-					github: '', 
-					motto: "Make stuff for yourself and don't care about others' opinion.",
-					about: 'I design app icons and cool stuff.'
-				},
-				{ name: 'Matt Murdock',
-					image: '/assets/matt.jpg',
-					role: '@mattmurdock86 | Telegram Moderator',
-					facebook: '',
-					instagram: '',
-					telegram: 'https://t.me/mattmurdock86',
-					email: '', 
-					gitlab: '', 
-					github: '',
-					motto: 'Never Stop Trying.',
-					about: 'If possible, please support your favorite FOSS apps & Linux Distro(s).'
-				},
-				{ name: 'Marcel Alexandru Nitan',
-					image: '/assets/snoopalex.jpg',
-					role: '@snoopalex | Telegram Bot Dev',
-					facebook: 'https://www.facebook.com/marcel.alexandru.3939/',
-					instagram: 'https://www.instagram.com/nitan.alexandru/',
-					telegram: 'https://t.me/whyorean', 
-					email: 'mailto:nitan.marcel@gmail.com', 
-					gitlab: 'https://gitlab.com/whyorean', 
-					github: 'https://github.com/nitanmarcel', 
-					motto: 'Don’t limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve. ~ Mary Kay Ash',
-					about: 'Created the bots for our Telegram support chat, keeping humans in check!'
-				}
-			]
-		}),
-
-		methods: {
-			openFacebook(person) {
-				window.open(person.facebook, '__blank');
-			},
-			openInstagram(person) {
-				window.open(person.instagram, '__blank');
-			},
-			openTelegram(person) {
-				window.open(person.telegram, '__blank');
-			},
-			openEmail(person) {
-				window.open(person.email, '__blank');
-			},
-			openGitlab(person) {
-				window.open(person.gitlab, '__blank');
-			},
-			openGithub(person) {
-				window.open(person.github, '__blank');
-			}
-		}
-
-	}
+	methods: {
+		openFacebook(person) {
+			window.open(person.facebook, "__blank");
+		},
+		openInstagram(person) {
+			window.open(person.instagram, "__blank");
+		},
+		openTelegram(person) {
+			window.open(person.telegram, "__blank");
+		},
+		openEmail(person) {
+			window.open(person.email, "__blank");
+		},
+		openGitlab(person) {
+			window.open(person.gitlab, "__blank");
+		},
+		openGithub(person) {
+			window.open(person.github, "__blank");
+		},
+	},
+};
 </script>
 
 <style lang="stylus">
@@ -222,13 +267,13 @@
 	.el-slider::after,
 	.el-slider::before,
 	.el-slider__button-wrapper::after,
-	.el-upload-cover::after 
+	.el-upload-cover::after
 		content none
-		
+
 	.el-col
 		display inline-block
 		grid-column-start inherit
-		
+
 	.el-button
 		font-size .875rem
 		margin 0.1em !important
@@ -258,13 +303,13 @@
 			color $githubAccentColor
 			&:hover
 				background-color lighten($githubAccentColor, 70%)
-		
+
 	@media (max-width: $MQMobileNarrow)
 		.el-button
 			padding 0.2rem 0.2rem
 		.el-row
 			grid-template-columns repeat(1, 1fr)
-	
+
 	.title
 		font-size 1.125rem
 		font-weight bold
@@ -274,7 +319,7 @@
 		font-size 0.9rem
 		color grey
 		padding 0.3rem 0.1rem
-	
+
 	.buttons
 		align-items left
 		background-color white

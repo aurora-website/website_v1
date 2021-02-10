@@ -1,7 +1,7 @@
 <template>
 	<div v-if="store" class="guide changelogAurora">
 		<p class="title">
-			<notes-icon />
+			<NotesIcon />
 			Changelog
 		</p>
 		<!-- eslint-disable-next-line vue/no-v-html -->
@@ -9,13 +9,15 @@
 		<div class="note">
 			<p>
 				View the full release
-				<a href="https://github.com/marchingon12/AuroraStore/releases/latest" target="_blank" rel="noopener">here</a>
+				<a href="https://github.com/marchingon12/AuroraStore/releases/latest" target="_blank" rel="noopener">
+					here
+				</a>
 			</p>
 		</div>
 	</div>
-    <div v-else-if="droid" class="guide changelogAurora">
+	<div v-else-if="droid" class="guide changelogAurora">
 		<p class="title">
-			<notes-icon />
+			<NotesIcon />
 			Changelog
 		</p>
 		<!-- eslint-disable-next-line vue/no-v-html -->
@@ -23,7 +25,9 @@
 		<div class="note">
 			<p>
 				View the full release
-				<a href="https://github.com/marchingon12/AuroraDroid/releases/latest" target="_blank" rel="noopener">here</a>
+				<a href="https://github.com/marchingon12/AuroraDroid/releases/latest" target="_blank" rel="noopener">
+					here
+				</a>
 			</p>
 		</div>
 	</div>
@@ -33,8 +37,7 @@
 import marked from "marked";
 
 export default {
-
-    props: {
+	props: {
 		store: {
 			type: Boolean,
 			default: false,
@@ -43,12 +46,12 @@ export default {
 			type: Boolean,
 			default: false,
 		},
-    },
-    
+	},
+
 	data() {
 		return {
-            changelogStore: "Failed to load data from GitHub.",
-            changelogDroid: "Failed to load data from GitHub.",
+			changelogStore: "Failed to load data from GitHub.",
+			changelogDroid: "Failed to load data from GitHub.",
 		};
 	},
 
@@ -61,8 +64,8 @@ export default {
 			);
 		} catch (e) {
 			console.error(e);
-        }
-        try {
+		}
+		try {
 			const { data } = await this.$store.dispatch("getDroidReleaseData");
 			this.$data.changelogDroid = marked(data.body).replace(
 				/(?<=\(|(, ))@(.*?)(?=\)|(, ))/g,
