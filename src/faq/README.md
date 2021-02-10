@@ -404,4 +404,4 @@ You can Revert back the Nuke it effect by toggling De-Nuke button from same sect
 
 ## Aurora Wallpapers
 
-_Wow, such empty 🐶_
+_Wow, such empty_ 🐶
