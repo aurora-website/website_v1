@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.82 17.59"><defs><style>.cls-1{fill:none;stroke:#e5422b;stroke-miterlimit:10;}.cls-2{fill:#e5422b;}</style></defs><title>icon-danger</title><g id="Layer_2" data-name="Layer 2"><path class="cls-1" d="M9.06,2,.73,16.39A1.09,1.09,0,0,0,1.67,18H18.33a1.09,1.09,0,0,0,.94-1.63L10.94,2A1.08,1.08,0,0,0,9.06,2Z" transform="translate(-0.09 -0.92)"/></g><g id="Layer_3" data-name="Layer 3"><rect class="cls-2" x="9.09" y="13.63" width="1.66" height="1.66" rx="0.26"/><path class="cls-2" d="M8.66,6.65,9.13,13a.29.29,0,0,0,.29.28h1.17a.29.29,0,0,0,.29-.28l.47-6.39a.3.3,0,0,0-.3-.33H9A.3.3,0,0,0,8.66,6.65Z" transform="translate(-0.09 -0.92)"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <title>icon-danger-shit-colour</title>
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    <path d="M12 9v2m0 4v.01" />
+    <path d="M5 19h14a2 2 0 0 0 1.84 -2.75l-7.1 -12.25a2 2 0 0 0 -3.5 0l-7.1 12.25a2 2 0 0 0 1.75 2.75" />
+</svg>

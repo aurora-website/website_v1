@@ -1,1 +1,7 @@
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.57 18.64"><defs><style>.cls-1,.cls-2{fill:none;stroke:#184cef;stroke-linecap:round;stroke-miterlimit:10;}.cls-1{stroke-width:1.2px;}.cls-2{stroke-width:1.1px;}</style></defs><title>bulb-icon</title><path class="cls-1" d="M12.5,12.76V11.65a1.84,1.84,0,0,1,.72-1.45,5.19,5.19,0,1,0-6.43,0,1.86,1.86,0,0,1,.71,1.45v1" transform="translate(-4.21 -0.37)"/><line class="cls-2" x1="2.99" y1="14.13" x2="8.58" y2="14.13"/><line class="cls-2" x1="3.56" y1="16.13" x2="8.01" y2="16.13"/><line class="cls-2" x1="5.17" y1="18.09" x2="6.41" y2="18.09"/><path class="cls-2" d="M10.36,3.25A2.31,2.31,0,0,1,12,4a2.46,2.46,0,0,1,.71,1.67" transform="translate(-4.21 -0.37)"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bulb" width="31" height="31" viewBox="0 0 24 24" stroke-width="1.5" stroke="#184cef" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <title>bulb-icon</title>
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    <path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" />
+    <path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" />
+    <line x1="9.7" y1="17" x2="14.3" y2="17" />
+</svg>
