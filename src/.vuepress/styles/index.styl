@@ -38,6 +38,13 @@ body,
 		@media (max-width: $MQMobile)
 			display inherit
 
+// Badge styling
+.badge
+	&.default-indicator
+		background-color $accentColor !important
+	&.version-indicator
+		background-color $badgeVersionColor !important
+		
 // Guide container
 .guide
 	background-color $containerBackground
@@ -223,9 +230,14 @@ body,
 	border-bottom 1px solid $borderColor
 	padding-left 10px
 	&.is-active
-		color $elementAccentColor
+		color $accentColor
+		font-size .9rem
 	&:not(.is-active):hover
-		color $elementAccentColor
+		color $accentColor
+		font-size .9rem
+	&:not(.is-active)
+		color $textColor
+		font-size .9rem
 
 .el-collapse-item__wrap
 	background-color transparent !important

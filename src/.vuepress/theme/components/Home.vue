@@ -19,7 +19,7 @@
 					rel="next"
 					:href="data.downloadLink"
 				>
-					<cloud-download-icon size="20px"/>
+					<cloud-download-icon size="20px" />
 					{{ data.downloadText }}
 				</a>
 				<a
@@ -29,7 +29,7 @@
 					rel="next"
 					:href="data.faqLink"
 				>
-					<messages-icon size="20px"/>
+					<messages-icon size="20px" />
 					{{ data.faqText }}
 				</a>
 			</p>
@@ -55,7 +55,6 @@
 </template>
 
 <script>
-
 export default {
 	name: "Home",
 
@@ -76,8 +75,8 @@ export default {
 				link: this.data.faqLink,
 				text: this.data.faqText,
 			};
-		}
-	}
+		},
+	},
 };
 </script>
 
@@ -111,7 +110,7 @@ export default {
 				border-bottom 1px solid darken($accentColor, 10%)
 				border-radius 4px
 				box-sizing border-box
-				color #fff
+				color darken($textColor, 10%)
 				cursor pointer
 				display inline-block
 				font-family $fontButton

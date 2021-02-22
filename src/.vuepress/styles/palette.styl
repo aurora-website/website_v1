@@ -6,20 +6,50 @@
 
 // Colors
 $accentColor = #b071e3
+// $accentLighten10 = lighten($accentColor, 10%)
+// $accentLighten75 = lighten($accentColor, 75%)
+
 $accentColorSecondary = #eb6cad
-$textColor = #2c3e50
-$borderColor = #eaecef
-$textColor = #2c3e50
-$borderColor = #eaecef
+// $accentSecondaryLighten10 = lighten($accentColorSecondary, 10%)
+// $accentLightenSecondary40 = lighten($accentColorSecondary, 40%)
+// $accentLightenSecondary75 = lighten($accentColorSecondary, 75%)
+
+$textColor = $lighttextColor
+$borderColor = $lightborderColor
 $codeBgColor = #282c34
 $arrowBgColor = #ccc
+
 $badgeTipColor = $accentColor
 $badgeWarningColor = darken(#ffe564, 35%)
 $badgeErrorColor = #DA5961
 $badgeVersionColor = #000000
-$backgroundColor = #FDFDFD
-$backgroundColorSecondary = #FAFBFE
-$containerBackground = #f8e6ff
+
+$backgroundColor = $lightbackgroundColor
+$backgroundColorSecondary = $lightbackgroundColorSecondary
+$containerBackground = $lightcontainerBackground
+
+$navbarColor = $lightnavbarColor
+// $navbarLightenColor20 = lighten($navbarColor, 20%)
+// $navbarLightenColor10 = lighten($navbarColor, 10%)
+
+// Lightmode scheme
+$lighttextColor = #2c3e50
+$lightborderColor = #eaecef
+$lightbadgeVersionColor = #000000
+$lightbackgroundColor = #FDFDFD
+$lightbackgroundColorSecondary = #FAFBFE
+$lightcontainerBackground = #f8e6ff
+$lightnavbarColor = #FDFDFD
+
+// Darkmode scheme
+$darktextColor = #fcfcfc
+$darkborderColor = #373737
+$darkbadgeVersionColor = #232222
+$darkbackgroundColor =#171514
+$darkbackgroundColorSecondary = #1f1f1f
+$darkcontainerBackground = #232222
+$darknavbarColor = #1f1f1f
+
 // Layout
 $navbarHeight = 3.6rem
 $sidebarWidth = 20rem
@@ -28,24 +58,39 @@ $homePageWidth = 70rem
 $heroImageHeight = 8rem
 $containerBorderRadius = 0.4rem
 $buttonBorderRadius = 0.25rem
+
 // Responsive breakpoints
 $MQNarrow = 959px
 $MQMobile = 767px
 $MQMobileNarrow = 419px
+
 // Fonts
 $fontButton = "Open Sans", Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif
 $fontCode = source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace
+
 // Custom blocks
 $customTip = #184cef
 $customWarning = #b29400
 $customDanger = #e5422b
-// Links
+
+// Social
 $emailAccentColor = #D44638
 $facebookAccentColor = #3B5998
 $instagramAccentColor = #FF2e66
 $telegramAccentColor = #0088CC
 $gitlabAccentColor = #FC6D27
 $redditAccentColor = #FF5700
-$githubAccentColor = #333333
+$githubAccentColor = #000000
+$transparentEM = transparentify(lighten($emailAccentColor, 80%))
+$transparentFB = transparentify(lighten($facebookAccentColor, 80%))
+$transparentIN = transparentify(lighten($instagramAccentColor, 80%))
+$transparentTG = transparentify(lighten($telegramAccentColor, 80%))
+$transparentGL = transparentify(lighten($gitlabAccentColor, 80%))
+$transparentGH = transparentify(lighten($githubAccentColor, 80%))
+$transparentRD = transparentify(lighten($redditAccentColor, 80%))
+
 // Element-UI
-$elementAccentColor = #409EFF
+$elementAccentColor = $accentColor
+
+// Misc
+$greyLighten5 = lighten(grey, 5%)

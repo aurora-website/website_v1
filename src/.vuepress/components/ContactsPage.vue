@@ -262,6 +262,8 @@ export default {
 
 	.el-card
 		width 100%
+		background-color $backgroundColorSecondary
+		border none
 
 	.el-row
 		display grid
@@ -288,6 +290,7 @@ export default {
 		grid-column-start inherit
 
 	.el-button
+		background-color transparent
 		font-size .875rem
 		margin 0.1em !important
 		padding 0.3rem 0.3rem
@@ -295,27 +298,27 @@ export default {
 		&--facebook
 			color $facebookAccentColor
 			&:hover
-				background-color lighten($facebookAccentColor, 70%)
+				background-color transparentify(lighten($facebookAccentColor, 80%))
 		&--instagram
 			color $instagramAccentColor
 			&:hover
-				background-color lighten($instagramAccentColor, 70%)
+				background-color transparentify(lighten($instagramAccentColor, 80%))
 		&--telegram
 			color $telegramAccentColor
 			&:hover
-				background-color lighten($telegramAccentColor, 70%)
+				background-color transparentify(lighten($telegramAccentColor, 80%))
 		&--email
 			color $emailAccentColor
 			&:hover
-				background-color lighten($emailAccentColor, 70%)
+				background-color transparentify(lighten($emailAccentColor, 80%))
 		&--gitlab
 			color $gitlabAccentColor
 			&:hover
-				background-color lighten($gitlabAccentColor, 70%)
+				background-color transparentify(lighten($gitlabAccentColor, 80%))
 		&--github
 			color $githubAccentColor
 			&:hover
-				background-color lighten($githubAccentColor, 70%)
+				background-color transparentify(lighten($githubAccentColor, 80%))
 
 	@media (max-width: $MQMobileNarrow)
 		.el-button
@@ -327,27 +330,30 @@ export default {
 		font-size 1.125rem
 		font-weight bold
 		padding 0.1rem 0.1rem
+		color $textColor
 
 	.role
 		font-size 0.9rem
-		color grey
+		color lighten(grey, 5%)
 		padding 0.3rem 0.1rem
 
 	.buttons
 		align-items left
-		background-color white
+		background-color $backgroundColorSecondary
 		margin 0.5rem 0.1rem
 		padding 0.1rem 0.1rem
 
 	.image
 		width 100%
-		heigth 100%
+		height 100%
 		display block
 
 	.motto
 		font-size 16px
 		padding 0.7rem 0.1rem
+		color $textColor
 
 	.about
 		font-size .875rem
+		color $textColor
 </style>

@@ -5,7 +5,7 @@ lang: en-GB
 sidebarDepth: 2
 ---
 
-# Frequently Asked Questions <messages-icon size="38px"/>
+# Frequently Asked Questions <messages-icon size="38px" color="#b071e3" />
 
 ## <img class="headerLogo" :src="$withBase('/icons/aurora_store.png')"> Aurora Store
 
@@ -33,10 +33,9 @@ http://www.auroraoss.in:8080​ has been disabled. All users are requested to us
 
 If you are using Android 10+ (Q and above), both of these apps are not easy to install/update. Basically, Google messed things up and gave Android users more work to do.
 
-> Chrome is no longer used as a WebView implementation in Q+. We've moved to a new model for sharing common code between Chrome and WebView (called "Trichrome") which gives the same benefits of reduced download and install size while having fewer weird special cases and bugs. 
->   
+> Chrome is no longer used as a WebView implementation in Q+. We've moved to a new model for sharing common code between Chrome and WebView (called "Trichrome") which gives the same benefits of reduced download and install size while having fewer weird special cases and bugs.
+>
 > ~ Source: [androidpolice.com](https://www.androidpolice.com/2019/10/24/android-10-no-longer-uses-chrome-app-to-render-pages-inside-apps/)
-
 
 The trichrome library is split into 4 variants, just like Google Chrome: Stable, Beta, Dev, Canary.
 
@@ -64,14 +63,14 @@ Remember to check what architecture your device supports! You can easily check i
 
 Chances are that you have a device running Android that was originally shipped without Google support. To the best of our knowledge, this includes:
 
-- Huawei Mate 30 series
-- Huawei Mate 40 Series
-- Huawei P40 series
-- Huawei P Smart S
-- Huawei Mate Xs
-- Huawei Y5p, Y6p, Y7p, Y8p
-- Huawei Nova 7i, 7 SE
-- Huawei Matepad T8, Pro 5g
+-   Huawei Mate 30 series
+-   Huawei Mate 40 Series
+-   Huawei P40 series
+-   Huawei P Smart S
+-   Huawei Mate Xs
+-   Huawei Y5p, Y6p, Y7p, Y8p
+-   Huawei Nova 7i, 7 SE
+-   Huawei Matepad T8, Pro 5g
 
 Simply spoofing to another device configuration should help solve this problem.
 
@@ -82,7 +81,7 @@ Bundled apps can't be installed on OEM ROMs due to shameless mods like (VirusChe
 Pick **one** of these workarounds:
 
 1. Turn off vendor optimizations (like MIUI Optimizations)
-2. Enable "Enforce Native Installer" from Aurora Store  Settings → Installations.
+2. Enable "Enforce Native Installer" from Aurora Store Settings → Installations.
 3. Use root installation method
 
 #### Problems with downloading apps
@@ -111,13 +110,12 @@ Check if you are using the latest Stable build `v.3.2.9` or Nightly builds. For 
 
 Please download all latest AuroraOSS apps from any of the below mentioned sources only:
 
-1. F-Droid:  [https://f-droid.org/en/packages/com.aurora.store/](https://f-droid.org/en/packages/com.aurora.store/)
-2. AuroraOSS Website:  [https://auroraoss.com/downloads.php](https://auroraoss.com/downloads.php)
-3. Official Telegram Channel:  [@AuroraOfficial](https://t.me/AuroraOfficial)
-4. GitLab:  [https://gitlab.com/AuroraOSS/AuroraStore/-/releases](https://gitlab.com/AuroraOSS/AuroraStore/-/releases)
+1. F-Droid: [https://f-droid.org/en/packages/com.aurora.store/](https://f-droid.org/en/packages/com.aurora.store/)
+2. AuroraOSS Website: [https://auroraoss.com/downloads.php](https://auroraoss.com/downloads.php)
+3. Official Telegram Channel: [@AuroraOfficial](https://t.me/AuroraOfficial)
+4. GitLab: [https://gitlab.com/AuroraOSS/AuroraStore/-/releases](https://gitlab.com/AuroraOSS/AuroraStore/-/releases)
 
-### FAQs 
-
+### FAQs
 
 #### Why the name "Aurora" Store?
 
@@ -149,13 +147,13 @@ Aurora Store does its best to send the least amount of information possible.
 
 To provide basic functionalities, the following is sent:
 
-- a list of package names of your installed apps \(for fetching updates\). You can select apps to be blacklisted in order to avoid sending package info to Google.
-- your search queries and your downloads for obvious reasons.
+-   a list of package names of your installed apps \(for fetching updates\). You can select apps to be blacklisted in order to avoid sending package info to Google.
+-   your search queries and your downloads for obvious reasons.
 
 For anonymous logins, following data is sent to Aurora Dispenser Server:
 
-- a GET request to obtain a authentication token. This token is generated server side so no user data is leaked. All the requests are made to Google from the Dispenser Server's IP.
-- AuroraOSS follows a strict policy of no-logging, so no data is stored on the Dispenser Server.
+-   a GET request to obtain a authentication token. This token is generated server side so no user data is leaked. All the requests are made to Google from the Dispenser Server's IP.
+-   AuroraOSS follows a strict policy of no-logging, so no data is stored on the Dispenser Server.
 
 ::: guide Tip 👀
 For more info read​ [Anonymous Logins](/guides/anonymous-logins).
@@ -211,12 +209,13 @@ Spoofing allows you to pretend to be any other device at any other location in t
 
 Aurora Store can install apps in 3 ways:
 
-- **Manual** - Whenever an app is downloaded, it will open the manual installation screen. This doesn't require root or system permissions.
-- **Session** -  This has the same effect as if you were to install Aurora Services as a system application. This method (can use, but) does not require root, however you will need an unlocked bootloader with a custom recovery like TWRP installed. 
-- **Root** - By giving Aurora Store root access (latest Magisk recommended), it will automatically install apps in the background as soon as they are downloaded.
+-   **Manual** - Whenever an app is downloaded, it will open the manual installation screen. This doesn't require root or system permissions.
+-   **Session** - This has the same effect as if you were to install Aurora Services as a system application. This method (can use, but) does not require root, however you will need an unlocked bootloader with a custom recovery like TWRP installed.
+-   **Root** - By giving Aurora Store root access (latest Magisk recommended), it will automatically install apps in the background as soon as they are downloaded.
 
 For v3 and under:
-- **Aurora Services** - By installing Aurora Services as a system app, Aurora Store can automatically install apps upon download completion in the background.
+
+-   **Aurora Services** - By installing Aurora Services as a system app, Aurora Store can automatically install apps upon download completion in the background.
 
 #### How do I use Aurora Services?
 
@@ -248,7 +247,7 @@ Aurora Store is still in a development phase right now; Only infrequent, stable 
 
 #### "Please add support for F-Droid/Amazon/Yada repositories!"
 
-No, this is a Play Store client only. Different clients for different services (^_~)
+No, this is a Play Store client only. Different clients for different services (^\_~)
 
 #### Does Aurora supports downgrading app versions?
 
@@ -276,17 +275,11 @@ For code and UI improvements, do a Merge Request. These will not be looked as of
 
 For feature requests, open an issue with [Feature Request] at the start of your title. If in consideration there will be a 'Feature Request' label on your issue.
 
-
 ::: danger EDIT PAGE
 add this page to contribution page
 :::
 
 ### Spoofing
-
-
-
-
-
 
 ## <img class="headerLogo" :src="$withBase('/icons/aurora_droid.png')"> Aurora Droid
 
@@ -312,13 +305,13 @@ Why do you think? Many repos (including Haagch and IzzyonDroid) are known to inc
 
 Aurora Droid can currently install apps in 4 ways:
 
-- **Manual** - Whenever an app is downloaded, it will open the manual installation screen. This doesn't require root or system permissions.
+-   **Manual** - Whenever an app is downloaded, it will open the manual installation screen. This doesn't require root or system permissions.
 
-- **Root** (Recommended) - By giving Aurora Store root or system permissions, it will automatically install apps in the background as soon as they are downloaded.
+-   **Root** (Recommended) - By giving Aurora Store root or system permissions, it will automatically install apps in the background as soon as they are downloaded.
 
-- **Session** - This has the same effect as if you were to install Aurora Services as a system application. This method (can use, but) does not require root, however you will need an unlocked bootloader with a custom recovery like TWRP installed. 
+-   **Session** - This has the same effect as if you were to install Aurora Services as a system application. This method (can use, but) does not require root, however you will need an unlocked bootloader with a custom recovery like TWRP installed.
 
-- **Aurora Services** - By installing Aurora Services as system app, Aurora Store can automatically install app upon download completion in background. Use #services for more info in group.
+-   **Aurora Services** - By installing Aurora Services as system app, Aurora Store can automatically install app upon download completion in background. Use #services for more info in group.
 
 Facing app installation issues? Check out the `#install_solution` note in our group chat.
 
@@ -374,7 +367,7 @@ Warden also monitors & preview app usage stats of device in graphs. Like which a
 
 Note: "App usage access" permission is required to read & generate usage data.
 
-####  Stats for tracker & loggers (No Root required):
+#### Stats for tracker & loggers (No Root required):
 
 Warden also shows the stats like the current amount of trackers & loggers present on device by scanning all installed apps. This feature only preview data/graphs when user scanned all apps using "Scan Now" button on maim screen.
 

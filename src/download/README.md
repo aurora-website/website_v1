@@ -9,7 +9,7 @@ meta:
 lang: en-GB
 ---
 
-# Downloads <cloud-download-icon size="38px"/>
+# Downloads <cloud-download-icon size="38px" color="#b071e3" />
 
 Download our latest apps here. To know more about our apps, click on the app titles!
 
@@ -19,7 +19,7 @@ The latest version of Aurora Store was uploaded <ReleaseDate store /> and releas
 
 Note: all current nightly builds have been paused until further notice.
 
-<DownloadButtons store />
+<DownloadButtons storeStable storeNightly />
 
 <AuroraChangelogs store />
 
@@ -27,7 +27,7 @@ Note: all current nightly builds have been paused until further notice.
 
 The latest version of Aurora Droid was uploaded <ReleaseDate droid /> and released **6 months ago**.
 
-<DownloadButtons droid />
+<DownloadButtons droidStable droidNightly />
 
 <AuroraChangelogs droid />
 
@@ -35,14 +35,14 @@ The latest version of Aurora Droid was uploaded <ReleaseDate droid /> and releas
 
 The latest version of App Warden was released <ReleaseDate.WIP warden />.
 
-<!-- <DownloadButtons />
+<DownloadButtons warden />
 
-<AuroraChangelogs warden />-->
+<AuroraChangelogs warden />
 
 ## <img class="headerLogo" :src="$withBase('/icons/aurora_wallpapers.png')"> [Aurora Wallpapers](/download/AuroraWallpapers/)
 
 The latest version of Aurora Wallpapers was released <ReleaseDate.WIP walls />
 
-<!-- <DownloadButtons />
+<DownloadButtons walls />
 
-<AuroraChangelogs walls /> -->
+<AuroraChangelogs walls />

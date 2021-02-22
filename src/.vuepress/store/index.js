@@ -2,14 +2,19 @@ import Vue from "vue";
 import Vuex from "vuex";
 import axios from "axios";
 
-import { GITHUB_STABLE_API_STORE, GITHUB_STABLE_API_DROID } from "../constants";
+import {
+	SERVER_STABLE_RELEASE_STORE,
+	SERVER_STABLE_RELEASE_DROID,
+	SERVER_STABLE_RELEASE_WARDEN,
+	SERVER_STABLE_RELEASE_WALLS,
+} from "../constants";
 
 const worker = (function () {
 	const networkMap = new Map();
 
 	// Makes sure there is only one network call to API
 	// Everyone else wait for promise
-	function _getDataFromGithub(name, url) {
+	function _getDataFromServer(name, url) {
 		if (networkMap.has(name)) {
 			return networkMap.get(name);
 		}
@@ -41,7 +46,7 @@ const worker = (function () {
 			return dataMap.get(name);
 		}
 
-		const promise = _getDataFromGithub(name, url)
+		const promise = _getDataFromServer(name, url)
 			.then(({ data }) => {
 				const object = {
 					updated: now,
@@ -75,7 +80,7 @@ const worker = (function () {
 	return {
 		getStoreData(store, name) {
 			return new Promise((resolve, reject) => {
-				_getData(store, name, "setStoreReleaseData", GITHUB_STABLE_API_STORE)
+				_getData(store, name, "setStoreReleaseData", SERVER_STABLE_RELEASE_STORE)
 					.then(() => {
 						resolve(store.state.astore);
 					})
@@ -86,9 +91,31 @@ const worker = (function () {
 		},
 		getDroidData(store, name) {
 			return new Promise((resolve, reject) => {
-				_getData(store, name, "setDroidReleaseData", GITHUB_STABLE_API_DROID)
+				_getData(store, name, "setDroidReleaseData", SERVER_STABLE_RELEASE_DROID)
 					.then(() => {
 						resolve(store.state.adroid);
+					})
+					.catch((reason) => {
+						reject(reason);
+					});
+			});
+		},
+		getWardenData(store, name) {
+			return new Promise((resolve, reject) => {
+				_getData(store, name, "setWardenReleaseData", SERVER_STABLE_RELEASE_WARDEN)
+					.then(() => {
+						resolve(store.state.awarden);
+					})
+					.catch((reason) => {
+						reject(reason);
+					});
+			});
+		},
+		getWallsData(store, name) {
+			return new Promise((resolve, reject) => {
+				_getData(store, name, "setWallsReleaseData", SERVER_STABLE_RELEASE_WALLS)
+					.then(() => {
+						resolve(store.state.awalls);
 					})
 					.catch((reason) => {
 						reject(reason);
@@ -110,6 +137,14 @@ export default new Vuex.Store({
 			updated: null,
 			data: null,
 		},
+		awarden: {
+			updated: null,
+			data: null,
+		},
+		awalls: {
+			updated: null,
+			data: null,
+		},
 	},
 	mutations: {
 		setStoreReleaseData(state, { object }) {
@@ -120,9 +155,17 @@ export default new Vuex.Store({
 			// eslint-disable-next-line no-param-reassign
 			state.adroid = object;
 		},
+		setWardenReleaseData(state, { object }) {
+			// eslint-disable-next-line no-param-reassign
+			state.awarden = object;
+		},
+		setWallsReleaseData(state, { object }) {
+			// eslint-disable-next-line no-param-reassign
+			state.awalls = object;
+		},
 	},
 	actions: {
-		getStoreReleaseData() {
+		getStoreStableReleaseData() {
 			const { updated } = this.state.astore;
 			const now = new Date().getTime();
 
@@ -132,7 +175,7 @@ export default new Vuex.Store({
 
 			return worker.getStoreData(this, "astore");
 		},
-		getDroidReleaseData() {
+		getDroidStableReleaseData() {
 			const { updated } = this.state.adroid;
 			const now = new Date().getTime();
 
@@ -141,6 +184,26 @@ export default new Vuex.Store({
 			}
 
 			return worker.getDroidData(this, "adroid");
+		},
+		getWardenReleaseData() {
+			const { updated } = this.state.awarden;
+			const now = new Date().getTime();
+
+			if (updated != null && now - updated <= 60 * 60 * 24 * 1000) {
+				return Promise.resolve(this.state.awarden);
+			}
+
+			return worker.getWardenData(this, "awarden");
+		},
+		getWallsReleaseData() {
+			const { updated } = this.state.awalls;
+			const now = new Date().getTime();
+
+			if (updated != null && now - updated <= 60 * 60 * 24 * 1000) {
+				return Promise.resolve(this.state.awalls);
+			}
+
+			return worker.getWallsData(this, "awalls");
 		},
 	},
 });

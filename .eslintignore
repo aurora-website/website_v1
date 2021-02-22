@@ -1,2 +1,15 @@
-!.vuepress
+# Markdown content
+contact
+contribution
+download
+faq
+guides
+index.md
+
+# Vuepress
 dist
+!.vuepress
+ServerTable.vue
+
+# Language folders
+de
