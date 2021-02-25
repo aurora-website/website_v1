@@ -4,7 +4,9 @@ import axios from "axios";
 
 import {
 	SERVER_STABLE_RELEASE_STORE,
+	SERVER_NIGHTLY_RELEASE_STORE,
 	SERVER_STABLE_RELEASE_DROID,
+	SERVER_NIGHTLY_RELEASE_DROID,
 	SERVER_STABLE_RELEASE_WARDEN,
 	SERVER_STABLE_RELEASE_WALLS,
 } from "../constants";
@@ -89,11 +91,33 @@ const worker = (function () {
 					});
 			});
 		},
+		getStoreDataNightly(store, name) {
+			return new Promise((resolve, reject) => {
+				_getData(store, name, "setStoreReleaseDataNightly", SERVER_NIGHTLY_RELEASE_STORE)
+					.then(() => {
+						resolve(store.state.astoreN);
+					})
+					.catch((reason) => {
+						reject(reason);
+					});
+			});
+		},
 		getDroidData(store, name) {
 			return new Promise((resolve, reject) => {
 				_getData(store, name, "setDroidReleaseData", SERVER_STABLE_RELEASE_DROID)
 					.then(() => {
 						resolve(store.state.adroid);
+					})
+					.catch((reason) => {
+						reject(reason);
+					});
+			});
+		},
+		getDroidDataNightly(store, name) {
+			return new Promise((resolve, reject) => {
+				_getData(store, name, "setDroidReleaseDataNightly", SERVER_NIGHTLY_RELEASE_DROID)
+					.then(() => {
+						resolve(store.state.adroidN);
 					})
 					.catch((reason) => {
 						reject(reason);
@@ -137,6 +161,14 @@ export default new Vuex.Store({
 			updated: null,
 			data: null,
 		},
+		astoreN: {
+			updated: null,
+			data: null,
+		},
+		adroidN: {
+			updated: null,
+			data: null,
+		},
 		awarden: {
 			updated: null,
 			data: null,
@@ -154,6 +186,14 @@ export default new Vuex.Store({
 		setDroidReleaseData(state, { object }) {
 			// eslint-disable-next-line no-param-reassign
 			state.adroid = object;
+		},
+		setStoreReleaseDataNightly(state, { object }) {
+			// eslint-disable-next-line no-param-reassign
+			state.astoreN = object;
+		},
+		setDroidReleaseDataNightly(state, { object }) {
+			// eslint-disable-next-line no-param-reassign
+			state.adroidN = object;
 		},
 		setWardenReleaseData(state, { object }) {
 			// eslint-disable-next-line no-param-reassign
@@ -184,6 +224,26 @@ export default new Vuex.Store({
 			}
 
 			return worker.getDroidData(this, "adroid");
+		},
+		getStoreNightlyReleaseData() {
+			const { updated } = this.state.astoreN;
+			const now = new Date().getTime();
+
+			if (updated != null && now - updated <= 60 * 60 * 24 * 1000) {
+				return Promise.resolve(this.state.astoreN);
+			}
+
+			return worker.getStoreDataNightly(this, "astoreN");
+		},
+		getDroidNightlyReleaseData() {
+			const { updated } = this.state.adroidN;
+			const now = new Date().getTime();
+
+			if (updated != null && now - updated <= 60 * 60 * 24 * 1000) {
+				return Promise.resolve(this.state.adroidN);
+			}
+
+			return worker.getDroidDataNightly(this, "adroidN");
 		},
 		getWardenReleaseData() {
 			const { updated } = this.state.awarden;

@@ -18,6 +18,7 @@ html
 	overflow-y scroll
 
 body
+	display block
 	font-family $fontMain
 	font-size 16px
 
@@ -27,7 +28,7 @@ body,
 	background-color $backgroundColor
 
 .note
-	color rgba(0,0,0,.4)
+	color $greyLighten5
 	font-size .9rem
 	text-align right
 
@@ -108,32 +109,32 @@ body,
 				height 1.75rem
 				background-size contain
 		&tip
-			background-color alpha($customTip, 2%)
+			background-color alpha($customTip, 10%)
 			border 1px solid alpha($customTip, 20%)
 			&:before
 				background transparent url(/assets/icon_tip.svg) no-repeat 0 0
 			a
 				color $customTip
 			h4
-				color darken($customTip, 60%)
+				color $customTip
 		&warning
-			background-color alpha($customWarning, 2%)
+			background-color alpha($customWarning, 10%)
 			border 1px solid alpha($customWarning, 20%)
 			&:before
 				background transparent url(/assets/icon_warning.svg) no-repeat 0 0
 			a
 				color $customWarning
 			h4
-				color darken($customWarning, 40%)
+				color $customWarning
 		&danger
-			background-color alpha($customDanger, 2%)
+			background-color alpha($customDanger, 10%)
 			border 1px solid alpha($customDanger, 20%)
 			&:before
 				background transparent url(/assets/icon_danger.svg) no-repeat 0 0
 			a
 				color $customDanger
 			h4
-				color darken($customDanger, 40%)
+				color $customDanger
 	&.aside
 		background-color transparent
 		border none

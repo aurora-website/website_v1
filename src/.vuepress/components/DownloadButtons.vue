@@ -38,12 +38,12 @@
 		</ElButton>
 		<span v-if="storeStable || storeNightly" class="versionNotice">
 			Requires
-			<strong>Android 4.4</strong>
+			<strong class="versionNumber">Android 4.4</strong>
 			or higher.
 		</span>
 		<span v-else class="versionNotice">
 			Requires
-			<strong>Android 5.0</strong>
+			<strong class="versionNumber">Android 5.0</strong>
 			or higher.
 		</span>
 	</div>
@@ -363,6 +363,8 @@ export default {
 		display block
 		font-size .9rem
 		padding .1rem
+		.versionNumber
+			color darken($accentColor, 10%)
 	@media (max-width: $MQMobile)
 		.el-button
 			width 8.2em
