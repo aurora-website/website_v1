@@ -11,7 +11,11 @@ lang: de
 
 # Downloads <cloud-download-icon size="38px" color="#b071e3" />
 
-Download our latest apps here. To know more about our apps, click on the app titles!
+Download our latest apps here.
+
+::: c-tip Tip!
+To know more about our apps, click on the app titles!
+:::
 
 ## <img class="headerLogo" :src="$withBase('/icons/aurora_store.png')"> [Aurora Store](/download/AuroraStore/)
 
@@ -33,7 +37,7 @@ The latest version of Aurora Droid was uploaded <ReleaseDate droid /> and releas
 
 ## <img class="headerLogo" :src="$withBase('/icons/app_warden.png')"> [App Warden](/download/AppWarden/)
 
-The latest version of App Warden was released <ReleaseDate.WIP warden />.
+The latest version of App Warden was released <ReleaseDate warden />.
 
 <DownloadButtons warden />
 
@@ -41,7 +45,7 @@ The latest version of App Warden was released <ReleaseDate.WIP warden />.
 
 ## <img class="headerLogo" :src="$withBase('/icons/aurora_wallpapers.png')"> [Aurora Wallpapers](/download/AuroraWallpapers/)
 
-The latest version of Aurora Wallpapers was released <ReleaseDate.WIP walls />
+The latest version of Aurora Wallpapers was released <ReleaseDate walls />.
 
 <DownloadButtons walls />
 

@@ -3,18 +3,19 @@ title: Roadmap
 description: Timeline of Aurora Store.
 lang: en-GB
 meta:
-  - property: og:image
-    content: /icons/aurora_store.png
+    - property: og:image
+      content: /icons/aurora_store.png
 sidebar: true
 ---
 
 # Roadmap
+
 ![Roadmap](https://telegra.ph/file/732c1e50d8c7febfe8c63.png)
 
 The goal of Aurora Store is to provide users an alternative to the Google Play Store that works well, packed with important privacy features as well as stunning and pleasant-looking UI. Here is a list of the important stuff of what we've achieved and changed so far.
 
-✅ = Completed 
-  
+✅ = Completed
+
 ⏳ = Work In Progress
 
 ❓ = Unknown Stage
@@ -31,8 +32,7 @@ There may no longer be support for Aurora Services. The reason for this is becau
 
 3. If you have no root access available, the default installation method will be "Native".
 
-However, after the recent release of the public alpha of Aurora Store v4, we have come to realize some people will still want to use Aurora Services. We are now considering whether or not we should still maintain support for Aurora Services. 
-
+However, after the recent release of the public alpha of Aurora Store v4, we have come to realize some people will still want to use Aurora Services. We are now considering whether or not we should still maintain support for Aurora Services.
 
 #### ⏳ New UI
 
@@ -56,7 +56,8 @@ In this build, a few more device configs with newer versions of Android will be 
 
 For Android TV there will most likely be a Web App version built and for Android Kitkat another seperate version, could also possibly be merged to the current alpha version.
 
-***
+---
+
 #### ✅ Completed stuff
 
 1. You can browse streams similar to Play Store, ie For You, Editor's Choice, Early Access. EC & EA is not available on anonymous logins
@@ -67,13 +68,15 @@ For Android TV there will most likely be a Web App version built and for Android
 6. A lot of under the hood improvements.
 7. Rewritten in Kotlin
 
-***
-#### ✅  Stuff that's changed
+---
+
+#### ✅ Stuff that's changed
 
 Here are few things that will no longer be available or has changed:
+
 1. Geo-spoof, would provide a companion app to facilitate the same, if required.
 2. Favourite app, will add something called similar to WishList, limited to google login only.
-3. Anonymous logins now use your device-config to create session, so your device-config is sent to my dispenser server. It may sound scary but it is not, here is a sample (https://gitlab.com/AuroraOSS/gplayapi/-/blob/master/src/main/resources/op_8_pro.properties) of what I send to my dispenser in order to create a anonymous session.
+3. Anonymous logins now use your device-config to create session, so your device-config is sent to my dispenser server. It may sound scary but it is not, here is a [sample](https://gitlab.com/AuroraOSS/gplayapi/-/blob/master/src/main/resources/op_8_pro.properties) of what I send to my dispenser in order to create a anonymous session.
 
 ## version 3
 

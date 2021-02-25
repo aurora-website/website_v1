@@ -47,7 +47,7 @@ $darkborderColor = #373737
 $darkbadgeVersionColor = #232222
 $darkbackgroundColor =#171514
 $darkbackgroundColorSecondary = #1f1f1f
-$darkcontainerBackground = #232222
+$darkcontainerBackground = transparentify(#efa4f5)
 $darknavbarColor = #1f1f1f
 
 // Layout
@@ -70,7 +70,7 @@ $fontCode = source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace
 
 // Custom blocks
 $customTip = #184cef
-$customWarning = #b29400
+$customWarning = #e8c82a
 $customDanger = #e5422b
 
 // Social
@@ -80,14 +80,16 @@ $instagramAccentColor = #FF2e66
 $telegramAccentColor = #0088CC
 $gitlabAccentColor = #FC6D27
 $redditAccentColor = #FF5700
-$githubAccentColor = #000000
-$transparentEM = transparentify(lighten($emailAccentColor, 80%))
-$transparentFB = transparentify(lighten($facebookAccentColor, 80%))
-$transparentIN = transparentify(lighten($instagramAccentColor, 80%))
-$transparentTG = transparentify(lighten($telegramAccentColor, 80%))
-$transparentGL = transparentify(lighten($gitlabAccentColor, 80%))
-$transparentGH = transparentify(lighten($githubAccentColor, 80%))
-$transparentRD = transparentify(lighten($redditAccentColor, 80%))
+$githubAccentColor = $githubDarkAccentColor
+$githubLightAccentColor = #000000
+$githubDarkAccentColor = lighten(#000000, 80%)
+// $transparentEM = transparentify(lighten($emailAccentColor, 80%))
+// $transparentFB = transparentify(lighten($facebookAccentColor, 80%))
+// $transparentIN = transparentify(lighten($instagramAccentColor, 80%))
+// $transparentTG = transparentify(lighten($telegramAccentColor, 80%))
+// $transparentGL = transparentify(lighten($gitlabAccentColor, 80%))
+// $transparentGH = transparentify(lighten($githubAccentColor, 80%))
+// $transparentRD = transparentify(lighten($redditAccentColor, 80%))
 
 // Element-UI
 $elementAccentColor = $accentColor

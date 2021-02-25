@@ -2,6 +2,9 @@
 title: Contribution
 description: Find out how to contribute to AuroraOSS!
 lang: de
+meta:
+    - property: og:image
+      content: /icons/auroralogo.png
 sidebar: true
 ---
 
@@ -78,21 +81,21 @@ If you can't contribute code or translations but you still wish to help, then yo
 ---
 
 <a href="/contribution/UPI/">
-	<img width="213" style="border:0px;width:213px;" src="/assets/upibutton.png" style="border-radius: 5%" alt="Donate via UPI" />
+	<img style="border:0px;width:213px;" src="/assets/upibutton.png" alt="Donate via UPI" />
 </a>
 <a href="http://www.paypal.me/AuroraDev" target="_blank" rel="noopener">
-	<img width="213" style="border:0px;width:213px;" src="/assets/paypalbutton.png" style="border-radius: 5%" alt="Donate with PayPal" />
+	<img style="border:0px;width:213px;" src="/assets/paypalbutton.png" alt="Donate with PayPal" />
 </a>
 <a href="https://liberapay.com/whyorean/" target="_blank" rel="noopener">
-	<img width="213" style="border:0px;width:213px;" src="/assets/liberapaybutton.png" style="border-radius: 5%" alt="Bitcoin accepted here" />
+	<img style="border:0px;width:213px;" src="/assets/liberapaybutton.png" alt="Bitcoin accepted here" />
 </a>
 
 <a href="/contribution/BTC/" >
-	<img width="213" style="border:0px;width:213px;" src="/assets/bitcoinbutton.png" style="border-radius: 5%" alt="Bitcoin accepted here" />
+	<img style="border:0px;width:213px;" src="/assets/bitcoinbutton.png" alt="Bitcoin accepted here" />
 </a>
 <a href="/contribution/BCH/" >
-	<img width="213" style="border:0px;width:213px;" src="/assets/btcashbutton.png" style="border-radius: 5%" alt="Bitcoin accepted here" />
+	<img style="border:0px;width:213px;" src="/assets/btcashbutton.png" alt="Bitcoin accepted here" />
 </a>
 <a href="/contribution/ETH/" >
-	<img width="213" style="border:0px;width:213px;" src="/assets/etherumbutton.png" style="border-radius: 5%" alt="Bitcoin accepted here" />
+	<img style="border:0px;width:213px;" src="/assets/etherumbutton.png" alt="Bitcoin accepted here" />
 </a>

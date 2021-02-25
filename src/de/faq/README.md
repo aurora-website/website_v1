@@ -325,7 +325,11 @@ Repo Name: F-Droid
 
 Repo URL: https://f-droid.org/repo
 
-Repo Fingerprint (Optional): 43238D512C1E5EB2D6569F4A3AFBF5523418B82E0A3ED1552770ABB9A9C9CCAB
+Repo Fingerprint (Optional):
+
+```
+43238D512C1E5EB2D6569F4A3AFBF5523418B82E0A3ED1552770ABB9A9C9CCAB
+```
 
 ::: danger EDIT PAGE
 maybe move above to user guide page? also instead of text example add screenshot
