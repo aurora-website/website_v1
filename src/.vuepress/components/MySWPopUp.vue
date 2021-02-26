@@ -26,9 +26,11 @@ export default {
   font-size 20px
   padding 10px
   border 5px solid $accentColor
+  border-radius 5%
 }
 
 .my-sw-update-popup button {
   border 1px solid #fefefe
+  border-radius 5%
 }
 </style>
