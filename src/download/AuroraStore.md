@@ -8,7 +8,7 @@ meta:
     - property: og:image
       content: /assets/storebanner.png
     - property: og:image:width
-      content: 100%
+      content: 1200
     - property: og:image:alt
       content: Aurora Store Banner Image
     - name: theme-color
