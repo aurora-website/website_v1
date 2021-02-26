@@ -2,7 +2,7 @@
 	<div id="ContactCards">
 		<ElRow>
 			<ElCol v-for="person in team" :key="person.name">
-				<ElCard :body-style="{ padding: '0px' }" width="100%" shadow="hover">
+				<ElCard :body-style="{ padding: '0px' }" width="100%" shadow="always">
 					<img class="image" :src="$withBase(person.image)" />
 
 					<div style="padding: 14px">
@@ -262,6 +262,7 @@ export default {
 
 	.el-card
 		width 100%
+		height 100%
 		background-color $backgroundColorSecondary
 		border none
 
