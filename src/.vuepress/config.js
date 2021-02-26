@@ -45,7 +45,6 @@ module.exports = {
 		logo: "/icons/auroralogo.png",
 		//repo: "https://gitlab.com/auroraoss/",
 		editLinks: false,
-		cache: false,
 		docsRepo: "/marchingon12/AuroraOSS",
 		docsDir: "src",
 		editLinks: true,
