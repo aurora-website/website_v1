@@ -13,16 +13,7 @@ module.exports = [
 		{
 			serviceWorker: true,
 			popupComponent: "MySWUpdatePopup",
-			updatePopup: {
-				"/": {
-					message: "New content available.",
-					buttonText: "Refresh",
-				},
-				"/de/": {
-					message: "Neuer Inhalt verfügbar.",
-					buttonTest: "Aktualisieren",
-				},
-			},
+			updatePopup: true,
 		},
 	],
 	[
