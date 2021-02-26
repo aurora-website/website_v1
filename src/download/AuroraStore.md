@@ -5,12 +5,12 @@ metaTitle: Aurora Store
 description: An open source alternative Google Play Store frontend with privacy features and clean UI.
 lang: en-GB
 meta:
-  - property: og:image
-    content: /icons/aurora_store.png
-  - name: theme-color
-    content: "#38CA79"
-  - name: msapplication-TileColor
-    content: "#38CA79"
+    - property: og:image
+      content: /assets/storebanner.png
+    - name: theme-color
+      content: "#38CA79"
+    - name: msapplication-TileColor
+      content: "#38CA79"
 sidebar: false
 ---
 
@@ -26,22 +26,22 @@ Aurora Store is an open-source alternative Google Play Store frontend client wit
 
 ## Features:
 
-- **Anonymous login**: Login anonymously so that you stay private.
-- **Google login**: access your paid apps and install beta apps.
-- **Device spoofing**: App not available for your device? Use available device configurations to spoof you device!
-- **Location spoofing**: With the help of location spoofing and a VPN, you can access gloabally restricted apps!
-- **Filter F-Droid app**: Don't want F-Droid apps to be in your update list? Use the filter to exclude them.
-- **Blacklist apps**: By blacklisting apps, Google will not know that the selected apps are installed on your device.
+-   **Anonymous login**: Login anonymously so that you stay private.
+-   **Google login**: access your paid apps and install beta apps.
+-   **Device spoofing**: App not available for your device? Use available device configurations to spoof you device!
+-   **Location spoofing**: With the help of location spoofing and a VPN, you can access gloabally restricted apps!
+-   **Filter F-Droid app**: Don't want F-Droid apps to be in your update list? Use the filter to exclude them.
+-   **Blacklist apps**: By blacklisting apps, Google will not know that the selected apps are installed on your device.
 
 ## Credits
 
-- [whyorean](https://gitlab.com/whyorean/) (Rahul Patel) for making the app.
-- [IacobIonut01](https://gitlab.com/IacobIonut01/) for the sweet-looking UI.
+-   [whyorean](https://gitlab.com/whyorean/) (Rahul Patel) for making the app.
+-   [IacobIonut01](https://gitlab.com/IacobIonut01/) for the sweet-looking UI.
 
 ## Known Bugs
 
-::: guide Bugs 
-- **Categories** tab shows "No apps blacklisted" [WIP]
+::: guide Bugs
+-   **Categories** tab shows "No apps blacklisted" [WIP]
 :::
 
 ## Disclaimer
