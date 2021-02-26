@@ -98,7 +98,7 @@ export default {
 		h1, .description, .action
 			margin 1rem auto
 		.description
-			color $textColorLight
+			color $textColor
 			font-size 1.6rem
 			line-height 1.3
 			margin 1rem auto
@@ -158,14 +158,14 @@ export default {
 				padding-bottom 0
 				color $textColor
 			p
-				color $textColorLight
+				color $textColor
 	footer
 		position relative
 		.footer
 			padding 2.5rem
 			border-top 1px solid $borderColor
 			text-align center
-			color $textColorLight
+			color $textColor
 
 @keyframes fade
 	0%
