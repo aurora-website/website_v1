@@ -5,18 +5,14 @@ metaTitle: Aurora Store
 description: An open source alternative Google Play Store frontend with privacy features and clean UI.
 lang: en-GB
 meta:
-    - property: og:image
-      content: /assets/storebanner.png
-    - property: og:image:width
-      content: 1200
-    - property: og:image:height
-      content: 630
-    - property: og:image:alt
-      content: Aurora Store Banner Image
-    - name: theme-color
-      content: "#38CA79"
-    - name: msapplication-TileColor
-      content: "#38CA79"
+  - property: og:image
+    content: /assets/storebanner1200x680.png
+  - property: og:image:alt
+    content: Aurora Store Banner Image
+  - name: theme-color
+    content: "#38CA79"
+  - name: msapplication-TileColor
+    content: "#38CA79"
 sidebar: false
 ---
 

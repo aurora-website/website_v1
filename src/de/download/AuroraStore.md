@@ -6,7 +6,9 @@ description: An open source alternative Google Play Store frontend with privacy 
 lang: de
 meta:
   - property: og:image
-    content: /icons/aurora_store.png
+    content: /assets/storebanner1200x680.png
+  - property: og:image:alt
+    content: Aurora Store Banner Image
   - name: theme-color
     content: "#38CA79"
   - name: msapplication-TileColor
