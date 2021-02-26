@@ -110,7 +110,7 @@ export default {
 				border-bottom 1px solid darken($accentColor, 10%)
 				border-radius 4px
 				box-sizing border-box
-				color darken($textColor, 10%)
+				color white
 				cursor pointer
 				display inline-block
 				font-family $fontButton
