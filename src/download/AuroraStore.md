@@ -7,6 +7,10 @@ lang: en-GB
 meta:
     - property: og:image
       content: /assets/storebanner.png
+    - property: og:image:width
+      content: 100%
+    - property: og:image:alt
+      content: Aurora Store Banner Image
     - name: theme-color
       content: "#38CA79"
     - name: msapplication-TileColor
