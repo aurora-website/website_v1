@@ -65,29 +65,33 @@ export default {
 	async mounted() {
 		try {
 			const { data } = await this.$store.dispatch("getStoreStableReleaseData");
-			this.$data.storePublishRelative = this.$moment(data.datetime).fromNow();
-			this.$data.storePublishExact = this.$moment(data.datetime).format("dddd, MMMM Do YYYY [at] HH:mm");
+			const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
+			this.$data.storePublishRelative = this.$moment(apkAsset.datetime).fromNow();
+			this.$data.storePublishExact = this.$moment(apkAsset.datetime).format("dddd, MMMM Do YYYY [at] HH:mm");
 		} catch (e) {
 			console.error(e);
 		}
 		try {
 			const { data } = await this.$store.dispatch("getDroidStableReleaseData");
-			this.$data.droidPublishRelative = this.$moment(data.datetime).fromNow();
-			this.$data.droidPublishExact = this.$moment(data.datetime).format("dddd, MMMM Do YYYY [at] HH:mm");
+			const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
+			this.$data.droidPublishRelative = this.$moment(apkAsset.datetime).fromNow();
+			this.$data.droidPublishExact = this.$moment(apkAsset.datetime).format("dddd, MMMM Do YYYY [at] HH:mm");
 		} catch (e) {
 			console.error(e);
 		}
 		try {
 			const { data } = await this.$store.dispatch("getWardenReleaseData");
-			this.$data.droidPublishRelative = this.$moment(data.datetime).fromNow();
-			this.$data.droidPublishExact = this.$moment(data.datetime).format("dddd, MMMM Do YYYY [at] HH:mm");
+			const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
+			this.$data.wardenPublishRelative = this.$moment(apkAsset.datetime).fromNow();
+			this.$data.wardenPublishExact = this.$moment(apkAsset.datetime).format("dddd, MMMM Do YYYY [at] HH:mm");
 		} catch (e) {
 			console.error(e);
 		}
 		try {
 			const { data } = await this.$store.dispatch("getWallsReleaseData");
-			this.$data.droidPublishRelative = this.$moment(data.datetime).fromNow();
-			this.$data.droidPublishExact = this.$moment(data.datetime).format("dddd, MMMM Do YYYY [at] HH:mm");
+			const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
+			this.$data.wallsPublishRelative = this.$moment(apkAsset.datetime).fromNow();
+			this.$data.wallsPublishExact = this.$moment(apkAsset.datetime).format("dddd, MMMM Do YYYY [at] HH:mm");
 		} catch (e) {
 			console.error(e);
 		}
