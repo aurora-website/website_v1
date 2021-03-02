@@ -28,27 +28,33 @@ Aurora Store is an open-source alternative Google Play Store frontend client wit
 
 ## Features:
 
-- **Anonymous login**: Login anonymously so that you stay private.
-- **Google login**: access your paid apps and install beta apps.
-- **Device spoofing**: App not available for your device? Use available device configurations to spoof you device!
-- **Location spoofing**: With the help of location spoofing and a VPN, you can access gloabally restricted apps!
-- **Filter F-Droid app**: Don't want F-Droid apps to be in your update list? Use the filter to exclude them.
-- **Blacklist apps**: By blacklisting apps, Google will not know that the selected apps are installed on your device.
+-   **Anonymous login**: Login anonymously so that you stay private.
+-   **Google login**: access your paid apps and install beta apps.
+-   **Device spoofing**: App not available for your device? Use available device configurations to spoof you device!
+-   **Filter F-Droid app**: Don't want F-Droid apps to be in your update list? Use the filter to exclude them.
+-   **Blacklist apps**: By blacklisting apps, Google will not know that the selected apps are installed on your device.
 
 ## Credits
 
-- [whyorean](https://gitlab.com/whyorean/) (Rahul Patel) for making the app.
-- [IacobIonut01](https://gitlab.com/IacobIonut01/) for the sweet-looking UI.
+-   [whyorean](https://gitlab.com/whyorean/) (Rahul Patel) for making the app.
 
 ## Known Bugs
 
-::: guide Bugs 
-- **Categories** tab shows "No apps blacklisted" [WIP]
+::: guide Bugs
+-   Root installation not working properly on Android 11 (R+)
 :::
+
+## Terms Of Service
+
+Every user is required to read and agree to the Terms of Service before being able to use Aurora Store. You can read the Terms Of Service [here](/faq/terms-of-service/).
+
+## Policy
+
+Please read our [Policy](/faq/policy/) to know what we data we require & collect from you and what we send to Google.
 
 ## Disclaimer
 
-The developer of this application is not responsible for getting your Google account banned, device malware or anything affiliated with apps in the Google Play Store.
+Please read our [Disclaimer](/faq/disclaimer/) to know why what you do using Aurora Store is up to you and not us.
 
 As per [**Google Play Terms of Service §4**](https://play.google.com/intl/en-us_us/about/play-terms/index.html), under "Restrictions" there are a number of things that could potentially be used against you for the deactivation of your personal Google account that you want to remain using.
 
