@@ -14,20 +14,23 @@ export default {
 					label: "Server",
 					field: "server",
 					sortable: false,
+					tdClass: "text-center",
 				},
 				{
 					label: "Status",
 					field: "status",
 					html: true,
-					width: "83px",
+					width: "100px",
 					sortable: false,
+					tdClass: "text-center",
 				},
 				{
 					label: "Uptime (Last 30 days)",
 					field: "uptime",
 					html: true,
-					width: "160px",
+					width: "200px",
 					sortable: false,
+					tdClass: "text-center",
 				},
 			],
 			rows: [
@@ -35,20 +38,25 @@ export default {
 					id: 1,
 					server: "auroraoss.com:8080",
 					status:
-						'<img src="https://img.shields.io/uptimerobot/status/m786651508-fad67a53ecfca2d106edc6d0" width="82px" height="20px">',
+						'<img src="https://img.shields.io/uptimerobot/status/m787022460-31684f2d86b568f195aaf0b5" height="20px">',
 					uptime:
-						'<img src="https://img.shields.io/uptimerobot/ratio/m786651508-fad67a53ecfca2d106edc6d0" width="110px" height="20px">',
+						'<img src="https://img.shields.io/uptimerobot/ratio/m787022460-31684f2d86b568f195aaf0b5" height="20px">',
 				},
 				{
 					id: 2,
-					server: "auroraoss.in:8080",
+					server: "goolag.store:1337",
 					status:
-						'<img src="https://img.shields.io/uptimerobot/status/m786651524-7fd4fe056ae1389d3157b60d" width="82px" height="20px">',
+						'<img src="https://img.shields.io/uptimerobot/status/m787152791-f54549435d15088aed904bd3" height="20px">',
 					uptime:
-						'<img src="https://img.shields.io/uptimerobot/ratio/m786651524-7fd4fe056ae1389d3157b60d" width="110px" height="20px">',
+						'<img src="https://img.shields.io/uptimerobot/ratio/m787152791-f54549435d15088aed904bd3" height="20px">',
 				},
 			],
 		};
 	},
 };
 </script>
+
+<style lang="stylus">
+.text-center
+	text-align center
+</style>
