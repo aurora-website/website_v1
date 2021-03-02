@@ -60,6 +60,7 @@ module.exports = {
 			collapsable: false,
 			children: [
 				"/de/guides/wiki-home",
+				"/de/guides/troubleshooting",
 				"/de/guides/anonymous-logins",
 				"/de/guides/server-status",
 				"/de/guides/roadmap",

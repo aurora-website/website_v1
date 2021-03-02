@@ -58,7 +58,13 @@ module.exports = {
 		{
 			title: "Guide",
 			collapsable: false,
-			children: ["/guides/wiki-home", "/guides/anonymous-logins", "/guides/server-status", "/guides/roadmap"],
+			children: [
+				"/guides/wiki-home",
+				"/guides/troubleshooting",
+				"/guides/anonymous-logins",
+				"/guides/server-status",
+				"/guides/roadmap",
+			],
 			sidebarDepth: 2,
 		},
 		{
