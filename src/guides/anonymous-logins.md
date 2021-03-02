@@ -9,7 +9,7 @@ sidebar: true
 ---
 
 # Anonymous Logins
-![Anonymous Logins](https://telegra.ph/file/d74a0829516e7f008c48f.png)
+![Anonymous Logins](/assets/undraw_authentication.svg)
 
 ## How does it work?
 

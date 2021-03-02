@@ -9,7 +9,7 @@ sidebar: true
 ---
 
 # Server status
-![Server status](https://telegra.ph/file/5bb8488c1b393179e3105.png)
+![Server status](/assets/undraw_server_status.svg)
 
 See the current status of the token dispenser servers below:
 
@@ -22,7 +22,7 @@ See the current status of the token dispenser servers below:
 A word from the Aurora Store team: Please do not spam our servers. If you do, we will block you _mercilessly_.
 
 ::: c-warning Recent News!
-We are unable to show the status of our main dispenser with Uptimerobot as of now because of our newly implemented rate limiting. However, it is running and should there be any problems with the server you can check our Telegram group chat.
+With the release of Aurora Store v4, the server dispenser URL for v3 tokens is now obsolete. Please migrate to v4 or use your own Google account if you wish to still use v3.
 :::
 
 See real-time status and history [here](https://stats.uptimerobot.com/D6QpBHB11l).
