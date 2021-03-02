@@ -9,113 +9,7 @@ sidebarDepth: 2
 
 ## <img class="headerLogo" :src="$withBase('/icons/aurora_store.png')"> Aurora Store
 
-### Troubleshooting
-
-#### Failed to Build API
-
-If due to some reason the primary token dispenser has gone DOWN/OFFLINE & you are unable to login, then please enable the secondary token dispenser URL for the time being.​
-
-**Steps:**
-
-1. Go to Settings → Networks → Enable custom tokenizer​​.
-2. Enter the secondary token dispenser server URL:​ http://www.auroraoss.in:8080​
-3. Now try logging back in as Anonymous​
-
-::: guide Note
-This does not apply to anyone using their own Google account.
-:::
-
-::: c-warning
-http://www.auroraoss.in:8080​ has been disabled. All users are requested to use the main server, i.e. turn the custom tokenizer **OFF**, if not already doing so. For more information, please head to our support chat on [Telegram](https://t.me/aurorasupport)
-:::
-
-#### Installing/updating Google Chrome or Google/Android System WebView responds with "Incompatible app"!
-
-If you are using Android 10+ (Q and above), both of these apps are not easy to install/update. Basically, Google messed things up and gave Android users more work to do.
-
-> Chrome is no longer used as a WebView implementation in Q+. We've moved to a new model for sharing common code between Chrome and WebView (called "Trichrome") which gives the same benefits of reduced download and install size while having fewer weird special cases and bugs.
->
-> ~ Source: [androidpolice.com](https://www.androidpolice.com/2019/10/24/android-10-no-longer-uses-chrome-app-to-render-pages-inside-apps/)
-
-The trichrome library is split into 4 variants, just like Google Chrome: Stable, Beta, Dev, Canary.
-
-To install Chrome and WebView variants, follow the steps below:
-
-1. Firstly, download the trichrome library apk variant according to the Chrome/WebView version you have/to the one you want to update to.
-2. Install the apk onto your device.
-3. Try updating your Chrome/WebView with Aurora Store again.
-
-You can download the stable Trichrome library from apkmirror [here](https://www.apkmirror.com/apk/google-inc/trichrome-library/#variants).
-
-Read more about Trichrome on the Chromium Shared Libraries [documentation](https://chromium.googlesource.com/chromium/src.git/+/master/docs/android_native_libraries.md).
-
-#### My exported device info won't work in spoofing!
-
-Most likely the platforms property in the export file is missing. This sometimes happens while exporting on some devices. The only way to fix this is to manually input a new line with the content below:
-
-```java
-Platforms = arm64-v8a, armeabi-v7a, armeabi
-```
-
-Remember to check what architecture your device supports! You can easily check it with either of these apps: [CPU-Z](https://play.google.com/store/apps/details?id=com.cpuid.cpu_z&hl=en&gl=US), [DevCheck](https://play.google.com/store/apps/details?id=flar2.devcheck&hl=en&gl=US), [Castro](https://play.google.com/store/apps/details?id=com.itemstudio.castro&hl=en&gl=US) or just search for your device on [GSMArena](https://www.gsmarena.com/). DO NOT just copy-paste the line above and blame us if it doesn't work, even if it might.
-
-#### I have a Huawei device and I can't log in!
-
-Chances are that you have a device running Android that was originally shipped without Google support. To the best of our knowledge, this includes:
-
--   Huawei Mate 30 series
--   Huawei Mate 40 Series
--   Huawei P40 series
--   Huawei P Smart S
--   Huawei Mate Xs
--   Huawei Y5p, Y6p, Y7p, Y8p
--   Huawei Nova 7i, 7 SE
--   Huawei Matepad T8, Pro 5g
-
-Simply spoofing to another device configuration should help solve this problem.
-
-#### Installation fails without warning post downloads.
-
-Bundled apps can't be installed on OEM ROMs due to shameless mods like (VirusCheck, Tracker Stats, etc.).
-
-Pick **one** of these workarounds:
-
-1. Turn off vendor optimizations (like MIUI Optimizations)
-2. Enable "Enforce Native Installer" from Aurora Store Settings → Installations.
-3. Use root installation method
-
-#### Problems with downloading apps
-
-This problem may be due to your download path. Sometimes Android has issues with allowing read/write permissions for apps when external storage gets involved and this can affect Aurora Store as well. To fix this, you can toggle "Download apps in internal storage" in Settings → Downloads.
-
-#### Updates tab doesn't show apps but searching the app shows update.
-
-\[Will write once info is confirmed\]
-
-#### Unable to export device info.
-
-\[Will write once info is confirmed\]
-
-#### Why do I have two _Aurora Store_ apps after installing the new builds?
-
-This might be due to the fact that you have older versions of Aurora Store installed instead of version 3, which is a completely new rewrite that comes with a new package name. You can uninstall the older one or keep it if you want.
-
-#### The categories tab shows "No apps blacklisted".
-
-This is a bug in `v.3.2.9` that has been noted. For some people it works, for some it doesn't.
-
-#### Not working whatsoever.
-
-Check if you are using the latest Stable build `v.3.2.9` or Nightly builds. For some reason some people have reported issues while installing `v.2.0.5` from third-party sources like Softonic and Uptodown.
-
-Please download all latest AuroraOSS apps from any of the below mentioned sources only:
-
-1. F-Droid: [https://f-droid.org/en/packages/com.aurora.store/](https://f-droid.org/en/packages/com.aurora.store/)
-2. AuroraOSS Website: [https://auroraoss.com/downloads.php](https://auroraoss.com/downloads.php)
-3. Official Telegram Channel: [@AuroraOfficial](https://t.me/AuroraOfficial)
-4. GitLab: [https://gitlab.com/AuroraOSS/AuroraStore/-/releases](https://gitlab.com/AuroraOSS/AuroraStore/-/releases)
-
-### FAQs
+### General
 
 #### Why the name "Aurora" Store?
 
@@ -127,7 +21,7 @@ Unlike Google's Play Store, Aurora Store doesn't track your downloads or the app
 
 #### Is Aurora Store a fork of YalpStore?
 
-Technically, no. Aurora Store v3 is written from scratch, but it does share some code from YalpStore.
+Technically, no. Aurora Store v3 is written from scratch, and Aurora Store v4 is a rewrite of v3 in Kotlin, but it does share some code from YalpStore.
 
 #### Do I need Google Play Services to use Aurora Store?
 
@@ -140,6 +34,10 @@ Some poorly-designed apps detect if Google Play is missing and punish the user b
 #### Is it safe to use Aurora store?
 
 Aurora Store is fully open-source and verified by F-Droid. If you're asking about the safety of the apps in the store, those are the exact same ones the Play Store would load and display. A lot of dangerous stuff seems to sneak past Google though, so as a rule of thumb, don't download anything which you're unsure about.
+
+#### Why do I need to accept the Terms Of Service for Aurora Store?
+
+We deem this necessary, because it is to ensure a minimum safety for AuroraOSS, in case some individual or group wants to harm us in any way by using Aurora Store as leverage. It's also a way to ask users to be aware what they're signing up for, so we urge and encourage you to read it to inform yourselves of what Aurora Store is capable of doing and . If you find anything useful for or strange in our [Terms Of Service](/faq/terms-of-service/), don't hesitate to contact us on auroraoss.dev@gmail.com or our Telegram group.
 
 #### What data does Aurora Store send to Google?
 
@@ -155,9 +53,50 @@ For anonymous logins, following data is sent to Aurora Dispenser Server:
 -   a GET request to obtain a authentication token. This token is generated server side so no user data is leaked. All the requests are made to Google from the Dispenser Server's IP.
 -   AuroraOSS follows a strict policy of no-logging, so no data is stored on the Dispenser Server.
 
-::: guide Tip 👀
-For more info read​ [Anonymous Logins](/guides/anonymous-logins).
+::: guide Tip! 👀
+For more info on anonymous logins read​ [Anonymous Logins](/guides/anonymous-logins/) and [Policy](/faq/policy/) for our policy.
 :::
+
+#### What are nightly autobuilds?
+
+There are two versions of Aurora Store that we make available to all users.
+
+-   **Stable**: Stable versions with everything functioning.
+-   **Nightly**: Daily versions built by a script to include the latest dependencies and commits on the Aurora Store repo.
+
+If there is no change between a nightly version and the previous nighlty, a new version will be uploaded regardless.
+
+You can download the latest nightlies via the website or with this [link](https://auroraoss.com/AuroraStore/Nightlies/).
+
+#### Why are the versions on F-Droid and XDA labs outdated? When will they be updated?
+
+Aurora Store is still in a development phase right now; Only infrequent, stable builds will be uploaded there. F-Droid's review & build process is also quite lengthy. You can always grab the latest tests builds either from the [Telegram Group](https://t.me/AuroraSupport) or from [AuroraOSS](https://auroraoss.com/AuroraStore/Stable/).
+
+#### "Please add support for F-Droid/Amazon/Yada repositories!"
+
+No, this is a Play Store client only. Different clients for different services (^\_~)
+
+<!-- #### Does Aurora supports downgrading app versions?
+
+Yes, it supports app version downgrading to some extent. To download older versions, open the page of the desired app, from the three-dot-menu on the top right side, tap on `Manual download`. On the next screen put a valid last octet value of version you want & hit download.
+
+> Example: if the current installed app version is `v.3.1.550` & you want `v.3.1.445`, then on version page just put `445` i.e last octet value of version.
+
+Keep in mind that downloading arbitrary versions of apps is not supported by the Google Play Store. Your success depends on a lucky guess of the version code. Even if you guess right and you get the download to start, you still might get an incompatible APK. -->
+
+#### Why do some apps show updates in Aurora Store (Anonymous mode) but not in the Play Store (or vice-versa)?
+
+Aurora Store's anonymous mode works by connecting to an random dummy account stored in the token dispenser server. These dummy accounts are created by volunteers from different countries and some by the developer himself. Thus, every account has different locale settings by default according to the location where it was first created.
+
+So next comes the Google Play Update roll-out mechanism. Google doesn't push app updates in one single attempt to all countries users. It's similar to staged updates & needs a lot of server syncing which takes time. Some apps are also blacklisted or restricted in specific countries and for specific devices \(geolocked & device-restricted\).
+
+So while using Anonymous mode user are randomly connected to an Dummy account with different account locales which atlast alters the list of app updates accordingly. Additionally spoof settings can also be able to alter the apps updates list.
+
+#### How can I report a bug or suggest something?
+
+You can open issues on GitLab [here](https://gitlab.com/AuroraOSS/AuroraStore/issues), or you can do so by joining our [Telegram Support Group](https://t.me/AuroraSupport). Use `/bug` or `/suggestion` at the start of your message. If urgent, you can tag [@whyorean](https://t.me/whyorean).
+
+### Accounts
 
 #### Do I need to use my own Google account to log in?
 
@@ -166,14 +105,6 @@ Nope. Aurora Store can log you in with a dummy account that is stored in the tok
 #### What is the token dispenser?
 
 The token dispenser is a server which provides login credentials to Aurora Store for Anonymous Logins. You can check the current status of the token dispenser servers [here](/guides/server-status/) or by using `/status` in the Telegram group.
-
-::: danger EDIT PAGE
-edit link server status when complete page
-:::
-
-::: guide Update
-The `/status` and `/nightly` commands are disabled for now as we are working our way towards v4. The status page is also partly down, as we are making changes to the server rate limiting on the main server. The secondary server `auroraoss.in:8080` will still be monitored as before without change.
-:::
 
 If you would like to create and host your own token dispenser server, check out the source code [here](https://github.com/whyorean/AuroraDispenser).
 
@@ -191,31 +122,47 @@ Purchase the apps from the [Google Play website](https://play.google.com/store),
 
 #### Can Aurora store verify licenses?
 
-That, unfortunately, is something tied to Play Store and probably always will be. If you don't want to install the Play Store (it can work with microG), all you can do is pester the Devs to remove the verification or at least offer alternative means of verification. In-app purchases (IAPs) are similarly tied to Play Store and you will not be able to make or restore IAPs without having it installed.
+That, unfortunately, is something tied to Play Store and probably always will be. If you don't want to install the Play Store (it could work with microG), all you can do is pester the Devs to remove the verification or at least offer alternative means of verification. In-App Purchases (IAPs) are similarly tied to Play Store and you will not be able to make or restore IAPs without having it installed.
 
-#### Can I use Aurora store to get paid apps for free?
+#### Can I use Aurora Store to get paid apps for free?
 
-No.
+Not unless they are on discount or made free.
+
+### Filters
 
 #### What is the F-Droid filter?
 
-Since F-Droid signs APKs with its own keys, the Play store variants of apps cannot be installed over them. The F-Droid filter excludes all the apps it finds with FDroid signatures on your device to prevent such conflicts.
+Since F-Droid signs APKs with its own keys, the Play store variants of apps cannot be installed over them. The F-Droid filter excludes all the apps it finds with F-Droid signatures on your device to prevent such conflicts.
 
-#### What is the spoofing feature?
+#### What is the Google filter?
 
-Spoofing allows you to pretend to be any other device at any other location in the world in order to download geo-restricted apps. You can use your own custom device configs by dropping the .properties file in the Downloads directory (Settings → Downloads → Download Path).
+By enabling this filter, you can remove all Google Apps from your search query results and from categories. This is pretty useful for those ungoogled people out there.
+
+### Downloads & Installation
+
+#### Where can I find downloaded .apk files from Aurora Store?
+
+By default, Aurora Store utilizes the root storage space created for Aurora Store.
+
+Default path: `/data/data/com.aurora.store/files/Download`
+
+If you prefer to download the apk files to internal storage instead, you can choose to do so by enabling the User external storage toggle under Settings → Downloads.
+
+The path will then be Internal Storage → Aurora → Store → Downloads → packageName → versionNumber → apkFile.
 
 #### How does Aurora Store install apps?
 
-Aurora Store can install apps in 3 ways:
+Aurora Store can install apps in 4 ways:
 
--   **Manual** - Whenever an app is downloaded, it will open the manual installation screen. This doesn't require root or system permissions.
--   **Session** - This has the same effect as if you were to install Aurora Services as a system application. This method (can use, but) does not require root, however you will need an unlocked bootloader with a custom recovery like TWRP installed.
--   **Root** - By giving Aurora Store root access (latest Magisk recommended), it will automatically install apps in the background as soon as they are downloaded.
+-   **Session** (Recommended) - Works in a similar way to SAI. There are 2 ways session installer can be used. If you have Aurora Store installed as a system application, this will have the same effect as if you were to install Aurora Services as a system application. However, you will need an unlocked bootloader with a custom recovery similar to TWRP installed.
 
-For v3 and under:
+-   **Native** - Whenever an app is downloaded, it will open the native android installer screen. This doesn't require root or system permissions, but does NOT support split apk installations.
 
--   **Aurora Services** - By installing Aurora Services as a system app, Aurora Store can automatically install apps upon download completion in the background.
+-   **Root** - By giving Aurora Store root or system permissions, it will automatically install apps in the background as soon as they are downloaded.
+
+-   **Aurora Services** - By installing Aurora Services as a system app, Aurora Store can automatically install apps in background after the download complete.
+
+### Aurora Services
 
 #### How do I use Aurora Services?
 
@@ -229,61 +176,31 @@ You don't need to give Aurora Store system or root permissions; Aurora Services 
 
 Aurora Services will NOT work if it is not installed as a system app.
 
-1. If you have Magisk installed then simply download the zip file from [GitLab](https://gitlab.com/AuroraOSS/AuroraServices/-/releases) and flash via Magisk. If magisk is not installed then you can either install the 'magisk-unity' zip file via TWRP (root access is not needed) or manually push `AuroraServices.apk` to `/system/priv-app` and `permissions_com.aurora.services.xml` to `/system/etc/permissions/` (This needs root access!).
-2. Grant the required permissions & whitelist Aurora Store in the services app.
+1. If you have Magisk installed then simply download the zip file from [GitLab](https://gitlab.com/AuroraOSS/AuroraServices/-/releases) and flash via Magisk. If magisk is not installed then you can either install the 'magisk-unity' zip file via TWRP (root access is not needed) or manually push `AuroraServices.apk` to `/system/priv-app` and `permissions_com.aurora.services.xml` to `/system/etc/permissions/` (root access needed!).
+2. Grant the required permissions.
 3. Set installation method in the Aurora Store settings to Aurora Services (Settings → Installations → Installation method → Aurora Services).
-
-::: warning Warning
-Aurora Services is deprecated since the release of Aurora Store version 4. However, it is still usable with Aurora Store v3.
-:::
 
 #### Can Aurora Download and install Split or Bundled APKs?
 
 Yes, it can install both with or without root.
 
-#### Why are the versions on F-Droid and XDA labs outdated? When will they be updated?
-
-Aurora Store is still in a development phase right now; Only infrequent, stable builds will be uploaded there. F-Droid's review & build process is also quite lengthy. You can always grab the latest tests builds either from the [Telegram Group](https://t.me/AuroraSupport) or from [AuroraOSS](https://auroraoss.com/AuroraStore/Nightly/).
-
-#### "Please add support for F-Droid/Amazon/Yada repositories!"
-
-No, this is a Play Store client only. Different clients for different services (^\_~)
-
-#### Does Aurora supports downgrading app versions?
-
-Yes, it supports app version downgrading to some extent. To download older versions, open the page of the desired app, from the three-dot-menu on the top right side, tap on `Manual download`. On the next screen put a valid last octet value of version you want & hit download.
-
-> Example: if the current installed app version is `v.3.1.550` & you want `v.3.1.445`, then on version page just put `445` i.e last octet value of version.
-
-Keep in mind that downloading arbitrary versions of apps is not supported by the Google Play Store. Your success depends on a lucky guess of the version code. Even if you guess right and you get the download to start, you still might get an incompatible APK.
-
-#### Why do some apps show updates in Aurora Store (Anonymous mode) but not in the Play Store (or vice-versa)?
-
-Aurora Store's anonymous mode works by connecting to an random dummy account stored in the token dispenser server. These dummy accounts are created by volunteers from different countries and some by the developer himself. Thus, every account has different locale settings by default according to the location where it was first created.
-
-So next comes the Google Play Update roll-out mechanism. Google doesn't push app updates in one single attempt to all countries users. It's similar to staged updates & needs a lot of server syncing which takes time. Some apps are also blacklisted or restricted in specific countries and for specific devices \(geolocked & device-restricted\).
-
-So while using Anonymous mode user are randomly connected to an Dummy account with different account locales which atlast alters the list of app updates accordingly. Additionally spoof settings can also be able to alter the apps updates list.
-
-#### How can I report a bug or suggest something?
-
-You can open issues on GitLab [here](https://gitlab.com/AuroraOSS/AuroraStore/issues), or you can do so by joining our [Telegram Support Group](https://t.me/AuroraSupport). Use `/bug` or `/suggestion` at the start of your message. If urgent, you can tag [@whyorean](https://t.me/whyorean).
-
-#### How do I join/contribute to Aurora Store?
-
-For code and UI improvements, do a Merge Request. These will not be looked as often, but if it's something major then we will consider merging.
-
-For feature requests, open an issue with [Feature Request] at the start of your title. If in consideration there will be a 'Feature Request' label on your issue.
-
-::: danger EDIT PAGE
-add this page to contribution page
+::: c-tip Tip!
+To know more about the difference between Spilt and Bundled APKs, read [this](https://stackoverflow.com/questions/52059339/difference-between-apk-apk-and-app-bundle-aab).
 :::
 
 ### Spoofing
 
+#### Device
+
+To spoof your device config, go to the spoofing menu located at the sidebar and select your desired device config. Make sure you select one with the same architecture, otherwise you will experience problems with installing.
+
+#### Language
+
+Language spoofing allow you to change the content language displayed on Aurora Store. However, some strings are tied to your Google account if you are using your own account to log in, e.g. the Editor Choice section will be displayed in the language your account is set to (i.e. if you signed up in Germany, the language displayed will be German).
+
 ## <img class="headerLogo" :src="$withBase('/icons/aurora_droid.png')"> Aurora Droid
 
-### FAQs
+### General
 
 #### What is Aurora Droid?
 
@@ -301,38 +218,38 @@ Many repositories provide a QR code for their links and AuroraDroid can scan the
 
 Why do you think? Many repos (including Haagch and IzzyonDroid) are known to include proprietary/non-free applications. All of them are disabled at start, so it's on you for enabling them without knowing them.
 
+### Installations
+
 #### How does Aurora Droid install apps?
 
-Aurora Droid can currently install apps in 4 ways:
+Aurora Droid can install apps in 4 ways:
 
--   **Manual** - Whenever an app is downloaded, it will open the manual installation screen. This doesn't require root or system permissions.
+-   **Session** (Recommended) - Works in a similar way to SAI. There are 2 ways session installer can be used. If you have Aurora Droid installed as a system application, this will have the same effect as if you were to install Aurora Services as a system application. However, you will need an unlocked bootloader with a custom recovery similar to TWRP installed.
 
--   **Root** (Recommended) - By giving Aurora Store root or system permissions, it will automatically install apps in the background as soon as they are downloaded.
+-   **Native** - Whenever an app is downloaded, it will open the native android installer screen. This doesn't require root or system permissions, but does NOT support split apk installations.
 
--   **Session** - This has the same effect as if you were to install Aurora Services as a system application. This method (can use, but) does not require root, however you will need an unlocked bootloader with a custom recovery like TWRP installed.
+-   **Root** - By giving Aurora Store root or system permissions, it will automatically install apps in the background as soon as they are downloaded.
 
--   **Aurora Services** - By installing Aurora Services as system app, Aurora Store can automatically install app upon download completion in background. Use #services for more info in group.
-
-Facing app installation issues? Check out the `#install_solution` note in our group chat.
+-   **Aurora Services** - By installing Aurora Services as a system app, Aurora Droid can automatically install apps in background after the download complete.
 
 #### How to add an new Repository in Aurora Droid ?
 
-To add new repository, use "Repositories" button given in left side menu. Choose "add new repository", after that type name of repo in 1st section, then paste repository URL in 2nd section & repository fingerprint (if available) in last section.
+To add new repository, use "Repositories" button given in left side menu. Choose `Add new repository`, after that type name of repo in 1st section, then paste the repository URL in second section & repository fingerprint (if available) in last section.
 
-For Example:
+Example:
 
-Repo Name: F-Droid
+::: guide F-Droid Repo
+**Repo Name**: F-Droid
 
-Repo URL: https://f-droid.org/repo
+**Repo URL**: https://f-droid.org/repo
 
-Repo Fingerprint (Optional):
+**Repo Fingerprint (Optional)**:
 
 ```
-43238D512C1E5EB2D6569F4A3AFBF5523418B82E0A3ED1552770ABB9A9C9CCAB
+43238D512C1E5EB2D6569F4A3AFBF552
+3418B82E0A3ED1552770ABB9A9C9CCAB
 ```
 
-::: danger EDIT PAGE
-maybe move above to user guide page? also instead of text example add screenshot
 :::
 
 ## App Warden
@@ -343,7 +260,7 @@ Warden has a static curated list of known trackers (Exodus Privacy) , each app's
 
 A list of currently known trackers & loggers can be found here & here
 
-Loggers in the context of Warden means all utilities which are used to log user activity on an app or logcat in general. Not all loggers are evil. But few logging tools like ACRA, xLog are very powerful tools that can send user data to devs without user's consent. So do read the app's Privacy Policy, beforehand.
+Loggers in the context of Warden means all utilities which are used to log user activity on an app or logcat in general. Not all loggers are evil. But a few logging tools like ACRA, xLog are very powerful tools that can send user data to Devs without the user's consent. So do read the app's Privacy Policy, beforehand.
 
 ### What features are there?
 

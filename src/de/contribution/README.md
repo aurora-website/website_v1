@@ -10,11 +10,13 @@ sidebar: true
 
 # Contribution
 
-Find out how to help translate or build the app and extensions.
+Find out how to help translate or contribute to AuroraOSS.
 
 ## Code <code-icon color="#0aff50" />
 
 Skilled at code? Know how to improve something or you generally want to support the creation of our apps?
+
+For UI improvements, you can do a Merge Request. These will not be checked on as often, but if it's something major and urgent then we will consider merging.
 
 ### Applications <apps-icon color="#ff0040" />
 
