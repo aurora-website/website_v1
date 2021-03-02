@@ -115,7 +115,6 @@ $navbar-horizontal-padding = 1.5rem
 		display flex
 		.nav-dropdown
 			background-color lighten($navbarColor, 10%)
-			border none
 		.search-box
 			border none
 			flex: 0 0 auto
