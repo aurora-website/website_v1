@@ -98,7 +98,7 @@ export default {
 		h1, .description, .action
 			margin 1rem auto
 		.description
-			color $textColor
+			color inherit
 			font-size 1.6rem
 			line-height 1.3
 			margin 1rem auto

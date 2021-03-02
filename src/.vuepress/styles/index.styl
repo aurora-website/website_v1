@@ -1,3 +1,34 @@
+// redefining variables values
+:root[data-theme="light"]
+	--textColor $lighttextColor
+	--textColor40 transparentify($lighttextColor, 0.4)
+	--borderColor $lightborderColor
+	--badgeVersionColor $lightbadgeVersionColor
+	--backgroundColor $lightbackgroundColor
+	--backgroundColorSecondary $lightbackgroundColorSecondary
+	--containerBackground $lightcontainerBackground
+	--navbarColor $lightnavbarColor
+
+:root[data-theme="dark"]
+	--textColor $darktextColor
+	--textColor40 transparentify($darktextColor, 0.4)
+	--borderColor $darkborderColor
+	--badgeVersionColor $darkbadgeVersionColor
+	--backgroundColor $darkbackgroundColor
+	--backgroundColorSecondary $darkbackgroundColorSecondary
+	--containerBackground $darkcontainerBackground
+	--navbarColor $darknavbarColor
+
+@media (prefers-color-scheme: dark)
+	--textColor $darktextColor
+	--textColor40 transparentify($darktextColor, 0.4)
+	--borderColor $darkborderColor
+	--badgeVersionColor $darkbadgeVersionColor
+	--backgroundColor $darkbackgroundColor
+	--backgroundColorSecondary $darkbackgroundColorSecondary
+	--containerBackground $darkcontainerBackground
+	--navbarColor $darknavbarColor
+
 /**
  * Custom Styles here.
  *
@@ -5,7 +36,7 @@
  */
 
 .home .hero img
-  max-width 450px!important
+	max-width 450px!important
 
 // Page Header Logo
 .headerLogo
@@ -18,6 +49,7 @@ html
 	overflow-y scroll
 
 body
+	color var(--textColor)
 	display block
 	font-family $fontMain
 	font-size 16px
@@ -25,7 +57,7 @@ body
 html,
 body,
 .theme-container
-	background-color $backgroundColor
+	background-color var(--backgroundColor)
 
 .note
 	color $greyLighten5
@@ -44,7 +76,7 @@ body,
 	&.default-indicator
 		background-color $accentColor !important
 	&.version-indicator
-		background-color $badgeVersionColor !important
+		background-color var(--badgeVersionColor) !important
 
 // Guide container
 .guide
@@ -83,7 +115,7 @@ body,
 	border-radius .125rem
 	overflow hidden
 	position relative
-	background-color $backgroundColorSecondary
+	background-color var(--backgroundColorSecondary)
 	border 1px solid #e4e8ef
 	border-radius 6px
 	margin-bottom .5rem
@@ -138,7 +170,7 @@ body,
 	&.aside
 		background-color transparent
 		border none
-		color transparentify($textColor, 0.4)
+		color var(--textColor40)
 		font-size 0.9rem
 		text-align right
 	&.aside-guide
@@ -224,11 +256,11 @@ body,
 // Fix Element-UI styling
 .el-divider__text,
 .el-step__icon
-	background-color $backgroundColor !important
+	background-color var(--backgroundColor) !important
 
 .el-collapse-item__header
 	background-color transparent !important
-	border-bottom 1px solid $borderColor
+	border-bottom 1px solid var(--borderColor)
 	padding-left 10px
 	&.is-active
 		color $accentColor
@@ -237,7 +269,7 @@ body,
 		color $accentColor
 		font-size .9rem
 	&:not(.is-active)
-		color $textColor
+		color var(--textColor)
 		font-size .9rem
 
 .el-collapse-item__wrap
