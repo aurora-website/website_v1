@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<vue-good-table :columns="columns" :rows="rows" />
+		<vue-good-table :columns="columns" :rows="rows"/>
 	</div>
 </template>
 
@@ -59,4 +59,9 @@ export default {
 <style lang="stylus">
 .text-center
 	text-align center
+
+th,
+td
+	border 1px solid var(--borderColor)
+	background var(--backgroundColor)
 </style>

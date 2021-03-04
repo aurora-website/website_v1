@@ -91,7 +91,7 @@ $navbar-horizontal-padding = 1.5rem
 .navbar
 	padding $navbar-vertical-padding $navbar-horizontal-padding
 	line-height $navbarHeight - 1.4rem
-	background-color $navbarColor
+	background-color var(--navbarColor)
 	box-shadow 2
 	a, span, img
 		display inline-block
@@ -103,12 +103,20 @@ $navbar-horizontal-padding = 1.5rem
 	.site-name
 		font-size 1.3rem
 		font-weight 600
-		color $textColor
+		color var(--textColor)
 		position relative
+	.nav-link
+		&:hover
+			color var(--textColor)
+		&.router-link-active
+			color var(--textColor)
+	.dropdown-title
+		color var(--textColor)
+	// .toggle__wrapper
 	.links
 		padding-left 1.5rem
 		box-sizing border-box
-		background-color $navbarColor
+		background-color inherit
 		white-space nowrap
 		font-size 0.9rem
 		position absolute
@@ -116,15 +124,22 @@ $navbar-horizontal-padding = 1.5rem
 		top $navbar-vertical-padding
 		display flex
 		.nav-dropdown
-			background-color lighten($navbarColor, 10%)
+			background-color var(--navbarColor)
+			border 1px solid var(--borderColor)
 		.search-box
 			border none
 			flex: 0 0 auto
 			vertical-align top
 			input
 				background-color transparent
+				color inherit
 			.suggestions
-				background-color lighten($navbarColor, 10%)
+				background-color var(--navbarColor)
+				border 1px solid var(--borderColor)
+				.focused
+					background-color var(--borderColor)
+				&:hover
+					background-color var(--navbarColor)
 
 @media (max-width: $MQMobile)
 	.navbar

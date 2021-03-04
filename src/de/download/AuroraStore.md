@@ -62,6 +62,6 @@ As per [**Google Play Terms of Service §4**](https://play.google.com/intl/en-us
 
 <p align="center">
 	<a href="https://t.me/aurorasupport" target="_blank" rel="noopener">
-    <img :src="$withBase('/assets/tg-aurorasupport-qr.png')" width="175px" />
+    <img :src="$withBase('/assets/tg-aurorasupport-qr.png')" width="175px" style="border-radius: 15px;" />
   </a>
 </p>

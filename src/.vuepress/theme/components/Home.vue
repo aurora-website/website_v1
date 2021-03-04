@@ -135,7 +135,7 @@ export default {
 					box-shadow 0 0 30px #b1aeae52, 0 0 0 1px #fff, 0 0 0 3px rgba(50, 100, 150, 0.4)
 					outline none
 	.features
-		border-top 1px solid $borderColor
+		border-top 1px solid var(--borderColor)
 		padding 1rem 0
 		margin-top 1rem
 		display flex
@@ -156,16 +156,16 @@ export default {
 				font-weight 500
 				border-bottom none
 				padding-bottom 0
-				color $textColor
+				color inherit
 			p
-				color $textColor
+				color inherit
 	footer
 		position relative
 		.footer
 			padding 2.5rem
-			border-top 1px solid $borderColor
+			border-top 1px solid var(--borderColor)
 			text-align center
-			color $textColor
+			color inherit
 
 @keyframes fade
 	0%

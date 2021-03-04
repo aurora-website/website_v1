@@ -21,7 +21,10 @@ export default {
 
 <style lang="stylus">
 .sidebar
-  background-color $navbarColor
+  background-color var(--navbarColor)
+  border-right 1px solid var(--borderColor)
+  .sidebar-link
+    color var(--textColor)
   ul
     padding 0
     margin 0
@@ -30,7 +33,7 @@ export default {
     display inline-block
   .nav-links
     display none
-    border-bottom 1px solid $borderColor
+    border-bottom 1px solid var(--borderColor)
     padding 0.5rem 0 0.75rem 0
     a
       font-weight 600

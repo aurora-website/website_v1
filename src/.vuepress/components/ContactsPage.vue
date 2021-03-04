@@ -263,7 +263,7 @@ export default {
 	.el-card
 		width 100%
 		height 100%
-		background-color $backgroundColorSecondary
+		background-color var(--backgroundColorSecondary)
 		border none
 
 	.el-row
@@ -317,9 +317,9 @@ export default {
 			&:hover
 				background-color transparentify(lighten($gitlabAccentColor, 80%))
 		&--github
-			color $githubAccentColor
+			color var(--githubAccentColor)
 			&:hover
-				background-color transparentify(lighten($githubAccentColor, 80%))
+				background-color var(--githubBGColor)
 
 	@media (max-width: $MQMobileNarrow)
 		.el-button
@@ -327,11 +327,14 @@ export default {
 		.el-row
 			grid-template-columns repeat(1, 1fr)
 
+	.el-collapse
+		border-top none !important
+
 	.title
 		font-size 1.125rem
 		font-weight bold
 		padding 0.1rem 0.1rem
-		color $textColor
+		color var(--textColor)
 
 	.role
 		font-size 0.9rem
@@ -340,7 +343,7 @@ export default {
 
 	.buttons
 		align-items left
-		background-color $backgroundColorSecondary
+		background-color var(--backgroundColorSecondary)
 		margin 0.5rem 0.1rem
 		padding 0.1rem 0.1rem
 
@@ -352,9 +355,9 @@ export default {
 	.motto
 		font-size 16px
 		padding 0.7rem 0.1rem
-		color $textColor
+		color var(--textColor)
 
 	.about
 		font-size .875rem
-		color $textColor
+		color var(--textColor)
 </style>

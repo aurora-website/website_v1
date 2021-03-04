@@ -45,6 +45,6 @@ The developer of this application is not responsible for getting your device mal
 
 <p align="center">
   <a href="https://t.me/auroradroid" target="_blank" rel="noopener">
-    <img :src="$withBase('/assets/tg-auroradroid-qr.png')" width="175px" />
+    <img :src="$withBase('/assets/tg-auroradroid-qr.png')" width="175px" style="border-radius: 15px;" />
   </a>
 </p>
