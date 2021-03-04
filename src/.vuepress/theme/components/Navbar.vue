@@ -2,7 +2,6 @@
 	<header class="navbar">
 		<!-- eslint-disable-next-line vue/require-explicit-emits -->
 		<SidebarButton @toggle-sidebar="$emit('toggle-sidebar')" />
-
 		<RouterLink :to="$localePath" class="home-link">
 			<img
 				v-if="$site.themeConfig.logo"
@@ -25,6 +24,7 @@
 					: {}
 			"
 		>
+			<DarkThemeSwitcher />
 			<div v-if="$page.frontmatter.hideSearch" />
 			<SearchBox v-else-if="$site.themeConfig.search !== false && $page.frontmatter.search !== false" />
 			<NavLinks class="can-hide" />
@@ -36,6 +36,7 @@
 import SearchBox from "@SearchBox";
 import SidebarButton from "@theme/components/SidebarButton.vue";
 import NavLinks from "@theme/components/NavLinks.vue";
+import DarkThemeSwitcher from "@theme/components/DarkThemeSwitcher.vue";
 
 export default {
 	name: "Navbar",
@@ -43,6 +44,7 @@ export default {
 	components: {
 		SidebarButton,
 		NavLinks,
+		DarkThemeSwitcher,
 		SearchBox,
 	},
 
