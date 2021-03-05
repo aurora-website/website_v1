@@ -1,3 +1,4 @@
+
 <template>
 	<div role="group" class="toggle__wrapper dark-theme-switcher">
 		<input 
@@ -6,10 +7,10 @@
 			v-model="darkTheme" 
 			class="toggle" 
 		/>
-		<span class="toggler">
+		<label for="theme-toggle" class="toggler">
 			<SunIcon v-if="darkTheme==false" size="24px"/>
 			<MoonIcon v-if="darkTheme==true" size="24px"/>
-		</span>
+		</label>
 	</div>
 </template>
 
@@ -47,28 +48,21 @@ export default {
 };
 </script>
 
-<style lang="stylus">
-.toggle__wrapper {
-	display: inline-block;
-	line-height $navbarHeight - 1.4rem
+<style scoped>
+[type='checkbox'] {
+  display: none;
 }
-
-.toggle__wrapper input {
-	position relative
-	cursor pointer
-	opacity: 0;
-	width: 0;
-	height: 0;
+label {
+  display: block;
+  background-color: trnasparent;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
-
-.toggler {
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	-webkit-transition: 0.4s;
-	transition: 0.4s;
+:checked + label {
+  background-color: transparent;
 }
-
-
 </style>
+
+
+

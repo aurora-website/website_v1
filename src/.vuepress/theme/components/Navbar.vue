@@ -24,10 +24,10 @@
 					: {}
 			"
 		>
-			<DarkThemeSwitcher />
 			<div v-if="$page.frontmatter.hideSearch" />
 			<SearchBox v-else-if="$site.themeConfig.search !== false && $page.frontmatter.search !== false" />
 			<NavLinks class="can-hide" />
+			<DarkThemeSwitcher class="toggleNav can-hide" />
 		</div>
 	</header>
 </template>
@@ -111,8 +111,7 @@ $navbar-horizontal-padding = 1.5rem
 		&.router-link-active
 			color var(--textColor)
 	.dropdown-title
-		color var(--textColor)
-	// .toggle__wrapper
+		color var(--textColor) !important
 	.links
 		padding-left 1.5rem
 		box-sizing border-box
@@ -153,4 +152,9 @@ $navbar-horizontal-padding = 1.5rem
 			overflow hidden
 			white-space nowrap
 			text-overflow ellipsis
+		.mobile-dropdown-title
+			color inherit
+
+.toggleNav
+	padding: 0.4rem 0 0 1rem;
 </style>
