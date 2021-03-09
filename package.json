@@ -14,7 +14,7 @@
   "scripts": {
     "dev": "vuepress dev src",
     "build": "vuepress build src",
-    "format": "prettier --check src",
+    "format": "npx prettier -w src",
     "lint": "eslint --fix src/.vuepress/**/*.{js,vue}"
   },
   "license": "MIT",
