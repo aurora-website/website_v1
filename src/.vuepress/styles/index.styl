@@ -70,6 +70,11 @@ body,
 	font-size .9rem
 	text-align right
 
+// Table Changes
+tr, th, td
+	border 1px solid var(--borderColor) !important
+	background-color transparent !important
+
 // Navbar Changes
 .navbar
 	border-bottom 1px solid var(--borderColor)
@@ -80,6 +85,7 @@ body,
 
 // Badge styling
 .badge
+	color var(--backgroundColor) !important
 	&.default-indicator
 		background-color $accentColor !important
 	&.version-indicator
@@ -122,7 +128,10 @@ body,
 		border-radius .25rem
 		font-size .8rem
 		background-color var(--containerBackground)
-		color $accentColorSecondary
+		//color $accentColorSecondary
+	div[class*="language-"]
+		border-radius 6px
+
 
 
 .custom-block

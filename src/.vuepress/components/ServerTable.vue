@@ -59,9 +59,4 @@ export default {
 <style lang="stylus">
 .text-center
 	text-align center
-
-th,
-td
-	border 1px solid var(--borderColor)
-	background var(--backgroundColor)
 </style>

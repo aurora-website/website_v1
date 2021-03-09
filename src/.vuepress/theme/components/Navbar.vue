@@ -131,7 +131,7 @@ $navbar-horizontal-padding = 1.5rem
 			vertical-align top
 			input
 				background-color transparent
-				color inherit
+				color var(--textColor)
 			.suggestions
 				background-color var(--navbarColor)
 				border 1px solid var(--borderColor)
@@ -153,7 +153,7 @@ $navbar-horizontal-padding = 1.5rem
 			white-space nowrap
 			text-overflow ellipsis
 		.mobile-dropdown-title
-			color inherit
+			color var(--textColor)
 
 .toggleNav
 	padding: 0.4rem 0 0 1rem;

@@ -48,7 +48,11 @@
 
 		<footer>
 			<div v-if="data.footer" class="footer">
+				<router-link to="/site-policy/">
+					<a>Privacy policy</a>
+				</router-link> 
 				{{ data.footer }}
+				(<a href="https://github.com/marchingon12" target="_blank" rel="noopener">@marchingon12</a>)
 			</div>
 		</footer>
 	</main>
@@ -98,7 +102,7 @@ export default {
 		h1, .description, .action
 			margin 1rem auto
 		.description
-			color inherit
+			color var(--textColor)
 			font-size 1.6rem
 			line-height 1.3
 			margin 1rem auto
@@ -156,16 +160,16 @@ export default {
 				font-weight 500
 				border-bottom none
 				padding-bottom 0
-				color inherit
+				color var(--textColor)
 			p
-				color inherit
+				color var(--textColor)
 	footer
 		position relative
 		.footer
 			padding 2.5rem
 			border-top 1px solid var(--borderColor)
 			text-align center
-			color inherit
+			color var(--textColor)
 
 @keyframes fade
 	0%
