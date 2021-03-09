@@ -17,7 +17,7 @@ Initially, Aurora Store was named Galaxy Store. Some people thought we were tryi
 
 #### What is the difference between Aurora Store and Google's Play store?
 
-Unlike Google's Play Store, Aurora Store doesn't track your downloads or the apps you use. We respect your privacy. Aurora is also unaffected by Google marking your device as _uncertified_ or lacking of necessary Google apps. Play Protect is not present, as this is a Play Store feature.
+Unlike Google's Play Store, Aurora Store doesn't track your downloads or the apps you use. We respect your privacy. Aurora Store is also unaffected by Google marking your device as _uncertified_ or lacking of necessary Google apps. Play Protect is not present, as this is a Play Store only feature.
 
 #### Is Aurora Store a fork of YalpStore?
 
@@ -35,6 +35,14 @@ Some poorly-designed apps detect if Google Play is missing and punish the user b
 
 Aurora Store is fully open-source and verified by F-Droid. If you're asking about the safety of the apps in the store, those are the exact same ones the Play Store would load and display. A lot of dangerous stuff seems to sneak past Google though, so as a rule of thumb, don't download anything which you're unsure about.
 
+#### Why are some features from v3 not present in v4?
+
+Similar to Aurora Store v3, version 4 of Aurora Store is rewritten from scratch, but now in Kotlin language. This means that each and every feature and UI elements needs to be implemented accordingly. With new features, bugs come popping up every now and then, bit & pieces to improve while keeping it as stable as possible. As you can see, this takes time and effort so please have some patience! 
+
+::: c-tip Tip!
+You can check out the [Roadmap page](/guides/roadmap/) to know more about what has changed, removed and added to the newest version of Aurora Store!
+:::
+
 #### Why do I need to accept the Terms Of Service for Aurora Store?
 
 We deem this necessary, because it is to ensure a minimum safety for AuroraOSS, in case some individual or group wants to harm us in any way by using Aurora Store as leverage. It's also a way to ask users to be aware what they're signing up for, so we urge and encourage you to read it to inform yourselves of what Aurora Store is capable of doing and . If you find anything useful for or strange in our [Terms Of Service](/faq/terms-of-service/), don't hesitate to contact us on [auroraoss.dev@gmail.com](mailto:auroraoss.dev@gmail.com) or our Telegram group.
@@ -47,26 +55,27 @@ To provide basic functionalities, the following is sent:
 
 -   a list of package names of your installed apps \(for fetching updates\). You can select apps to be blacklisted in order to avoid sending package info to Google.
 -   your search queries and your downloads for obvious reasons.
+-   your IP address for network requests (this is a requirement for any app that requires internet access!)
 
 For anonymous logins, following data is sent to Aurora Dispenser Server:
 
--   a GET request to obtain a authentication token. This token is generated server side so no user data is leaked. All the requests are made to Google from the Dispenser Server's IP.
--   AuroraOSS follows a strict policy of no-logging, so no data is stored on the Dispenser Server.
+-   a GET request to obtain a authentication token. This token is generated server side so no user data is leaked. Requests upon creating session are made and sent to Google from the dispenser server's IP.
+-   AuroraOSS follows a strict policy of no-logging, so no data except IP addresses (only if rate-limiter on our server deems the IP as rate-limit-worthy or ban-worthy) are stored on the dispenser server.
 
 ::: guide Tip! 👀
-For more info on anonymous logins read​ [Anonymous Logins](/guides/anonymous-logins/) and [Policy](/faq/policy/) for our privacy policy.
+For more info on anonymous logins read​ [Anonymous Logins](/guides/anonymous-logins/) and [Policy](/faq/policy/) to know more on what we require from you for Aurora Store to work.
 :::
 
 #### What are nightly autobuilds?
 
 There are two versions of Aurora Store that we make available to all users.
 
-- **Stable**: Stable versions with everything functioning.
-- **Nightly**: Daily versions built by a script to include the latest dependencies and commits on the Aurora Store repo.
+-   **Stable**: Stable versions with everything functioning.
+-   **Nightly**: Daily versions built by a script to include the latest dependencies and commits on the Aurora Store repo.
 
 If there is no change between a nightly version and the previous nighlty, a new version will be uploaded regardless.
 
-You can download the latest nightlies via the website or with this [link](https://auroraoss.com/AuroraStore/Nightlies/).
+You can download the latest nightlies via the website or with this [link](https://auroraoss.com/AuroraStore/Nightly/).
 
 #### Why are the versions on F-Droid and XDA labs outdated? When will they be updated?
 
@@ -100,7 +109,9 @@ You can open issues on GitLab [here](https://gitlab.com/AuroraOSS/AuroraStore/is
 
 #### Do I need to use my own Google account to log in?
 
-Nope. Aurora Store can log you in with a dummy account that is stored in the token dispenser so that nothing gets linked to your own account.
+Nope. Aurora Store can log you in with a dummy (anonymous) account that is stored in the token dispenser so that nothing gets linked to your own account.
+
+However, it is recommended to use **your own Google account**, or at the very least a throwaway one which you will not have to worry about if it gets banned. This ensures better stability and gives you the full potential with the features available in Aurora Store.
 
 #### What is the token dispenser?
 
@@ -142,7 +153,7 @@ By enabling this filter, you can remove all Google Apps from your search query r
 
 #### Where can I find downloaded .apk files from Aurora Store?
 
-By default, Aurora Store utilizes the root storage space created for Aurora Store. 
+By default, Aurora Store utilizes the root storage space created for Aurora Store.
 
 Default path: `/data/data/com.aurora.store/files/Download`
 
@@ -154,31 +165,62 @@ The path will then be Internal Storage → Aurora → Store → Downloads → pa
 
 Aurora Store can install apps in 4 ways:
 
-- **Session** (Recommended) - Works in a similar way to SAI. There are 2 ways session installer can be used. If you have Aurora Store installed as a system application, this will have the same effect as if you were to install Aurora Services as a system application. However, you will need an unlocked bootloader with a custom recovery similar to TWRP installed.
+-   **Session** (Recommended) - Works in a similar way to [SAI](https://github.com/Aefyr/SAI). There are 2 ways session installer can be used. If you have Aurora Store installed as a system application, this will have the same effect as if you were to install Aurora Services as a system application. However, you will need an unlocked bootloader with a custom recovery similar to TWRP installed.
 
-- **Native** - Whenever an app is downloaded, it will open the native android  installer screen. This doesn't require root or system permissions, but does NOT support split apk installations.
+-   **Native** - Whenever an app is downloaded, it will open the native android installer screen. This doesn't require root or system permissions, but does _not_ support split apk installations.
 
-- **Root** - By giving Aurora Store root or system permissions, it will automatically install apps in the background as soon as they are downloaded.
+-   **Root** - By giving Aurora Store root or system permissions, it will automatically install apps in the background as soon as they are downloaded.
 
-- **Aurora Services** - By installing Aurora Services as a system app, Aurora Store can automatically install apps in background after the download complete.
+-   **Aurora Services** - By installing Aurora Services as a system app, Aurora Store can automatically install apps in background after the download complete.
 
-### Aurora Services
+### Aurora Services <Badge text="system-only" type="tip"/>
 
 #### How do I use Aurora Services?
 
-1. Install Aurora Services (preferably to the system).
-2. Open Aurora Services and follow the initial set-up instructions
-3. Open Aurora Services settings and choose Aurora Services it as an install method.
+1. Install Aurora Services as a system app.
+2. Open Aurora Services and follow the initial set-up instructions.
+3. Open Aurora Services settings and choose Aurora Services it as an installation method.
 
-You don't need to give Aurora Store system or root permissions; Aurora Services handles all install and uninstall requests in the background, which is why it has to be installed as a system app. Get Aurora Services [here](https://gitlab.com/AuroraOSS/AuroraServices/-/releases).
+You don't need to give Aurora Store system or root permissions; Aurora Services handles all install and uninstall requests in the background, which is why it has to be installed as a system app. Get Aurora Services on [GitLab](https://gitlab.com/AuroraOSS/AuroraServices/-/releases).
 
 #### How to give Aurora Services system permissions?
 
-Aurora Services will NOT work if it is not installed as a system app.
+Aurora Services will _not_ work if it is not installed as a system app. You _must_ have an unlocked bootloader for the following to work.
 
-1. If you have Magisk installed then simply download the zip file from [GitLab](https://gitlab.com/AuroraOSS/AuroraServices/-/releases) and flash via Magisk. If magisk is not installed then you can either install the 'magisk-unity' zip file via TWRP (root access is not needed) or manually push `AuroraServices.apk` to `/system/priv-app` and `permissions_com.aurora.services.xml` to `/system/etc/permissions/` (root access needed!).
+1. If you have Magisk installed then simply download the zip file from [GitLab](https://gitlab.com/AuroraOSS/AuroraServices/-/releases) and flash via Magisk. If Magisk is present then you can:
+    -   either flash the 'magisk-unity' zip file via TWRP 
+    -   or unzip the zip file and manually push `AuroraServices.apk` to `/system/priv-app` and `permissions_com.aurora.services.xml` to `/system/etc/permissions/` (check How-To below)
 2. Grant the required permissions.
-3. Set installation method in the Aurora Store settings to Aurora Services (Settings → Installations → Installation method → Aurora Services).
+3. Set installation method in the Aurora Store settings to Aurora Services (**Settings** → **Installations** → **Installation method** → **Aurora Services**).
+
+::: c-danger Be careful!
+Make sure to follow every step through if you want to manually push files to system. You may end up breaking things if you aren't careful. Linux knowledge would come in handy.
+:::
+
+::: guide How to push files to /system with TWRP
+1. Go to **Mount** and tick 'System'.
+2. Go back and go to **Advanced** → **Terminal**.
+3. Find the directory where AuroraServices.apk is located (most likely **Internal Storage** → **Download**).
+4. Copy the apk file and paste it in system files:
+```bash
+~ $ cp /path/to/apkFile /system/priv-app/
+# If the .apk file is located in the internal storage Download folder 
+~ $ cp /sdcard/Download/AuroraServices.apk /system/priv-app/
+# If you are currently accessing the Download folder in internal storage
+~ $ cd /sdcard/Download/
+/sdcard/Download/ $ cp AuroraServices.apk /system/priv-app/
+```
+5. Copy the xml file and paste it in system files:
+```bash
+~ $ cp /path/to/xmlFile /system/etc/permissions/
+# If the .xml file is located in the internal storage Download folder 
+~ $ cp /sdcard/Download/permissions_com.aurora.services.xml /system/etc/permissions/
+# If you are currently accessing the Download folder in internal storage
+~ $ cd /sdcard/Download/
+/sdcard/Download/ $ cp permissions_com.aurora.services.xml /system/priv-app/
+```
+6. Reboot to system (reboot the device).
+:::
 
 #### Can Aurora Download and install Split or Bundled APKs?
 
@@ -192,7 +234,7 @@ To know more about the difference between Spilt and Bundled APKs, read [this](ht
 
 #### Device
 
-To spoof your device config, go to the spoofing menu located at the sidebar and select your desired device config. Make sure you select one with the same architecture, otherwise you will experience problems with installing.
+To spoof your device config, go to the **Spoofing** menu located at the sidebar and select your desired device config. Make sure to select one with the same architecture (e.g. arm64-v8a, armeabi-v7a, armeabi) and better yet, same Target Android Runtime APIs (API30: Android 11, API29: Android 10, API28: Android 9, etc.), otherwise you will experience problems with installing.
 
 #### Language
 
@@ -208,7 +250,7 @@ Aurora Droid is an unofficial, FOSS client to F-Droid and F-Droid compatible rep
 
 #### How can I report a bug or suggest something?
 
-You can do it here, on this Aurora’s official Telegram Group OR on Gitlab. In telegram group just remember to use `/bug` and `/suggestion` in start of your message. Optionally you can tag [@whyorean](https://t.me/whyorean).
+You can do it in the Aurora Store support group, Aurora Official support group or by opening an issue on GitLab with the issue template. Before anything, please check our [Bugs & Suggestions](https://t.me/aurorabugsandsuggestions) channel to see if your findings or suggestions have been reported and remember to use `/bug` and `/suggestion` at the  start of your message so that our bot picks up your message and forwards it to our channel. If urgent, you may tag [@whyorean](https://t.me/whyorean).
 
 #### Why does this even need the camera permissions?
 
@@ -216,7 +258,7 @@ Many repositories provide a QR code for their links and AuroraDroid can scan the
 
 #### Why is there WhatsApp / Skype / some miscellaneous proprietary app in the apps list? This is blasphemy!
 
-Why do you think? Many repos (including Haagch and IzzyonDroid) are known to include proprietary/non-free applications. All of them are disabled at start, so it's on you for enabling them without knowing them.
+Why do you think? Many repos (including [Haagch](https://haagch.frickel.club/files/fdroid/repo/) and [IzzyOnDroid](https://apt.izzysoft.de/fdroid/)) are known to include proprietary/non-free applications. All of them are disabled at start, so it's on you if you enable them without knowing them.
 
 ### Installations
 
@@ -224,13 +266,13 @@ Why do you think? Many repos (including Haagch and IzzyonDroid) are known to inc
 
 Aurora Droid can install apps in 4 ways:
 
-- **Session** (Recommended) - Works in a similar way to SAI. There are 2 ways session installer can be used. If you have Aurora Droid installed as a system application, this will have the same effect as if you were to install Aurora Services as a system application. However, you will need an unlocked bootloader with a custom recovery similar to TWRP installed.
+-   **Session** (Recommended) - Works in a similar way to [SAI](https://github.com/Aefyr/SAI). There are 2 ways session installer can be used. If you have Aurora Droid installed as a system application, this will have the same effect as if you were to install [Aurora Services](#aurora-services) as a system application. However, you will need an unlocked bootloader with a custom recovery similar to TWRP installed.
 
-- **Native** - Whenever an app is downloaded, it will open the native android  installer screen. This doesn't require root or system permissions, but does NOT support split apk installations.
+-   **Native** - Whenever an app is downloaded, it will open the native android installer screen. This doesn't require root or system permissions, but does _not_ support split apk installations.
 
-- **Root** - By giving Aurora Store root or system permissions, it will automatically install apps in the background as soon as they are downloaded.
+-   **Root** - By giving Aurora Droid root or system permissions, it will automatically install apps in the background as soon as they are downloaded. If you have root, use this method.
 
-- **Aurora Services** - By installing Aurora Services as a system app, Aurora Droid can automatically install apps in background after the download complete.
+-   **Aurora Services** - By installing Aurora Services as a system app, Aurora Droid can automatically install apps in background after the download complete.
 
 #### How to add an new Repository in Aurora Droid ?
 
@@ -249,73 +291,83 @@ Example:
 43238D512C1E5EB2D6569F4A3AFBF552
 3418B82E0A3ED1552770ABB9A9C9CCAB
 ```
+<p align="center">
+    <img class="zoomable" :src="$withBase('/assets/fdroidrepo.jpg')" style="border-radius:7px;width:360px;" />
+</p>
 :::
 
-
-## App Warden
+## <img class="headerLogo" :src="$withBase('/icons/app_warden.png')"> App Warden
 
 ### How does it work?
 
-Warden has a static curated list of known trackers (Exodus Privacy) , each app's dex file is read to retrieve the class names, these class names are then matched with the signatures of known trackers & loggers to find them.
+App Warden has a static curated list of known trackers from [Exodus Privacy](https://reports.exodus-privacy.eu.org/en/), the dex file of each app is read to retrieve the class names, which are then matched with the signatures of known trackers & loggers to find them.
 
-A list of currently known trackers & loggers can be found here & here
+A list of currently known [trackers](https://gitlab.com/AuroraOSS/AppWarden/-/blob/master/app/src/main/assets/trackers.json) & [loggers](https://gitlab.com/AuroraOSS/AppWarden/-/blob/master/app/src/main/assets/loggers.json) can be found on GitLab.
 
-Loggers in the context of Warden means all utilities which are used to log user activity on an app or logcat in general. Not all loggers are evil. But a few logging tools like ACRA, xLog are very powerful tools that can send user data to Devs without the user's consent. So do read the app's Privacy Policy, beforehand.
+Loggers in the context of Warden means all utilities which are used to log user activity on an app or logcat in general. Not all loggers are evil. But a few logging tools like ACRA, xLog are very powerful tools that can send user data to Devs without the user's consent. That's why you should always read the app's Privacy Policy beforehand.
 
 ### What features are there?
 
-#### Manual App management:
+#### Manual App management
 
-User can manage their installed apps using apps tab on main screen. Non-rooted user can manually check tracker/logger for each installed app on device.
+Users can manage their installed apps using the **Apps** tab on main screen. Non-rooted users can manually check trackers/loggers for each installed app on device.
 
-Devices which has ROOT access can also perform some advance actions by pressing # icon on app page. Advance actions includes: Hide, Uninstall, Disable, Suspend, Clear data.
+Devices which have **root** access can perform some advance actions by pressing the <HashIcon size="18px"/> icon on app page. Advance actions include: **Hide**, **Uninstall**, **Disable**, **Suspend**, **Clear data**.
 
-Also ROOTED users can manually disable app components of their own choice. Currently Warden uses su pm to manage the components.
+**Rooted** users can also manually disable app components of their own choice. App Warden currently uses `su pm` to manage the components.
 
-Note: By default only user installed apps are shown in app list, to preview system apps enable "include system apps" from settings.
+::: guide Note
+By default only user installed apps are shown in app list, to preview system apps enable **Include System Apps** from Settings.
+:::
 
-#### Trackers search function (No Root required):
+#### Tracker search function <Badge text="No ROOT" type="tip" />
 
-Warden provides direct access to Exodus privacy scanned app Database. Use the search function on main home screen & just paste the "package name" (e.g.: com.whatsapp for whatsapp & com.google.android.youtube for YouTube) of the app in search bar & hit search button.
+Warden provides direct access to Exodus Privacy scanned app Database. Use the search function on main home screen & just paste the "package name" (e.g.: `com.whatsapp` for Whatsapp & `com.google.android.youtube` for YouTube) of the app in search bar & hit search button.
 
-If No results are found try to submit app manually for analysis on exodus web portal. Submit app HERE. After 2-3 minutes from submission time results will be reflected in warden, if its successfully scanned by Exodus.
+If no results are found try to submitting the app manually for analysis on the [Exodus web portal](https://reports.exodus-privacy.eu.org/en/analysis/submit/). After 2-3 minutes from submission time results will be received in Warden, if successfully scanned by Exodus.
 
-Note: Please Keep in mind that Not all apps can be scanned by online static analysis. Paid apps & other apps which are geographically restricted cannot be scanned by Exodus Privacy.
+::: guide Note
+Please keep in mind that not all apps can be scanned by online static analysis. Paid apps & other apps that are geographically restricted cannot be scanned using Exodus Privacy.
+:::
 
-#### Monitor app usage (No Root Required):
+#### Monitor app usage <Badge text="No ROOT" type="tip" />
 
-Warden also monitors & preview app usage stats of device in graphs. Like which app used recently & for how long time. This data surely helps you to think once about your app usage time 😉
+Warden also monitors & preview app usage stats of device in graphs. Like which app used recently & for how long time. This data surely helps you to think once about your app usage time 😉.
 
-Note: "App usage access" permission is required to read & generate usage data.
+::: guide Note
+**App Usage Access** permission is required to read & generate usage data.
+:::
 
-#### Stats for tracker & loggers (No Root required):
+#### Stats for tracker & loggers <Badge text="No ROOT" type="tip" />
 
-Warden also shows the stats like the current amount of trackers & loggers present on device by scanning all installed apps. This feature only preview data/graphs when user scanned all apps using "Scan Now" button on maim screen.
+Warden also shows the stats like the current amount of trackers & loggers present on device by scanning all installed apps. This feature only preview data/graphs when user scanned all apps using **Scan Now** button on main screen.
 
-#### Warden LAB {Experimental}
+### Warden LAB <FlaskIcon fill="lightgreen" color="lightgreen" /> <Badge text="experimental" type="warning" />
 
-Currently it consists of two features i.e **De-bloater** & **Nuke it!**. These features are experimental, but it will surely improve with time.
+Currently it consists of two features, i.e [De-bloater](#de-bloater) & [Nuke it!](#nuke-it). These features are experimental, but will surely improve with time.
 
-#### De-bloater (Requires Root):
+#### De-bloater <Badge text="ROOT" type="error" />
 
-Warden provides a profile based de-bloater where a profile is created in a specific json file format.
+Warden provides a profile based de-bloater where a profile is created in a specific JSON file format.
 
-You need to place this profile/your custom profile at InternalStorage/Warden/Profiles to make them appear in app.
+You need to place this profile/your custom profile at **Internal Storage** → **Warden** → **Profiles** to make them appear in app.
 
-Get Debloat scripts made by AuroraOSS from HERE
+Get **De-bloat** scripts made by AuroraOSS [here](https://auroraoss.com/Warden/Scripts).
 
-You can also improve current De-bloat scripts by making PR on gitlab OR submit your own new one with same format in AuroraOSS group.
+You can also improve current **De-bloat** scripts or submit your own with same format by making PR on [GitLab](https://gitlab.com/AuroraOSS/AppWarden) or sending it to our [AuroraOSS discussion group](tg://resolve?domain=auroraoss)!
 
-Note: Default action for De-bloating is 'disable' app, you can configure it to 'uninstall' or 'hide' from settings. Debloat function is currently experimental, it will surely improve in future releases.
+::: guide Note
+The default action for De-bloating is to 'disable' apps, but you can configure it to 'uninstall' or 'hide' from Settings. Remember that the **De-bloat** function is currently experimental and will surely improve in future releases.
+:::
 
-#### Nuke it! (Requires Root):
+#### Nuke it! <Badge text="ROOT" type="error" />
 
-Nuke it! is another experimental feature that scans all apps on the device and disables all know tracker components for installed apps automatically. It also gives an option to export components names per-app basis.
+**Nuke it!** is another experimental feature that scans all apps on the device and disables all know tracker components for installed apps automatically. It also gives an option to export components* names per-app basis.
 
-Components here means: Activities, Services, Providers & Receivers of installed apps.
+You can revert back the Nuke it effect by toggling De-Nuke button from same section. All apps components will be restored to its original state after De-Nuking.
 
-You can Revert back the Nuke it effect by toggling De-Nuke button from same section. All apps components will be restored to its original state after De-Nuking.
+*Components: **Activities**, **Services**, **Providers** & **Receivers** of installed apps.
 
-## Aurora Wallpapers
+## <img class="headerLogo" :src="$withBase('/icons/aurora_wallpapers.png')"> Aurora Wallpapers
 
-_Wow, such empty_ 🐶
+_Wow, such empty_ ~ 🐶
