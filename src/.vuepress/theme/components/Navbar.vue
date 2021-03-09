@@ -107,9 +107,9 @@ $navbar-horizontal-padding = 1.5rem
 		position relative
 	.nav-link
 		&:hover
-			color var(--textColor)
+			color inherit
 		&.router-link-active
-			color var(--textColor)
+			color inherit
 	.dropdown-title
 		color var(--textColor) !important
 	.links
@@ -131,7 +131,7 @@ $navbar-horizontal-padding = 1.5rem
 			vertical-align top
 			input
 				background-color transparent
-				color var(--textColor)
+				color inherit
 			.suggestions
 				background-color var(--navbarColor)
 				border 1px solid var(--borderColor)
@@ -153,7 +153,7 @@ $navbar-horizontal-padding = 1.5rem
 			white-space nowrap
 			text-overflow ellipsis
 		.mobile-dropdown-title
-			color var(--textColor)
+			color inherit
 
 .toggleNav
 	padding: 0.4rem 0 0 1rem;

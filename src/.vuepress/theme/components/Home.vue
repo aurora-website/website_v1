@@ -102,7 +102,7 @@ export default {
 		h1, .description, .action
 			margin 1rem auto
 		.description
-			color var(--textColor)
+			color inherit
 			font-size 1.6rem
 			line-height 1.3
 			margin 1rem auto
@@ -160,16 +160,16 @@ export default {
 				font-weight 500
 				border-bottom none
 				padding-bottom 0
-				color var(--textColor)
+				color inherit
 			p
-				color var(--textColor)
+				color inherit
 	footer
 		position relative
 		.footer
 			padding 2.5rem
 			border-top 1px solid var(--borderColor)
 			text-align center
-			color var(--textColor)
+			color inherit
 
 @keyframes fade
 	0%
