@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting
 description: Troubleshooting for Aurora Apps.
-lang: en-GB
+lang: de
 sidebarDepth: 2
 ---
 
@@ -10,6 +10,8 @@ sidebarDepth: 2
 ![Troubleshooting](/assets/undraw_troubleshooting.svg)
 
 ## <img class="headerLogo" :src="$withBase('/icons/aurora_store.png')"> Aurora Store
+
+### Miscellaneous
 
 #### Installing/updating Google Chrome or Google/Android System WebView responds with "Incompatible app"!
 
@@ -31,7 +33,7 @@ You can download the stable Trichrome library from apkmirror [here](https://www.
 
 Read more about Trichrome on the Chromium Shared Libraries [documentation](https://chromium.googlesource.com/chromium/src.git/+/master/docs/android_native_libraries.md).
 
-#### Login Problems
+### Login Problems
 
 -   **"BadRequest"** → I have a Huawei device and I can't log in!
 
@@ -46,7 +48,7 @@ Read more about Trichrome on the Chromium Shared Libraries [documentation](https
     -   Huawei Nova 7i, 7 SE
     -   Huawei Matepad T8, Pro 5g
 
-    Simply spoofing to another device configuration with the same architecture (e.g. arm64-v8a, armeabi-v7a, armeabi) should help solve this problem.
+    Simply spoofing to another device configuration with the same architecture (e.g. arm64-v8a, armeabi-v7a, armeabi) and better yet, same Target Android Runtime APIs (API30: Android 11, API29: Android 10, API28: Android 9, etc.) should help solve this problem.
 
 -   **"Timeout"** → I can't login because of internet connection.
 
@@ -54,7 +56,7 @@ Read more about Trichrome on the Chromium Shared Libraries [documentation](https
 
 -   **"Oops! You have been rate-limited!"** → I clicked on Anonymous button too many times!
 
-    You are rate-limited after trying to sign in anonymously after 20 concurrent retries.
+    You are rate-limited after trying to sign in anonymously after 20 concurrent retries within an hour. Rate-limiting lasts for an hour. Going over the 20 request per hour limit means an additional hour  will be added for every additional 20 requests (20r/h: 1h, 40r/h: 2h, 60r/h: 3h, etc.). If you are rate-limited, wait for an hour before logging in again.
 
     Our current rate looks like this:
 
@@ -63,18 +65,21 @@ Read more about Trichrome on the Chromium Shared Libraries [documentation](https
     |      > 20 r/m       |     yes      |   no   |
     |      > 50 r/m       |      no      |  yes   |
 
-#### Installation fails without warning after downloading.
+### Installation Problems
 
 Bundled apps (split apks) can't be installed on OEM ROMs, i.e. MIUI, Oppo, due to shameless mods like (VirusCheck, Tracker Stats, etc.).
 
 Pick **one** of these workarounds:
 
-1. Turn off vendor optimizations (like MIUI Optimizations, NOT battery optimizations).
+1. Turn off vendor optimizations (like MIUI Optimizations, _not_ battery optimizations).
 2. Use the Aurora Services installation method.
 3. Use the root installation method.
+4. Install the original Android Package installer and try 
+
+For the fourth workaround, you might need to install it as a system app for it to be able to use session installer and removing MIUI's package installer might help further. The problem with MIUI is that it only allows installations through Google Play Store and Xioami GetApps. You can get the Android Package installer from [apkmirror](https://www.apkmirror.com/apk/google-inc/package-installer/).
 
 ::: c-warning
-You may not be able to disable MIUI Optimzations through developer options anymore after MIUI 12 because MIUI is just being MIUI.
+You may not be able to disable MIUI Optimizations through developer options anymore after MIUI 12 on EU versions because MIUI is just being MIUI.
 :::
 
 #### "Getting Metadata - Downloads failed, could not fetch files"
@@ -104,21 +109,15 @@ You may not be able to disable MIUI Optimzations through developer options anymo
     2. Tap **Power off** or **Restart** if that is an option.
     3. If needed, press and hold the **Power** button until your device turns on again.
 
-#### "java.io.FileNotFoundException"
-
-The logs say "open failed", which implies that the installer was not able to read the files.
-
-So problem is either with installer (mostly using incompatible Aurora Services) or with something with storage access permission. Try clearing app cache & data or using other installation methods and if those give the same result, consult us on Telegram or open an issue on Gitlab.
-
 #### "Installation failed"
 
-If your installation method is set to **Root** and your **Android version 11+ (R+)**, then you may experience problems with installing apps. A quick 'fix', that works every now and then, is to force clear all downloads in the downloads page within Aurora Store and try installing it again. Hope you win the gamble!
+If your installation method is set to **Root** and your **Android version 11 (R)**, then you may experience problems with installing apps. A quick 'fix', that works every now and then, is to force clear all downloads in the downloads page within Aurora Store and try installing it again. Hope you win the gamble!
 
 #### Why do I have two Aurora Store apps after installing the new builds?
 
-This might be due to the fact that you have older versions of Aurora Store installed instead of version 3, which is a completely new rewrite that comes with a new package name. You can uninstall the older one or keep it if you want.
+This might be due to the fact that you have subversions of Aurora Store (Beta & Nightly) installed instead of Aurora Store version 4 **Stable**, which is comes with a corresponding package names. You can uninstall those or keep it if you want.
 
-#### Not working whatsoever.
+### Not Working Whatsoever
 
 Check if you are using the latest Stable build or Nightly builds. For some reason some people have reported issues while installing older versions of Aurora Store from third-party sources like Softonic and Uptodown.
 
@@ -126,7 +125,7 @@ Please download all latest AuroraOSS apps from any of the below mentioned source
 
 1. F-Droid: [https://f-droid.org/en/packages/com.aurora.store/](https://f-droid.org/en/packages/com.aurora.store/)
 2. AuroraOSS Website: [https://auroraoss.com/download/](https://auroraoss.com/download/)
-3. Official Telegram Channel: [@AuroraOfficial](https://t.me/AuroraOfficial)
+3. Official Telegram Channel: [@AuroraOfficial](tg://resolve?domain=AuroraOfficial)
 4. GitLab: [https://gitlab.com/AuroraOSS/AuroraStore/-/releases](https://gitlab.com/AuroraOSS/AuroraStore/-/releases)
 
-If you still can't figure out why, consult us on our Telegram Group chat or open an issue on Gitlab if you must.
+If you still can't figure out why, consult us on our Telegram Group chat or open an issue on GitLab if you must.
