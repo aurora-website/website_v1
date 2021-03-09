@@ -44,7 +44,7 @@ The developer of this application is not responsible for getting your device bri
 ## Support Group
 
 <p align="center">
-	<a href="https://t.me/aurorafficial" target="_blank" rel="noopener">
+	<a href="tg://resolve?domain=auroraofficial" target="_blank" rel="noopener">
     <img :src="$withBase('/assets/tg-auroraofficial-qr.png')" width="175px" style="border-radius: 15px;" />
   </a>
 </p>

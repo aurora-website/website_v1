@@ -71,6 +71,6 @@ sidebar: true
 
 	Recently I thought of an idea to tackle this other way, like when we send our app list, we would dope it with some random apps that we haven't even installed. Then check for updates and parse only the required app data. Smart ? No ! Google is way too smart. I'm open to discuss about it and may implement it, if it turns out to be useful.
 
-Join Aurora's Support Group on Telegram for more on this: [@AuroraSupport](https://t.me/AuroraSupport)
+Join Aurora's Support Group on Telegram for more on this: [@AuroraSupport](tg://resolve?domain=AuroraSupport)
 
 Written by Rahul Patel, original article can be found [here](https://telegra.ph/Aurora-Store---Anonymous-Login-12-20-2).

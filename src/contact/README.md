@@ -30,19 +30,19 @@ Our go-to platform would be Telegram. We are almost active everyday so we won't 
 Please read the group rules, pinned messages and a few of the previous messages to see if their context is what you are looking for before asking any questions, you're helping us reduce spam and time! 👍
 :::
 
-<a href="https://t.me/aurorafficial" target="_blank" rel="noopener">
+<a href="tg://resolve?domain=aurorafficial" target="_blank" rel="noopener">
   <img :src="$withBase('/assets/tg-auroraofficial-qr.png')" width="175px" style="border-radius: 5%" />
 </a>
 
-<a href="https://t.me/aurorasupport" target="_blank" rel="noopener">
+<a href="tg://resolve?domain=aurorasupport" target="_blank" rel="noopener">
   <img :src="$withBase('/assets/tg-aurorasupport-qr.png')" width="175px" style="border-radius: 5%" />
 </a>
 
-<a href="https://t.me/auroradroid" target="_blank" rel="noopener">
+<a href="tg://resolve?domain=auroradroid" target="_blank" rel="noopener">
   <img :src="$withBase('/assets/tg-auroradroid-qr.png')" width="175px" style="border-radius: 5%" />
 </a>
 
-<a href="https://t.me/AuroroaOT" target="_blank" rel="noopener">
+<a href="tg://resolve?domain=AuroroaOT" target="_blank" rel="noopener">
   <img :src="$withBase('/assets/tg-auroraot-qr.png')" width="175px" style="border-radius: 5%" />
 </a>
 
