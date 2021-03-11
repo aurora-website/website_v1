@@ -48,11 +48,10 @@
 
 		<footer>
 			<div v-if="data.footer" class="footer">
-				| 
 				<router-link to="/faq/site-policy/">
 					<a>Privacy policy</a>
-				</router-link> 
-				{{ data.footer }}
+				</router-link>
+				| {{ data.footer }}
 				(<a href="https://github.com/marchingon12" target="_blank" rel="noopener">@marchingon12</a>)
 			</div>
 		</footer>

@@ -1,6 +1,6 @@
 ---
 title: Anonymous Logins
-description: A short explantion on how Anonymous Logins work.
+description: A short explanation on how Anonymous Logins work.
 lang: de
 meta:
   - property: og:image
