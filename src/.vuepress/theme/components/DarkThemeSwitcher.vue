@@ -54,7 +54,7 @@ export default {
 }
 label {
   display: block;
-  background-color: trnasparent;
+  background-color: transparent;
   cursor: pointer;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
