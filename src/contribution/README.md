@@ -51,30 +51,28 @@ Visit our translation projects:
 We will soon be moving our translation projects to [Weblate](https://hosted.weblate.org).
 :::
 
-<!-- #### Project status
+#### Project status
 ***
 Aurora Store v4
 
-<a href="https://hosted.weblate.org/engage/tachiyomi/?utm_source=widget">
-	<img src="https://hosted.weblate.org/widgets/tachiyomi/-/horizontal-auto.svg" alt="Translation status" />
+<a href="https://hosted.weblate.org/engage/aurora-store/">
+	<img src="https://hosted.weblate.org/widgets/aurora-store/-/aurorastore-translations/multi-auto.svg" alt="Translation status" />
 </a>
 ***
 Aurora Website
 
-<a href="https://hosted.weblate.org/engage/tachiyomi/?utm_source=widget">
-	<img src="https://hosted.weblate.org/widgets/tachiyomi/-/horizontal-auto.svg" alt="Translation status" />
-</a> -->
+<a href="https://hosted.weblate.org/engage/aurora-store/">
+	<img src="https://hosted.weblate.org/widgets/aurora-store/-/aurorastore-translations/multi-auto.svg" alt="Translation status" />
+</a>
 
 #### Helpful links
 
 ---
 
--   [Translators guide](https://poeditor.com/blog/translators-guide-software-localization/)
-
-<!-- - [Translators guide](https://docs.weblate.org/en/latest/user/translating.html)
+- [Translators guide](https://docs.weblate.org/en/latest/user/translating.html)
 - [Secondary-languages](https://docs.weblate.org/en/latest/user/profile.html#secondary-languages)
 - [Subscriptions](https://docs.weblate.org/en/latest/user/profile.html#subscriptions)
-- [Glossary](https://docs.weblate.org/en/latest/user/translating.html#glossary) -->
+- [Glossary](https://docs.weblate.org/en/latest/user/translating.html#glossary)
 
 ## Donation <coin-icon color="#ffc414" />
 

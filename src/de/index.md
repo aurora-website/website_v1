@@ -19,5 +19,5 @@ features:
     details: Alle von Aurora OSS erstellten Apps werden unter der GNU General Public License (GPLv.3.0) veröffentlicht. Was wir hinter der schönen Benutzeroberfläche tun, ist nicht verborgen. Sie können unseren Code jederzeit überprüfen. Wir sind offen für Vorschläge und Pull-Requests sind immer willkommen!
   - title: Anpassbar
     details: Aurora Apps bieten eine hervorragende Anpassbarkeit, sodass Benutzer die App an ihre ästhetischen Anforderungen anpassen können. Wechseln Sie automatisch zwischen den UI Hell & Dunkel (& Schwarz), sodass alle Nachteulen nice blind werden.
-footer: "| MIT Licensed | Copyright © 2021-present Austin Hornhead"
+footer: MIT Licensed | Copyright © 2021-present Austin Hornhead
 ---

@@ -48,6 +48,7 @@
 
 		<footer>
 			<div v-if="data.footer" class="footer">
+				| 
 				<router-link to="/faq/site-policy/">
 					<a>Privacy policy</a>
 				</router-link> 

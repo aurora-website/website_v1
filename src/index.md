@@ -19,5 +19,5 @@ features:
     details: All apps made by Aurora OSS are released under GNU General Public License (GPLv.3.0). What we do behind the beautiful UI is not hidden, feel free to audit our code anyday, anytime. We are open to suggestions and pull requests are always welcome!
   - title: Customizable
     details: Aurora Apps provide a variety of customizations, so that users can tweak the app to meet their aesthetic needs. Auto switch between Light & Dark (& Black) themes to make sure all nightowls don't get blinded.
-footer: "| MIT Licensed | Copyright © 2021-present Austin Hornhead"
+footer: MIT Licensed | Copyright © 2021-present Austin Hornhead
 ---

@@ -62,5 +62,4 @@ Want to write to us discreetly? Send us a [mail](mailto:auroraoss.dev@gmail.com)
 
 We're planning on starting a Reddit subreddit after we stabilized things a bit. Who wouldn't want their service to be on the world's most well-known forum service, right?
 
-<!-- NOTE TO SELF
-add icons from vue-tabler-icons for titles -->
+
