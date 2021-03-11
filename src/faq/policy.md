@@ -26,7 +26,7 @@ We do not store, process or sell any of the collected data above. The data is se
 
 ## User data sent to our server by default
 
-The only data being sent to our server are **IP addresses**. This is to ensure the functionality and stability of our server, which detects the amount of GET requests from an IP address and if deemed them as spamming, will be banned from our server, otherwise rate-limited. Rate-limiting lasts for an hour. If you keep going over the 20 request per hour limit, an additional hour to the rate-limiting will be added for every addtional 20 requests. So do yourself a favour and don't do it.
+The only data being sent to our server are **IP addresses**. This is to ensure the functionality and stability of our server, which detects the amount of GET requests from an IP address and if deemed them as spamming, will be banned from our server, otherwise rate-limited. Rate-limiting lasts for an hour. If you keep going over the 20 request per hour limit, an additional hour to the rate-limiting will be added for every additional 20 requests. So do yourself a favour and don't do it.
 
 ## Changes To This Privacy Policy
 
