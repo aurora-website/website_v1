@@ -53,13 +53,13 @@ This Privacy Statement is licensed under this [Creative Commons Zero](https://cr
 
 Below are translations of this document into other languages. In the event of any conflict, uncertainty, or apparent inconsistency between any of those versions and the English version, this English version is the controlling version.
 
-- German: [Webseite-Richtlinien](/faq/site-policy/)
-<!-- - French: [Politique du site](/faq/site-policy/)
+- German: [Webseite-Richtlinien](/de/faq/site-policy/)
+- French: [Politique du site](/faq/site-policy/)
 - Spanish: [Política del sitio](/faq/site-policy/)
 - Portuguese: [Política do site](/faq/site-policy/)
 - Russian: [политика сайта](/faq/site-policy/)
 - Chinese: [网站政策](/faq/site-policy/)
-- Hindi: [वेबसाइट नीति](/faq/site-policy/) -->
+- Hindi: [वेबसाइट नीति](/faq/site-policy/)
 
 Please proceed to the [Contribution](/contribution/#translation) page for more info on translating this website.
 
