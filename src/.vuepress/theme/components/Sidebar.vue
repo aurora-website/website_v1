@@ -5,7 +5,9 @@
 		<slot name="top" />
 
 		<SidebarLinks :depth="0" :items="items" />
-    <DarkThemeSwitcher class="toggleSide"/>
+    <ClientOnly>
+      <DarkThemeSwitcher class="toggleSide"/>
+    </ClientOnly>
 		<slot name="bottom" />
     
 	</aside>
