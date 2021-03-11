@@ -27,7 +27,9 @@
 			<div v-if="$page.frontmatter.hideSearch" />
 			<SearchBox v-else-if="$site.themeConfig.search !== false && $page.frontmatter.search !== false" />
 			<NavLinks class="can-hide" />
-			<DarkThemeSwitcher class="toggleNav can-hide" />
+			<ClientOnly>
+				<DarkThemeSwitcher class="toggleNav can-hide" />
+			</ClientOnly>
 		</div>
 	</header>
 </template>

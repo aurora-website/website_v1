@@ -1,13 +1,12 @@
 
 <template>
 	<div role="group" class="toggle__wrapper dark-theme-switcher">
-		<input 
-			type="checkbox" 
-			id="theme-toggle" 
-			v-model="darkTheme" 
-			class="toggle" 
-		/>
-		<label for="theme-toggle" class="toggler">
+		<label class="toggler">
+			<input 
+				type="checkbox" 
+				v-model="darkTheme" 
+				class="toggle" 
+			/>
 			<SunIcon v-if="darkTheme==false" size="24px"/>
 			<MoonIcon v-if="darkTheme==true" size="24px"/>
 		</label>
