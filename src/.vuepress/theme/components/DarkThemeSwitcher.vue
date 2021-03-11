@@ -7,8 +7,13 @@
 				v-model="darkTheme" 
 				class="toggle" 
 			/>
-			<SunIcon v-if="darkTheme==false" size="24px"/>
-			<MoonIcon v-if="darkTheme==true" size="24px"/>
+			<div v-if="darkTheme==false">
+				<SunIcon size="24px"/><span class="hidden">Light Theme</span>
+			</div>
+			<div v-if="darkTheme==true">
+				<MoonIcon size="24px"/><span class="hidden">Dark Theme</span>
+			</div>
+			
 		</label>
 	</div>
 </template>
@@ -47,7 +52,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="stylus" scoped>
 [type='checkbox'] {
   display: none;
 }
@@ -59,6 +64,18 @@ label {
 :checked + label {
   background-color: transparent;
 }
+.hidden
+	display none
+
+@media (max-width: $MQMobile)
+	.hidden
+		display inline-block
+		font-size 1.1em
+		line-height 1.5
+		font-weight bold
+		vertical-align top
+		padding-left 10px
+
 </style>
 
 

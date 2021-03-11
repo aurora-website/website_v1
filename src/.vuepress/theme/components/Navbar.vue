@@ -155,7 +155,7 @@ $navbar-horizontal-padding = 1.5rem
 			text-overflow ellipsis
 
 .toggleNav
-	padding: 0.4rem 0 0 1rem;
+	padding: 0.35rem 0 0 1rem;
 
 .dropdown-wrapper, .title, .mobile-dropdown-title
 	color var(--textColor) 
