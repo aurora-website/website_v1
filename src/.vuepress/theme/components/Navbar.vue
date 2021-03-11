@@ -95,7 +95,7 @@ $navbar-horizontal-padding = 1.5rem
 	padding $navbar-vertical-padding $navbar-horizontal-padding
 	line-height $navbarHeight - 1.4rem
 	background-color var(--navbarColor)
-	box-shadow 1px 1px 10px 5px var(--borderColor)
+	box-shadow 1px 1px 10px 0px rgba(10, 10, 10, 0.25)
 	a, span, img
 		display inline-block
 	.logo

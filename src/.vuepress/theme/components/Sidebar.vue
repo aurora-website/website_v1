@@ -26,6 +26,7 @@ export default {
 
 <style lang="stylus">
 .sidebar
+  transition 0.2s ease-in-out
   background-color var(--navbarColor)
   border-right 1px solid var(--borderColor)
   .sidebar-link
@@ -57,7 +58,6 @@ export default {
       margin-top .75rem
 @media (max-width: $MQMobile)
   .sidebar
-    transition 0.2s ease-in-out
     .nav-links
       display block
       .dropdown-wrapper .nav-dropdown .dropdown-item a.router-link-active::after
