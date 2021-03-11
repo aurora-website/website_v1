@@ -91,10 +91,11 @@ $navbar-vertical-padding = 0.7rem
 $navbar-horizontal-padding = 1.5rem
 
 .navbar
+	transition 0.2s ease-in-out
 	padding $navbar-vertical-padding $navbar-horizontal-padding
 	line-height $navbarHeight - 1.4rem
 	background-color var(--navbarColor)
-	box-shadow 2
+	box-shadow 1px 1px 10px 5px var(--borderColor)
 	a, span, img
 		display inline-block
 	.logo
@@ -112,8 +113,6 @@ $navbar-horizontal-padding = 1.5rem
 			color inherit
 		&.router-link-active
 			color inherit
-	.dropdown-title
-		color var(--textColor) !important
 	.links
 		padding-left 1.5rem
 		box-sizing border-box
@@ -154,9 +153,11 @@ $navbar-horizontal-padding = 1.5rem
 			overflow hidden
 			white-space nowrap
 			text-overflow ellipsis
-		.mobile-dropdown-title
-			color inherit
 
 .toggleNav
 	padding: 0.4rem 0 0 1rem;
+
+.dropdown-wrapper, .title, .mobile-dropdown-title
+	color var(--textColor) 
+	transition 0.4s ease-in-out
 </style>

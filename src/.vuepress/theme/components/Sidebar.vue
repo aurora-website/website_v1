@@ -57,6 +57,7 @@ export default {
       margin-top .75rem
 @media (max-width: $MQMobile)
   .sidebar
+    transition 0.2s ease-in-out
     .nav-links
       display block
       .dropdown-wrapper .nav-dropdown .dropdown-item a.router-link-active::after
