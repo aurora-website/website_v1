@@ -91,7 +91,8 @@ $navbar-vertical-padding = 0.7rem
 $navbar-horizontal-padding = 1.5rem
 
 .navbar
-	transition 0.2s ease-in-out
+	transition 0.2s ease-in-out, color 0s
+	-webkit-transition 0.2s ease-in-out, color 0s
 	padding $navbar-vertical-padding $navbar-horizontal-padding
 	line-height $navbarHeight - 1.4rem
 	background-color var(--navbarColor)
@@ -160,4 +161,5 @@ $navbar-horizontal-padding = 1.5rem
 .dropdown-wrapper, .title, .mobile-dropdown-title
 	color var(--textColor) 
 	transition 0.4s ease-in-out
+	-webkit-transition 0.4s ease-in-out
 </style>

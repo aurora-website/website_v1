@@ -26,12 +26,15 @@ export default {
 
 <style lang="stylus">
 .sidebar
-  transition 0.2s ease-in-out
+  transition 0.2s ease-in-out, color 0s
+  -webkit-transition 0.2s ease-in-out, color 0s
   background-color var(--navbarColor)
   border-right 1px solid var(--borderColor)
   .can-hide
     display none
   .sidebar-link
+    transition 0.2s ease-in-out, color 0s
+    -webkit-transition 0.2s ease-in-out, color 0s
     color var(--textColor)
   ul
     padding 0
