@@ -16,8 +16,6 @@ meta:
     content: /download/AuroraStore/
   - property: og:locale
     content: en-GB
-  - property: og:site_name
-    content: AuroraOSS
   - property: twitter:card
     content: summary_large_image
 sidebar: false

@@ -25,6 +25,8 @@ module.exports = {
 		// required headers
 		["link", { rel: "icon", href: "/favicon.ico" }],
 		["meta", { name: "viewport", content: "width=device-width, initial-scale=1.0" }],
+		// important headers for metadata
+		["meta", { property: "og:site_name", content: "AuroraOSS" }],
 		// custom headers for PWA
 		["link", { rel: "manifest", href: "/manifest.json" }],
 		["meta", { name: "theme-color", content: "#b071e3" }],

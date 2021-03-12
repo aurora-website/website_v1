@@ -1,16 +1,23 @@
 ---
 layout: DownloadPage
-title: App Warden
-metaTitle: Aurora Store
-description: An open source alternative Google Play Store frontend with privacy features and clean UI.
+title: Aurora Wallpapers
+description: Beautiful wallpapers readily available within your fingertips!
 lang: de
 meta:
-    - property: og:image
-      content: /icons/app_warden.png
-    - name: theme-color
-      content: "#38CA79"
-    - name: msapplication-TileColor
-      content: "#38CA79"
+  - property: og:title
+    content: Aurora Wallpapers
+  - property: og:description
+    content: Beautiful wallpapers readily available within your fingertips!
+  - property: og:image
+    content: /assets/storebanner1200x680.png
+  - property: og:image:alt
+    content: Aurora Wallpapers Banner Image
+  - property: og:url
+    content: /download/AuroraWallpapers/
+  - property: og:locale
+    content: de
+  - property: twitter:card
+    content: summary_large_image
 sidebar: false
 ---
 
