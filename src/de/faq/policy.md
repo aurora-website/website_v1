@@ -8,7 +8,7 @@ meta:
   - property: og:description
     content: Policy for Aurora Store
   - property: og:image
-    content: /icons/policy-icon.png
+    content: /icons/policy_icon.png
   - property: og:image:alt
     content: Aurora Store Policy Banner Image
   - property: og:url
