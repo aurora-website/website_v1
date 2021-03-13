@@ -1,7 +1,20 @@
 ---
-title: TermsOfService
+title: Terms Of Service
 description: Terms of Service for Aurora Store
 lang: en-GB
+meta:
+  - property: og:title
+    content: Terms of Service
+  - property: og:description
+    content: Terms of Service for Aurora Store
+  - property: og:image
+    content: /icons/tos-icon.png
+  - property: og:image:alt
+    content: Aurora Store TOS Banner Image
+  - property: og:url
+    content: /faq/terms-of-service
+  - property: og:locale
+    content: en-GB
 sidebar: false
 ---
 

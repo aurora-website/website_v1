@@ -2,6 +2,19 @@
 title: SITE-POLICY
 description: Privacy Policy for AuroraOSS.com
 lang: de
+meta:
+  - property: og:title
+    content: Privacy Policy
+  - property: og:description
+    content: Privacy Policy for AuroraOSS.com
+  - property: og:image
+    content: /icons/policy-icon.png
+  - property: og:image:alt
+    content: AuroraOSS Policy Banner Image
+  - property: og:url
+    content: /de/faq/site-policy
+  - property: og:locale
+    content: de
 published: March 9, 2021
 sidebar: false
 search: false

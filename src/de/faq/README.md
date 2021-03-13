@@ -2,6 +2,21 @@
 title: Frequently Asked Questions
 description: Need help with something? Most of your issues can probably be solved from this page.
 lang: de
+meta:
+  - property: og:title
+    content: Frequently Asked Questions
+  - property: og:description
+    content: Need help with something? Most of your issues can probably be solved from this page.
+  - property: og:image
+    content: /assets/undraw_questions.png
+  - property: og:image:alt
+    content: FAQs Banner Image
+  - property: og:url
+    content: /de/faq/
+  - property: og:locale
+    content: de
+  - property: twitter:card
+    content: summary_large_image
 sidebarDepth: 2
 ---
 
