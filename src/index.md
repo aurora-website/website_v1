@@ -4,6 +4,21 @@ meta:
   - name: keywords
     content: Official, Android apps, Homepage, AuroraOSS
 lang: en-GB
+meta:
+  - property: og:title
+    content: AuroraOSS
+  - property: og:description
+    content: An organization that aims to build applications that are easy to use & beautiful to look at. Aurora Apps Open-Source Software. Inspired by you. Built for the community.
+  - property: og:image
+    content: /assets/auroraoss_banner1200x680.png
+  - property: og:image:alt
+    content: AuroraOSS Banner Image
+  - property: og:url
+    content: /
+  - property: og:locale
+    content: en-GB
+  - property: twitter:card
+    content: summary_large_image
 heroImage: /icons/auroralogo.png
 downloadText: Downloads
 downloadLink: /download/
