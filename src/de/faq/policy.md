@@ -15,6 +15,8 @@ meta:
     content: /de/faq/policy
   - property: og:locale
     content: de
+  - property: twitter:card
+    content: summary
 sidebar: false
 ---
 

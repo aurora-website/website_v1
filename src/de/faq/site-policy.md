@@ -15,6 +15,8 @@ meta:
     content: /de/faq/site-policy
   - property: og:locale
     content: de
+  - property: twitter:card
+    content: summary
 published: March 9, 2021
 sidebar: false
 search: false
