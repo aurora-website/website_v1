@@ -8,7 +8,7 @@ meta:
   - property: og:description
     content: Timeline of Aurora Apps.
   - property: og:image
-    content: /assets/undraw_roadmap.svg
+    content: /assets/undraw_roadmap.png
   - property: og:image:alt
     content: Roadmap Banner Image
   - property: og:url
