@@ -15,6 +15,8 @@ meta:
     content: /de/faq/terms-of-service
   - property: og:locale
     content: de
+  - property: twitter:card
+    content: summary
 sidebar: false
 ---
 
