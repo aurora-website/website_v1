@@ -134,7 +134,6 @@ $navbar-horizontal-padding = 1.5rem
 			input
 				background-color transparent
 				color inherit
-				border 1px solid var(--borderColor)
 			.suggestions
 				background-color var(--navbarColor)
 				border 1px solid var(--borderColor)
@@ -155,6 +154,9 @@ $navbar-horizontal-padding = 1.5rem
 			overflow hidden
 			white-space nowrap
 			text-overflow ellipsis
+		.search-box
+			input
+				border 1px solid var(--borderColor)
 
 .toggleNav
 	padding: 0.35rem 0 0 1rem;

@@ -15,8 +15,6 @@ meta:
     content: /de/faq/disclaimer
   - property: og:locale
     content: de
-  - property: twitter:card
-    content: summary
 sidebar: false
 ---
 
