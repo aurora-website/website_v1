@@ -3,8 +3,6 @@ home: true
 meta:
   - name: keywords
     content: Official, Android apps, Homepage, AuroraOSS
-lang: en-GB
-meta:
   - property: og:title
     content: AuroraOSS
   - property: og:description
@@ -19,6 +17,7 @@ meta:
     content: en-GB
   - property: twitter:card
     content: summary_large_image
+lang: en-GB
 heroImage: /icons/auroralogo.png
 downloadText: Downloads
 downloadLink: /download/
