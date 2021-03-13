@@ -134,6 +134,7 @@ $navbar-horizontal-padding = 1.5rem
 			input
 				background-color transparent
 				color inherit
+				border 1px solid var(--borderColor)
 			.suggestions
 				background-color var(--navbarColor)
 				border 1px solid var(--borderColor)
