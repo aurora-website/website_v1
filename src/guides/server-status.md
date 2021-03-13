@@ -3,8 +3,20 @@ title: Server status
 description: Server statuses of dispensers for Aurora Store.
 lang: en-GB
 meta:
+  - property: og:title
+    content: Server status
+  - property: og:description
+    content: Server statuses of dispensers for Aurora Store.
   - property: og:image
-    content: /icons/aurora_store.png
+    content: /assets/undraw_server_status.svg
+  - property: og:image:alt
+    content: Server Status Banner Image
+  - property: og:url
+    content: /guides/server-status
+  - property: og:locale
+    content: en-GB
+  - property: twitter:card
+    content: summary_large_image
 sidebar: true
 ---
 

@@ -1,16 +1,23 @@
 ---
 layout: DownloadPage
 title: Aurora Droid
-metaTitle: Aurora Droid
 description: An open source F-Droid client with modern UI.
 lang: de
 meta:
-    - property: og:image
-      content: /icons/aurora_droid.png
-    - name: theme-color
-      content: "#38CA79"
-    - name: msapplication-TileColor
-      content: "#38CA79"
+  - property: og:title
+    content: Aurora Droid
+  - property: og:description
+    content: An open source F-Droid client with modern UI.
+  - property: og:image
+    content: /assets/storebanner1200x680.png
+  - property: og:image:alt
+    content: Aurora Droid Banner Image
+  - property: og:url
+    content: /de/download/AuroraDroid/
+  - property: og:locale
+    content: de
+  - property: twitter:card
+    content: summary_large_image
 sidebar: false
 ---
 

@@ -2,6 +2,21 @@
 title: Troubleshooting
 description: Troubleshooting for Aurora Apps.
 lang: de
+meta:
+  - property: og:title
+    content: Troubleshooting
+  - property: og:description
+    content: Troubleshooting for Aurora Apps.
+  - property: og:image
+    content: /assets/undraw_troubleshooting.svg
+  - property: og:image:alt
+    content: Troubleshooting Banner Image
+  - property: og:url
+    content: /de/guides/troubleshooting
+  - property: og:locale
+    content: de
+  - property: twitter:card
+    content: summary_large_image
 sidebarDepth: 2
 ---
 

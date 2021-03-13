@@ -3,8 +3,20 @@ title: Anonymous Logins
 description: A short explanation on how Anonymous Logins work.
 lang: en-GB
 meta:
+  - property: og:title
+    content: Anonymous Logins
+  - property: og:description
+    content: A short explanation on how Anonymous Logins work.
   - property: og:image
-    content: /icons/aurora_store.png
+    content: /assets/undraw_authentication.svg
+  - property: og:image:alt
+    content: Anonymous Logins Banner Image
+  - property: og:url
+    content: /guides/anonymous-logins
+  - property: og:locale
+    content: en-GB
+  - property: twitter:card
+    content: summary_large_image
 sidebar: true
 ---
 

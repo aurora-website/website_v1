@@ -2,6 +2,19 @@
 title: POLICY
 description: Policy for Aurora Store
 lang: en-GB
+meta:
+  - property: og:title
+    content: Privacy Policy
+  - property: og:description
+    content: Policy for Aurora Store
+  - property: og:image
+    content: /assets/aurora_wiki.png
+  - property: og:image:alt
+    content: Aurora Store Policy Banner Image
+  - property: og:url
+    content: /faq/policy
+  - property: og:locale
+    content: en-GB
 sidebar: false
 ---
 

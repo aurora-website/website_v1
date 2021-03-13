@@ -3,8 +3,20 @@ title: Aurora Wiki
 description: Read the Docs for Aurora Apps.
 lang: de
 meta:
-    - property: og:image
-      content: /icons/aurora_wiki.png
+  - property: og:title
+    content: Aurora Wiki
+  - property: og:description
+    content: Read the Docs for Aurora Apps.
+  - property: og:image
+    content: /assets/aurora_wiki.png
+  - property: og:image:alt
+    content: Aurora Wiki Banner Image
+  - property: og:url
+    content: /de/guides/wiki-home
+  - property: og:locale
+    content: de
+  - property: twitter:card
+    content: summary_large_image
 sidebar: true
 ---
 
@@ -18,9 +30,9 @@ sidebar: true
 
 ### Need some help? We've got your back!
 
-If you're a newcomer or have any questions, please read [FAQs](/faq/) before issuing problems on GitLab or asking for help in the Telegram support chat.
+If you're a newcomer or have any questions, please read [FAQs](/de/faq/) before issuing problems on GitLab or asking for help in the Telegram support chat.
 
-If you're interested in the timeline and future development of Aurora apps, read the [Roadmap](/guides/roadmap/) page to know more!
+If you're interested in the timeline and future development of Aurora apps, read the [Roadmap](/de/guides/roadmap/) page to know more!
 
 Other than that, indulge yourself with a good helping of docs!
 
@@ -28,10 +40,10 @@ Other than that, indulge yourself with a good helping of docs!
 
 ### Aurora Store
 
--   [Troubleshooting](/guides/troubleshooting/)
--   [Server status](/guides/server-status/)
--   [Roadmap](/guides/roadmap/)
--   [Anonymous Logins](/guides/anonymous-logins/)
+-   [Troubleshooting](/de/guides/troubleshooting/)
+-   [Server status](/de/guides/server-status/)
+-   [Roadmap](/de/guides/roadmap/)
+-   [Anonymous Logins](/de/guides/anonymous-logins/)
 
 ### Aurora Droid
 

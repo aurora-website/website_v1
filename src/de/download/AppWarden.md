@@ -1,16 +1,23 @@
 ---
 layout: DownloadPage
 title: App Warden
-metaTitle: Aurora Warden
 description: An open source app utility manager for all your installed apps.
 lang: de
 meta:
-    - property: og:image
-      content: /icons/app_warden.png
-    - name: theme-color
-      content: "#38CA79"
-    - name: msapplication-TileColor
-      content: "#38CA79"
+  - property: og:title
+    content: App Warden
+  - property: og:description
+    content: An open source app utility manager for all your installed apps.
+  - property: og:image
+    content: /assets/storebanner1200x680.png
+  - property: og:image:alt
+    content: App Warden Banner Image
+  - property: og:url
+    content: /de/download/AppWarden/
+  - property: og:locale
+    content: de
+  - property: twitter:card
+    content: summary_large_image
 sidebar: false
 ---
 

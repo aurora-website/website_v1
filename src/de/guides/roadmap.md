@@ -3,8 +3,20 @@ title: Roadmap
 description: Timeline of Aurora Store.
 lang: de
 meta:
+  - property: og:title
+    content: Anonymous Logins
+  - property: og:description
+    content: Timeline of Aurora Apps.
   - property: og:image
-    content: /icons/aurora_store.png
+    content: /assets/undraw_roadmap.svg
+  - property: og:image:alt
+    content: Roadmap Banner Image
+  - property: og:url
+    content: /de/guides/roadmap
+  - property: og:locale
+    content: de
+  - property: twitter:card
+    content: summary_large_image
 sidebar: true
 ---
 
