@@ -1,7 +1,7 @@
 ---
 title: POLICY
 description: Policy for Aurora Store
-lang: en-GB
+lang: de
 meta:
   - property: og:title
     content: Privacy Policy
@@ -12,9 +12,9 @@ meta:
   - property: og:image:alt
     content: Aurora Store Policy Banner Image
   - property: og:url
-    content: /faq/policy
+    content: /de/download/AuroraStore/policy
   - property: og:locale
-    content: en-GB
+    content: de
   - property: twitter:card
     content: summary
 sidebar: false

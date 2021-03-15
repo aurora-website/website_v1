@@ -214,7 +214,7 @@ export default {
 						},
 					});
 					window.location.assign(
-						this.$data.storeNightlyDownloadUrl || "https://auroraoss.com/AuroraStable/Nightly"
+						this.$data.storeNightlyDownloadUrl || "https://auroraoss.com/AuroraStore/Nightly"
 					);
 				}
 			});

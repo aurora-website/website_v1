@@ -1,7 +1,7 @@
 ---
-title: TermsOfService
+title: Terms Of Service
 description: Terms of Service for Aurora Store
-lang: de
+lang: en-GB
 meta:
   - property: og:title
     content: Terms of Service
@@ -12,9 +12,9 @@ meta:
   - property: og:image:alt
     content: Aurora Store TOS Banner Image
   - property: og:url
-    content: /de/faq/terms-of-service
+    content: /download/AuroraStore/terms-of-service
   - property: og:locale
-    content: de
+    content: en-GB
   - property: twitter:card
     content: summary
 sidebar: false
@@ -36,7 +36,7 @@ We reserve the right to modify these Terms at any time. For instance, we may nee
 
 ## Privacy Policy 
 
-We have a privacy policy covering the collection, use, and disclosure of user information, which can be found [here](/faq/policy/).
+We have a privacy policy covering the collection, use, and disclosure of user information, which can be found [here](/download/AuroraStore/policy/).
 
 ## Copyright Policy
 
@@ -44,7 +44,7 @@ We take intellectual property rights seriously, and by using a copyright policy 
 
 ## Disclaimer
 
-We have a disclaimer covering the use of our Service and the content within **Aurora Store**, which can be found [here](/faq/disclaimer/). 
+We have a disclaimer covering the use of our Service and the content within **Aurora Store**, which can be found [here](/download/AuroraStore/disclaimer/). 
 
 ## Third-Party Services
 
@@ -52,11 +52,24 @@ We provide users with two major third party services. Your use of the Service ma
 
 ## Token Dispenser Server
 
-We provide users with the ability to use anonymous accounts within **Aurora Store**, provided from our server as tokens. Your use of the Service agrees to not affect our server in any way deemed harmful or with malicious intent. We may occasionally ask contributors to provide us with accounts. You hereby acknowledge that the accounts you make for **Aurora Store** to be given entire access to **AuroraOSS** and to be stored on our server. This does not apply to non-anonymous accounts. 
+We provide users with the ability to use anonymous accounts within **Aurora Store**, provided from our server as tokens. Your use of the Service agrees to not affect our server in any way deemed harmful or with malicious intent. We may occasionally ask contributors to provide us with accounts. You hereby acknowledge that the accounts you make for **Aurora Store** to be given entire access to **AuroraOSS** and to be stored on our server. This does not apply to non-anonymous accounts.
+
+If there are anonymous accounts that somehow are able to gain access to paid apps, you MUST directly inform us with:
+- **Proof**, be it a a screen recording, screenshots or other image/video material, 
+- **Email address** of the account, which can be located at the Accounts page on the sidebar as **Accounts**,
+- **Time & Date** of when you encountered the breach.
+You can either message admins of the Telegram support group, direct message [@whyorean](tg://resolve?domain=whyorean) or via [auroraoss.dev@gmail.com](mailto:auroraoss.dev@gmail.com). 
+
+If we find accounts with a breach like this, we will either:
+- remove that account from the dispenser server or,
+- fix the breach and generate a new AAS token for that account or,
+- shut down the dispenser server with a notice on our website blog and Telegram channel, stating what the problem is.
+
+We do not allow or support piracy and do not tolerate users who abuse our Service. We are obligated to block users from accessing the accounts. Our server, our rules.
 
 ## **Aurora Store** Materials
 
-We put a lot of effort into creating the Service including, the logo and all designs, text, graphics, pictures, information and other content (excluding content within **Aurora Store**). This property is owned by us or our licensors and it is protected by open-source licenses. We grant you the right to use it.
+We put a lot of effort into creating the Service including, the logo and all designs, text, graphics, pictures, metadata, information and other content (excluding content within **Aurora Store**). This property is owned by us or our licensors and it is protected by open-source licenses. We grant you the right to use it.
 
 ## Unavoidable Legal Stuff
 

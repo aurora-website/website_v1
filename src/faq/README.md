@@ -60,7 +60,7 @@ You can check out the [Roadmap page](/guides/roadmap/) to know more about what h
 
 #### Why do I need to accept the Terms Of Service for Aurora Store?
 
-We deem this necessary, because it is to ensure a minimum safety for AuroraOSS, in case some individual or group wants to harm us in any way by using Aurora Store as leverage. It's also a way to ask users to be aware what they're signing up for, so we urge and encourage you to read it to inform yourselves of what Aurora Store is capable of doing and . If you find anything useful for or strange in our [Terms Of Service](/faq/terms-of-service/), don't hesitate to contact us on [auroraoss.dev@gmail.com](mailto:auroraoss.dev@gmail.com) or our Telegram group.
+We deem this necessary, because it is to ensure a minimum safety for AuroraOSS, in case some individual or group wants to harm us in any way by using Aurora Store as leverage. It's also a way to ask users to be aware what they're signing up for, so we urge and encourage you to read it to inform yourselves of what Aurora Store is capable of doing and . If you find anything useful for or strange in our [Terms Of Service](/download/AuroraStore/terms-of-service/), don't hesitate to contact us on [auroraoss.dev@gmail.com](mailto:auroraoss.dev@gmail.com) or our Telegram group.
 
 #### What data does Aurora Store send to Google?
 
@@ -78,7 +78,7 @@ For anonymous logins, following data is sent to Aurora Dispenser Server:
 -   AuroraOSS follows a strict policy of no-logging, so no data except IP addresses (only if rate-limiter on our server deems the IP as rate-limit-worthy or ban-worthy) are stored on the dispenser server.
 
 ::: guide Tip! 👀
-For more info on anonymous logins read​ [Anonymous Logins](/guides/anonymous-logins/) and [Policy](/faq/policy/) to know more on what we require from you for Aurora Store to work.
+For more info on anonymous logins read​ [Anonymous Logins](/guides/anonymous-logins/) and [Policy](/download/AuroraStore/policy/) to know more on what we require from you for Aurora Store to work.
 :::
 
 #### What are nightly autobuilds?

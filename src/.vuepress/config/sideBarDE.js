@@ -63,6 +63,7 @@ module.exports = {
 				"/de/guides/troubleshooting",
 				"/de/guides/anonymous-logins",
 				"/de/guides/server-status",
+				"/de/guides/system-app",
 				"/de/guides/roadmap",
 			],
 			sidebarDepth: 2,

@@ -133,7 +133,10 @@ $navbar-horizontal-padding = 1.5rem
 			vertical-align top
 			input
 				background-color transparent
+				border 1px solid var(--borderColor)
 				color inherit
+				&:focus
+					border 1px solid $accentColor !important
 			.suggestions
 				background-color var(--navbarColor)
 				border 1px solid var(--borderColor)
@@ -156,8 +159,13 @@ $navbar-horizontal-padding = 1.5rem
 			text-overflow ellipsis
 		.search-box
 			input
-				border 1px solid var(--borderColor)
+				border none !important
 
+@media (max-width: $MQMobileNarrow)
+	.navbar
+		.search-box
+			input
+				border none !important
 .toggleNav
 	padding: 0.35rem 0 0 1rem;
 

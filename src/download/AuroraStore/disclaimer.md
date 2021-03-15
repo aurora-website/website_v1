@@ -1,7 +1,7 @@
 ---
 title: DISCLAIMER
 description: Disclaimer for Aurora Store
-lang: de
+lang: en-GB
 meta:
   - property: og:title
     content: Disclaimer
@@ -12,9 +12,9 @@ meta:
   - property: og:image:alt
     content: Aurora Store Disclaimer Banner Image
   - property: og:url
-    content: /de/faq/disclaimer
+    content: /download/AuroraStore/disclaimer
   - property: og:locale
-    content: de
+    content: en-GB
   - property: twitter:card
     content: summary
 sidebar: false

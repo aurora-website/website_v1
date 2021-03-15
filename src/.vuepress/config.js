@@ -45,9 +45,10 @@ module.exports = {
 	 */
 	themeConfig: {
 		logo: "/icons/auroralogo.png",
-		//repo: "https://gitlab.com/auroraoss/",
+		// repo: "https://gitlab.com/marchingon12/AuroraOSS",
+		// repo: "https://github.com/marchingon12/AuroraOSS",
 		editLinks: false,
-		docsRepo: "/marchingon12/AuroraOSS",
+		docsRepo: "marchingon12/AuroraOSS",
 		docsDir: "src",
 		editLinks: true,
 		editLinkText: "Help us improve this page",
@@ -98,4 +99,7 @@ module.exports = {
 		".vuepress/config/sideBar.js",
 		".vuepress/config/sideBarDE.js",
 	],
+	markdown: {
+		lineNumbers: true
+	}
 };
