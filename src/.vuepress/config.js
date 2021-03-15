@@ -50,6 +50,7 @@ module.exports = {
 		editLinks: false,
 		docsRepo: "marchingon12/AuroraOSS",
 		docsDir: "src",
+		docsBranch: "source",
 		editLinks: true,
 		editLinkText: "Help us improve this page",
 		lastUpdated: "Last updated",
