@@ -168,7 +168,7 @@ export default {
 					popup: "animate__animated animate__faster animate__zoomOut",
 				},
 			});
-			window.location.assign(this.$data.storeStableDownloadUrl || "https://auroraoss.com/AuroraDroid/Stable");
+			window.location.assign(this.$data.storeStableDownloadUrl || "https://auroraoss.com/AuroraStore/Stable");
 		},
 		downloadStoreNightly() {
 			this.$swal({
