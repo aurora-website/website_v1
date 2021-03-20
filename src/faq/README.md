@@ -74,7 +74,7 @@ To provide basic functionalities, the following is sent:
 
 For anonymous logins, following data is sent to Aurora Dispenser Server:
 
--   a GET request to obtain a authentication token. This token is generated server side so no user data is leaked. Requests upon creating session are made and sent to Google from the dispenser server's IP.
+-   a GET request to obtain an authentication token. This token is generated server side so no user data is leaked. Requests upon creating sessions are made and sent to Google from the dispenser server's IP.
 -   AuroraOSS follows a strict policy of no-logging, so no data except IP addresses (only if rate-limiter on our server deems the IP as rate-limit-worthy or ban-worthy) are stored on the dispenser server.
 
 ::: guide Tip! 👀
@@ -172,9 +172,9 @@ By default, Aurora Store utilizes the root storage space created for Aurora Stor
 
 Default path: `/data/data/com.aurora.store/files/Download`
 
-If you prefer to download the apk files to internal storage instead, you can choose to do so by enabling the User external storage toggle under Settings → Downloads.
+If you prefer to download the apk files to internal storage instead, you can choose to do so by enabling the User external storage toggle under **Settings** → **Downloads**.
 
-The path will then be Internal Storage → Aurora → Store → Downloads → packageName → versionNumber → apkFile.
+The path will then be **Internal Storage** → **Aurora** → **Store** → **Downloads** → **packageName** → **versionNumber** → **apkFile**.
 
 #### How does Aurora Store install apps?
 
