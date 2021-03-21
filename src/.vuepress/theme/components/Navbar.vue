@@ -117,7 +117,9 @@ $navbar-horizontal-padding = 1.5rem
 	.links
 		padding-left 1.5rem
 		box-sizing border-box
-		background-color inherit
+		background-color var(--navbarColor)
+		transition 0.2s ease-in-out
+		-webkit-transition 0.2s ease-in-out
 		white-space nowrap
 		font-size 0.9rem
 		position absolute
@@ -171,6 +173,6 @@ $navbar-horizontal-padding = 1.5rem
 
 .dropdown-wrapper, .title, .mobile-dropdown-title
 	color var(--textColor) 
-	transition 0.4s ease-in-out
-	-webkit-transition 0.4s ease-in-out
+	transition 0.2s ease-in-out
+	-webkit-transition 0.2s ease-in-out
 </style>
