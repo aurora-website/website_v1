@@ -9,6 +9,20 @@ module.exports = [
 		},
 	],
 	[
+		"vuepress-plugin-sitemap",
+		{
+			hostname: "https://auroraoss.com",
+		},
+	],
+	[
+		"vuepress-plugin-robots",
+		{
+			host: "https://auroraoss.com",
+			allowAll: true,
+			sitemap: "/sitemap.xml",
+		},
+	],
+	[
 		"@vuepress/pwa",
 		{
 			serviceWorker: true,
