@@ -26,7 +26,7 @@ The latest stable version of **Aurora Store** was uploaded <ReleaseDate store />
 <AuroraChangelogs store />
 
 ::: c-tip
-Older versions of **Aurora Store** (Stable & Nightly) can be found [here](https://auroraoss.com/AuroraStore/).
+Older versions of **Aurora Store** (Stable & Nightly) can be found [here](https://goolag.store/AuroraStore/).
 :::
 
 ## <img class="headerLogo" :src="$withBase('/icons/aurora_droid.png')"> [Aurora Droid](/download/AuroraDroid/)
@@ -38,7 +38,7 @@ The latest stable version of **Aurora Droid** was uploaded <ReleaseDate droid />
 <AuroraChangelogs droid />
 
 ::: c-tip
-Older versions of **Aurora Droid** (Stable & Nightly) can be found [here](https://auroraoss.com/AuroraDroid/).
+Older versions of **Aurora Droid** (Stable & Nightly) can be found [here](https://goolag.store/AuroraDroid/).
 :::
 
 ## <img class="headerLogo" :src="$withBase('/icons/app_warden.png')"> [App Warden](/download/AppWarden/)
@@ -50,8 +50,8 @@ The latest version of **App Warden** was uploaded <ReleaseDate warden />.
 <AuroraChangelogs warden />
 
 ::: c-tip
-Older versions of **App Warden** can be found [here](https://auroraoss.com/AppWarden/Stable/). \
-Scripts can be found [here](https://auroraoss.com/AppWarden/Scripts/)
+Older versions of **App Warden** can be found [here](https://goolag.store/AppWarden/Stable/). \
+Scripts can be found [here](https://goolag.store/AppWarden/Scripts/)
 :::
 
 ## <img class="headerLogo" :src="$withBase('/icons/aurora_wallpapers.png')"> [Aurora Wallpapers](/download/AuroraWallpapers/)
@@ -63,5 +63,5 @@ The latest version of **Aurora Wallpapers** was uploaded <ReleaseDate walls />.
 <AuroraChangelogs walls />
 
 ::: c-tip
-Older versions of **Aurora Wallpapers** can be found [here](https://auroraoss.com/Wallpapers/).
+Older versions of **Aurora Wallpapers** can be found [here](https://goolag.store/Wallpapers/).
 :::
