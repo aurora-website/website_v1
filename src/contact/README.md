@@ -6,7 +6,7 @@ description: Contact the AuroraOSS Team!
 lang: en-GB
 meta:
     - property: og:image
-      content: /icons/auroralogo.png
+      content: /icons/auroralogo.webp
 sidebar: true
 ---
 
@@ -31,19 +31,19 @@ Please read the group rules, pinned messages and a few of the previous messages 
 :::
 
 <a href="tg://resolve?domain=aurorafficial" target="_blank" rel="noopener">
-  <img :src="$withBase('/assets/tg-auroraofficial-qr.png')" width="175px" style="border-radius: 5%" />
+  <img :src="$withBase('/assets/tg-auroraofficial-qr.webp')" width="175px" style="border-radius: 5%" />
 </a>
 
 <a href="tg://resolve?domain=aurorasupport" target="_blank" rel="noopener">
-  <img :src="$withBase('/assets/tg-aurorasupport-qr.png')" width="175px" style="border-radius: 5%" />
+  <img :src="$withBase('/assets/tg-aurorasupport-qr.webp')" width="175px" style="border-radius: 5%" />
 </a>
 
 <a href="tg://resolve?domain=auroradroid" target="_blank" rel="noopener">
-  <img :src="$withBase('/assets/tg-auroradroid-qr.png')" width="175px" style="border-radius: 5%" />
+  <img :src="$withBase('/assets/tg-auroradroid-qr.webp')" width="175px" style="border-radius: 5%" />
 </a>
 
 <a href="tg://resolve?domain=AuroroaOT" target="_blank" rel="noopener">
-  <img :src="$withBase('/assets/tg-auroraot-qr.png')" width="175px" style="border-radius: 5%" />
+  <img :src="$withBase('/assets/tg-auroraot-qr.webp')" width="175px" style="border-radius: 5%" />
 </a>
 
 ### GitLab <brand-gitlab-icon color="#FC6D27" />

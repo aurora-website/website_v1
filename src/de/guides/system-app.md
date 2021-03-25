@@ -8,7 +8,7 @@ meta:
   - property: og:description
     content: This is a short guide on how to install apps to the system.
   - property: og:image
-    content: /assets/undraw_android.png
+    content: /assets/undraw_android.webp
   - property: og:image:alt
     content: System Banner Image
   - property: og:url

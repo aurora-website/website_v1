@@ -8,7 +8,7 @@ meta:
   - property: og:description
     content: Need help with something? Most of your issues can probably be solved from this page.
   - property: og:image
-    content: /assets/undraw_questions.png
+    content: /assets/undraw_questions.webp
   - property: og:image:alt
     content: FAQs Banner Image
   - property: og:url
@@ -22,7 +22,7 @@ sidebarDepth: 2
 
 # Frequently Asked Questions <messages-icon size="38px" color="#b071e3" />
 
-## <img class="headerLogo" :src="$withBase('/icons/aurora_store.png')"> Aurora Store
+## <img class="headerLogo" :src="$withBase('/icons/aurora_store.webp')"> Aurora Store
 
 ### General
 
@@ -268,7 +268,7 @@ This is how Google determines the location of your account:
 > 
 > ~ Source: [Google Policies](https://policies.google.com/technologies/location-data?hl=en-GB)
 
-## <img class="headerLogo" :src="$withBase('/icons/aurora_droid.png')"> Aurora Droid
+## <img class="headerLogo" :src="$withBase('/icons/aurora_droid.webp')"> Aurora Droid
 
 ### General
 
@@ -320,11 +320,11 @@ Example:
 3418B82E0A3ED1552770ABB9A9C9CCAB
 ```
 <p align="center">
-    <img class="zoomable" :src="$withBase('/assets/fdroidrepo.jpg')" style="border-radius:7px;width:360px;" />
+    <img class="zoomable" :src="$withBase('/assets/fdroidrepo.webp')" style="border-radius:7px;width:360px;" />
 </p>
 :::
 
-## <img class="headerLogo" :src="$withBase('/icons/app_warden.png')"> App Warden
+## <img class="headerLogo" :src="$withBase('/icons/app_warden.webp')"> App Warden
 
 ### How does it work?
 
@@ -396,6 +396,6 @@ You can revert back the Nuke it effect by toggling De-Nuke button from same sect
 
 *Components: **Activities**, **Services**, **Providers** & **Receivers** of installed apps.
 
-## <img class="headerLogo" :src="$withBase('/icons/aurora_wallpapers.png')"> Aurora Wallpapers
+## <img class="headerLogo" :src="$withBase('/icons/aurora_wallpapers.webp')"> Aurora Wallpapers
 
 _Wow, such empty_ ~ 🐶

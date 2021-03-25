@@ -8,7 +8,7 @@ meta:
   - property: og:description
     content: Terms of Service for Aurora Store
   - property: og:image
-    content: /icons/tos_icon.png
+    content: /icons/tos_icon.webp
   - property: og:image:alt
     content: Aurora Store TOS Banner Image
   - property: og:url

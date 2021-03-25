@@ -8,7 +8,7 @@ meta:
   - property: og:description
     content: Troubleshooting for Aurora Apps.
   - property: og:image
-    content: /assets/undraw_troubleshooting.png
+    content: /assets/undraw_troubleshooting.webp
   - property: og:image:alt
     content: Troubleshooting Banner Image
   - property: og:url
@@ -24,7 +24,7 @@ sidebarDepth: 2
 
 ![Troubleshooting](/assets/undraw_troubleshooting.svg)
 
-## <img class="headerLogo" :src="$withBase('/icons/aurora_store.png')"> Aurora Store
+## <img class="headerLogo" :src="$withBase('/icons/aurora_store.webp')"> Aurora Store
 
 ### Miscellaneous
 

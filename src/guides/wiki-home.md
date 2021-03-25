@@ -8,7 +8,7 @@ meta:
   - property: og:description
     content: Read the Docs for Aurora Apps.
   - property: og:image
-    content: /assets/wiki_banner1200x680.png
+    content: /assets/wiki_banner1200x680.webp
   - property: og:image:alt
     content: Aurora Wiki Banner Image
   - property: og:url
@@ -23,7 +23,7 @@ sidebar: true
 # Welcome to the Aurora Wiki!
 
 <p align="center">
-  <img src="/icons/aurora_wiki.png" width="300px">
+  <img src="/icons/aurora_wiki.webp" width="300px">
 </p>
 
 ---

@@ -9,7 +9,7 @@ meta:
   - property: og:description
     content: An open-source alternative Google Play Store frontend with privacy features and clean UI.
   - property: og:image
-    content: /assets/storebanner1200x680.png
+    content: /assets/storebanner1200x680.webp
   - property: og:image:alt
     content: Aurora Store Banner Image
   - property: og:url
@@ -21,7 +21,7 @@ meta:
 sidebar: false
 ---
 
-# <img class="headerLogo" :src="$withBase('/icons/aurora_store.png')"> Aurora Store
+# <img class="headerLogo" :src="$withBase('/icons/aurora_store.webp')"> Aurora Store
 
 ## About
 
@@ -29,7 +29,7 @@ Aurora Store is an open-source alternative Google Play Store frontend client wit
 
 ## Screenshots
 
-<img class="zoomable" :src="$withBase('/assets/screenshots_store.png')"/>
+<img class="zoomable" :src="$withBase('/assets/screenshots_store.webp')"/>
 
 ## Features:
 
@@ -67,6 +67,6 @@ As per [**Google Play Terms of Service §4**](https://play.google.com/intl/en-us
 
 <p align="center">
 	<a href="tg://resolve?domain=aurorasupport" target="_blank" rel="noopener">
-    <img :src="$withBase('/assets/tg-aurorasupport-qr.png')" width="175px" style="border-radius: 15px;" />
+    <img :src="$withBase('/assets/tg-aurorasupport-qr.webp')" width="175px" style="border-radius: 15px;" />
   </a>
 </p>

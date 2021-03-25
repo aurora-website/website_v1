@@ -9,7 +9,7 @@ meta:
   - property: og:description
     content: An open source app utility manager for all your installed apps.
   - property: og:image
-    content: /assets/storebanner1200x680.png
+    content: /assets/storebanner1200x680.webp
   - property: og:image:alt
     content: App Warden Banner Image
   - property: og:url
@@ -21,7 +21,7 @@ meta:
 sidebar: false
 ---
 
-# <img class="headerLogo" :src="$withBase('/icons/app_warden.png')"> Aurora Store
+# <img class="headerLogo" :src="$withBase('/icons/app_warden.webp')"> Aurora Store
 
 ## About
 
@@ -29,7 +29,7 @@ App Warden is an app utility manager for all your installed apps.
 
 ## Screenshots
 
-<img class="zoomable" :src="$withBase('/assets/screenshots_store.png')"/>
+<img class="zoomable" :src="$withBase('/assets/screenshots_store.webp')"/>
 
 ## Features:
 
@@ -52,6 +52,6 @@ The developer of this application is not responsible for getting your device bri
 
 <p align="center">
 	<a href="tg://resolve?domain=aurorafficial" target="_blank" rel="noopener">
-    <img :src="$withBase('/assets/tg-auroraofficial-qr.png')" width="175px" style="border-radius: 15px;" />
+    <img :src="$withBase('/assets/tg-auroraofficial-qr.webp')" width="175px" style="border-radius: 15px;" />
   </a>
 </p>

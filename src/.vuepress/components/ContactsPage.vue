@@ -102,7 +102,7 @@ export default {
 			{
 				name: "Rahul Kumar Patel",
 				role: "@whyorean | Lead Dev",
-				image: "/assets/whyorean.jpg",
+				image: "/assets/whyorean.webp",
 				facebook: "",
 				instagram: "https://instagram.com/whyorean",
 				telegram: "https://t.me/whyorean",
@@ -115,7 +115,7 @@ export default {
 			{
 				name: "Disuq3Mirroir",
 				role: "@Disqu3mirroir | Server Backend Dev",
-				image: "/assets/Disqu3mirroir.png",
+				image: "/assets/Disqu3mirroir.webp",
 				facebook: "",
 				instagram: "",
 				telegram: "https://t.me/Disqu3mirroir ",
@@ -127,7 +127,7 @@ export default {
 			},
 			{
 				name: "Austin Hornhead",
-				image: "/assets/austin.jpg",
+				image: "/assets/austin.webp",
 				role: "@marchingon12 | Hobby Dev & Designer",
 				facebook: "",
 				instagram: "",
@@ -141,7 +141,7 @@ export default {
 			{
 				name: "Iacob Ionut",
 				role: "@iacobionut | Android UI/UX Dev",
-				image: "/assets/iacobionut.jpg",
+				image: "/assets/iacobionut.webp",
 				facebook: "",
 				instagram: "",
 				telegram: "https://t.me/iacobionut",
@@ -154,7 +154,7 @@ export default {
 			{
 				name: "Sunny Raj",
 				role: "@CheDuckevara | Privacy Enthusiast",
-				image: "/assets/sunny.jpg",
+				image: "/assets/sunny.webp",
 				facebook: "",
 				instagram: "",
 				telegram: "https://t.me/sunnyraj",
@@ -166,7 +166,7 @@ export default {
 			},
 			{
 				name: "ℂ𝕐𝕃Δℕℂ€ ✪",
-				image: "/assets/cylance.jpg",
+				image: "/assets/cylance.webp",
 				role: "@CYLANC | Contributor & Moderator",
 				facebook: "",
 				instagram: "",
@@ -179,7 +179,7 @@ export default {
 			},
 			{
 				name: "Æïý€€ =ęę",
-				image: "/assets/shanetheawesome.jpg",
+				image: "/assets/shanetheawesome.webp",
 				role: "@shanetheawesome | Contributor",
 				facebook: "",
 				instagram: "",
@@ -192,7 +192,7 @@ export default {
 			},
 			{
 				name: "Radek Błędowski",
-				image: "/assets/radek.jpg",
+				image: "/assets/radek.webp",
 				role: "@RKBDI | Designer",
 				instagram: "https://instagram.com/rkbdi",
 				facebook: "",
@@ -205,7 +205,7 @@ export default {
 			},
 			{
 				name: "Matt Murdock",
-				image: "/assets/matt.jpg",
+				image: "/assets/matt.webp",
 				role: "@mattmurdock86 | Telegram Moderator",
 				facebook: "",
 				instagram: "",
@@ -218,7 +218,7 @@ export default {
 			},
 			{
 				name: "Marcel Alexandru Nitan",
-				image: "/assets/snoopalex.jpg",
+				image: "/assets/snoopalex.webp",
 				role: "@snoopalex | Telegram Bot Dev",
 				facebook: "https://www.facebook.com/marcel.alexandru.3939/",
 				instagram: "https://www.instagram.com/nitan.alexandru/",

@@ -8,7 +8,7 @@ meta:
   - property: og:description
     content: Timeline of Aurora Apps.
   - property: og:image
-    content: /assets/undraw_roadmap.png
+    content: /assets/undraw_roadmap.webp
   - property: og:image:alt
     content: Roadmap Banner Image
   - property: og:url
@@ -26,7 +26,7 @@ sidebar: true
 
 Legend: **✅ Completed | ⏳ Work In Progress | ❓ Unknown Stage**
 
-## <img class="headerLogo" :src="$withBase('/icons/aurora_store.png')"> Aurora Store
+## <img class="headerLogo" :src="$withBase('/icons/aurora_store.webp')"> Aurora Store
 
 The goal of Aurora Store is to provide users an alternative to the Google Play Store that works well, packed with important privacy features as well as stunning and pleasant-looking UI. Here is a list of the important stuff of what we've achieved and changed so far.
 

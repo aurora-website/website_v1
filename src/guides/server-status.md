@@ -8,7 +8,7 @@ meta:
   - property: og:description
     content: Server statuses of dispensers for Aurora Store.
   - property: og:image
-    content: /assets/undraw_server_status.png
+    content: /assets/undraw_server_status.webp
   - property: og:image:alt
     content: Server Status Banner Image
   - property: og:url
