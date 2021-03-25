@@ -168,7 +168,7 @@ export default {
 					popup: "animate__animated animate__faster animate__zoomOut",
 				},
 			});
-			window.location.assign(this.$data.storeStableDownloadUrl || "https://auroraoss.com/AuroraStore/Stable");
+			window.location.assign(this.$data.storeStableDownloadUrl || "https://goolag.store/AuroraStore/Stable");
 		},
 		downloadStoreNightly() {
 			this.$swal({
@@ -214,7 +214,7 @@ export default {
 						},
 					});
 					window.location.assign(
-						this.$data.storeNightlyDownloadUrl || "https://auroraoss.com/AuroraStore/Nightly"
+						this.$data.storeNightlyDownloadUrl || "https://goolag.store/AuroraStore/Nightly"
 					);
 				}
 			});
@@ -235,7 +235,7 @@ export default {
 					popup: "animate__animated animate__faster animate__zoomOut",
 				},
 			});
-			window.location.assign(this.$data.droidStableDownloadUrl || "https://auroraoss.com/AuroraDroid/Stable");
+			window.location.assign(this.$data.droidStableDownloadUrl || "https://goolag.store/AuroraDroid/Stable");
 		},
 		downloadDroidNightly() {
 			this.$swal({
@@ -281,7 +281,7 @@ export default {
 						},
 					});
 					window.location.assign(
-						this.$data.droidNightlyDownloadUrl || "https://auroraoss.com/AuroraDroid/Nightly"
+						this.$data.droidNightlyDownloadUrl || "https://goolag.store/AuroraDroid/Nightly"
 					);
 				}
 			});
@@ -302,7 +302,7 @@ export default {
 					popup: "animate__animated animate__faster animate__zoomOut",
 				},
 			});
-			window.location.assign(this.$data.wardenDownloadUrl || "https://auroraoss.com/Warden/Stable");
+			window.location.assign(this.$data.wardenDownloadUrl || "https://goolag.store/Warden/Stable");
 		},
 		downloadWalls() {
 			this.$swal({
@@ -320,7 +320,7 @@ export default {
 					popup: "animate__animated animate__faster animate__zoomOut",
 				},
 			});
-			window.location.assign(this.$data.wallsDownloadUrl || "https://auroraoss.com/Wallpapers");
+			window.location.assign(this.$data.wallsDownloadUrl || "https://goolag.store/Wallpapers");
 		},
 	},
 };
