@@ -44,9 +44,13 @@ To install Chrome and WebView variants, follow the steps below:
 2. Install the apk onto your device.
 3. Try updating your Chrome/WebView with Aurora Store again.
 
-You can download the stable Trichrome library from apkmirror [here](https://www.apkmirror.com/apk/google-inc/trichrome-library/#variants).
+You can download the stable Trichrome library from [apkmirror](https://www.apkmirror.com/apk/google-inc/trichrome-library/#variants).
 
 Read more about Trichrome on the Chromium Shared Libraries [documentation](https://chromium.googlesource.com/chromium/src.git/+/master/docs/android_native_libraries.md).
+
+#### Why do I have two Aurora Store apps after installing the new builds?
+
+This might be due to the fact that you have subversions of Aurora Store (Beta & Nightly) installed instead of Aurora Store version 4 **Stable**, which is comes with a corresponding package names. You can uninstall those or keep it if you want.
 
 ### Login Problems
 
@@ -67,7 +71,7 @@ Read more about Trichrome on the Chromium Shared Libraries [documentation](https
 
 -   **"Timeout"** → I can't login because of internet connection.
 
-    When network connection is either blocked or network speed is too slow (Aurora Store waits only for 20 sec for an authentication request).
+    When network connection is either blocked or network speed is too slow (Aurora Store waits only for 20 sec for an authentication request). If there is no response from Google's servers, then there will be multiple timeouts.
 
 -   **"Oops! You have been rate-limited!"** → I clicked on Anonymous button too many times!
 
@@ -124,13 +128,33 @@ You may not be able to disable MIUI Optimizations through developer options anym
     2. Tap **Power off** or **Restart** if that is an option.
     3. If needed, press and hold the **Power** button until your device turns on again.
 
+#### "Download Failed - Session expired"
+
+This means that the session has expired and you need to relogin again. Best wait a few minutes before signing in so that the session gets refreshed.
+
 #### "Installation failed"
 
 If your installation method is set to **Root** and your **Android version 11 (R)**, then you may experience problems with installing apps. A quick 'fix', that works every now and then, is to force clear all downloads in the downloads page within Aurora Store and try installing it again. Hope you win the gamble!
 
-#### Why do I have two Aurora Store apps after installing the new builds?
+#### "INSTALL_FAILED_NO_MATCHING_ABIS: Failed to extract native libraries, res=-113"
 
-This might be due to the fact that you have subversions of Aurora Store (Beta & Nightly) installed instead of Aurora Store version 4 **Stable**, which is comes with a corresponding package names. You can uninstall those or keep it if you want.
+Most likely you chose a device config unsuited for your device cpu architecture (e.g. arm64-v8a, armeabi-v7a, armeabi). The device config should contain the same arch as the one your device arch has, otherwise you will get this error upon installation process. To fix this, spoof you device to the correct device config, logout & login, restart Aurora Store and try installing the app again.
+
+### Can't find apps!
+
+There are a few scenarios where you might not find the app you want in Aurora Store. These can include being invited to a beta app through an app developer, an app being geographically restricted or an app being device or OS specific.
+
+#### Invited to beta app
+
+Some beta apps can be accessed by using the Beta sign-up button on apps that have beta programmes. Beta apps that are specially invited through a developer will obviously require your own account with the email address the developer invited you with. However, this is not possible yet because
+
+#### Geo-locked app
+
+There is a high possibility that the app you want to look for is geo-locked, meaning it is not accessible either in your country or because the anonymous account you are using has it's locale setting set to any potential country other than yours. Read the [Location](/faq/#location) section under the FAQ page.
+
+#### Device-specific app
+
+The app you are searching for could be hardware specific or OS specific. For example, Google Camera only available for Pixel devices and OnePlus Launcher for OnePlus devices can only run with native libs or flags. You can't install these on other devices even with Google Play Store, so forget using Aurora Store.
 
 ### Not Working Whatsoever
 

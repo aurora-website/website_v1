@@ -98,6 +98,10 @@ This is a little bit more complicated for the average user and requires a bit of
 1. Locate to the apk and xml files:
 
   ```sh
+  # First mount the system partition if in TWRP
+  mount /system # or enable from the mounting page
+  # If using terminal with root access
+  su
   # If you downloaded the zip in the Download folder within internal storage
   cd /sdcard/Download/
   # if you haven't unzipped the folder then do the following
@@ -115,13 +119,14 @@ This is a little bit more complicated for the average user and requires a bit of
   com.aurora.services.xml
   com.aurora.store.xml
   ```
-2. Copy and paste the apk files to system using `cp /path/to/apkFile /system/priv-app/`:
+2. Copy and paste the app folders to system using `cp -R /path/to/appFolder /system/priv-app/`:
 
   ```sh
   # If the .apk file is located in the internal storage Download folder 
-  cp /sdcard/Download/system/priv-app/AuroraStore.apk /system/priv-app/
+  cp -R /sdcard/Download/system/priv-app/AuroraStore /system/priv-app/
   # If you are currently accessing the Download folder in internal storage
   cd /sdcard/Download/system/priv-app/
+  mkdir /system/priv-app/AuroraStore/
   cp AuroraStore.apk /system/priv-app/
   ```
 3. Copy and paste the xml files to system using `cp /path/to/xmlFile /system/etc/permissions/`:

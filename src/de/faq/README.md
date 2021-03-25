@@ -12,7 +12,7 @@ meta:
   - property: og:image:alt
     content: FAQs Banner Image
   - property: og:url
-    content: /de/faq/
+    content: /faq/
   - property: og:locale
     content: de
   - property: twitter:card
@@ -83,24 +83,26 @@ For more info on anonymous logins read​ [Anonymous Logins](/guides/anonymous-l
 
 #### What are nightly autobuilds?
 
+> A [...] nightly build is the practice of completing a software build of the latest version of a program, on a daily basis. This is so it can first be compiled to ensure that all required dependencies are present [...]. The daily build is also often publicly available allowing access to the latest features for feedback.
+> 
+> ~ Source: [Wikipedia](https://en.wikipedia.org/wiki/Daily_build)
+
 There are two versions of Aurora Store that we make available to all users.
 
--   **Stable**: Stable versions with everything functioning.
--   **Nightly**: Daily versions built by a script to include the latest dependencies and commits on the Aurora Store repo.
-
-If there is no change between a nightly version and the previous nighlty, a new version will be uploaded regardless.
+-   **Stable**: Stable versions with everything functioning, with minor to no bugs.
+-   **Nightly**: Daily versions built by a script to include the latest dependencies and commits on the Aurora Store repo. Can contain a few bugs and features the Stable version doesn't have.
 
 You can download the latest nightlies via the website or with this [link](https://auroraoss.com/AuroraStore/Nightly/).
 
-#### Why are the versions on F-Droid and XDA labs outdated? When will they be updated?
+#### Why are the versions on F-Droid and the XDA Thread outdated? When will they be updated?
 
-Aurora Store is still in a development phase right now; Only infrequent, stable builds will be uploaded there. F-Droid's review & build process is also quite lengthy. You can always grab the latest tests builds either from the [Telegram Group](https://t.me/AuroraSupport) or from [AuroraOSS](https://auroraoss.com/AuroraStore/Stable/).
+Aurora Store is in a constant development phase; Only infrequent, stable builds will be uploaded to those platforms. F-Droid's review & build process is also quite lengthy. You can always grab the latest tests builds either from the [Telegram Group](https://t.me/AuroraSupport) or from [AuroraOSS](https://auroraoss.com/AuroraStore/Stable/).
 
 #### "Please add support for F-Droid/Amazon/Yada repositories!"
 
 No, this is a Play Store client only. Different clients for different services (^\_~)
 
-<!-- #### Does Aurora supports downgrading app versions?
+<!-- #### Does Aurora Store support downgrading app versions?
 
 Yes, it supports app version downgrading to some extent. To download older versions, open the page of the desired app, from the three-dot-menu on the top right side, tap on `Manual download`. On the next screen put a valid last octet value of version you want & hit download.
 
@@ -110,11 +112,11 @@ Keep in mind that downloading arbitrary versions of apps is not supported by the
 
 #### Why do some apps show updates in Aurora Store (Anonymous mode) but not in the Play Store (or vice-versa)?
 
-Aurora Store's anonymous mode works by connecting to an random dummy account stored in the token dispenser server. These dummy accounts are created by volunteers from different countries and some by the developer himself. Thus, every account has different locale settings by default according to the location where it was first created.
+Aurora Store's anonymous mode works by connecting to a random dummy account stored in the token dispenser server. These dummy accounts are created by volunteers from different countries and some by the developer himself. Thus, every account has different locale settings by default according to the location where it was first created.
 
 So next comes the Google Play Update roll-out mechanism. Google doesn't push app updates in one single attempt to all countries users. It's similar to staged updates & needs a lot of server syncing which takes time. Some apps are also blacklisted or restricted in specific countries and for specific devices \(geolocked & device-restricted\).
 
-So while using Anonymous mode user are randomly connected to an Dummy account with different account locales which atlast alters the list of app updates accordingly. Additionally spoof settings can also be able to alter the apps updates list.
+So while using Anonymous mode user are randomly connected to an Dummy account with different account locales which alas alters the list of app updates accordingly. Additionally spoof settings can also be able to alter the apps updates list.
 
 #### How can I report a bug or suggest something?
 
@@ -216,23 +218,24 @@ Make sure to follow every step through if you want to manually push files to sys
 1. Go to **Mount** and tick 'System'.
 2. Go back and go to **Advanced** → **Terminal**.
 3. Find the directory where AuroraServices.apk is located (most likely **Internal Storage** → **Download**).
-4. Copy the apk file and paste it in system files:
+4. Copy the app-folder/apk-file and paste it in system files:
 ```bash
-~ $ cp /path/to/apkFile /system/priv-app/
+cp -R /path/to/appFolder /system/priv-app/
 # If the .apk file is located in the internal storage Download folder 
-~ $ cp /sdcard/Download/AuroraServices.apk /system/priv-app/
+cp -R /sdcard/Download/AuroraServices/AuroraServices.apk /system/priv-app/
 # If you are currently accessing the Download folder in internal storage
-~ $ cd /sdcard/Download/
-/sdcard/Download/ $ cp AuroraServices.apk /system/priv-app/
+cd /sdcard/Download/
+mkdir /system/priv-app/AuroraServices/
+cp AuroraServices.apk /system/priv-app/
 ```
 5. Copy the xml file and paste it in system files:
 ```bash
-~ $ cp /path/to/xmlFile /system/etc/permissions/
+cp /path/to/xmlFile /system/etc/permissions/
 # If the .xml file is located in the internal storage Download folder 
-~ $ cp /sdcard/Download/permissions_com.aurora.services.xml /system/etc/permissions/
+cp /sdcard/Download/permissions_com.aurora.services.xml /system/etc/permissions/
 # If you are currently accessing the Download folder in internal storage
-~ $ cd /sdcard/Download/
-/sdcard/Download/ $ cp permissions_com.aurora.services.xml /system/priv-app/
+cd /sdcard/Download/
+cp permissions_com.aurora.services.xml /system/priv-app/
 ```
 6. Reboot to system (reboot the device).
 :::
@@ -253,7 +256,17 @@ To spoof your device config, go to the **Spoofing** menu located at the sidebar 
 
 #### Language
 
-Language spoofing allow you to change the content language displayed on Aurora Store. However, some strings are tied to your Google account if you are using your own account to log in, e.g. the Editor Choice section will be displayed in the language your account is set to (i.e. if you signed up in Germany, the language displayed will be German).
+Language spoofing allow you to change the content language displayed on Aurora Store. This does not mean the app language, rather the actual content like app titles, description, reviews & more. However, some strings are tied to your Google account if you are using your own account to log in, e.g. the Editor Choice section will be displayed in the language your account is set to (i.e. if your account country is set to Germany, the language displayed will be German).
+
+#### Location
+
+For now, location spoofing can only be done using own Google accounts. It's not possible to use anonymous accounts for location spoofing, as all sessions are generated via our server, so only our server's IP and the account locale will be shown to Google. Using a VPN is sufficient to spoof your location so that Aurora Store can show apps with the IP location you selected. Simply use a VPN client to connect to IP then open Aurora Store and login using Google account.
+
+This is how Google determines the location of your account:
+
+> An IP address (also called Internet address) is assigned to your device by your Internet Service Provider, and is a requirement to use the Internet. IP addresses are used to make the connection between your device and the websites and services that you use. IP addresses are roughly based on geography. This means that any website that you use, including google.com, may get some information about your general area.
+> 
+> ~ Source: [Google Policies](https://policies.google.com/technologies/location-data?hl=en-GB)
 
 ## <img class="headerLogo" :src="$withBase('/icons/aurora_droid.png')"> Aurora Droid
 
