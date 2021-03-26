@@ -4,7 +4,7 @@ description: Find out how to contribute to AuroraOSS!
 lang: en-GB
 meta:
     - property: og:image
-      content: /icons/auroralogo.png
+      content: /icons/auroralogo.webp
 sidebar: true
 ---
 
@@ -81,21 +81,21 @@ If you can't contribute code or translations but you still wish to help, then yo
 ---
 
 <a href="/contribution/UPI/">
-	<img style="border:0px;width:213px;" src="/assets/upibutton.png" alt="Donate via UPI" />
+	<img style="border:0px;width:213px;" src="/assets/upibutton.webp" alt="Donate via UPI" />
 </a>
 <a href="http://www.paypal.me/AuroraDev" target="_blank" rel="noopener">
-	<img style="border:0px;width:213px;" src="/assets/paypalbutton.png" alt="Donate with PayPal" />
+	<img style="border:0px;width:213px;" src="/assets/paypalbutton.webp" alt="Donate with PayPal" />
 </a>
 <a href="https://liberapay.com/whyorean/" target="_blank" rel="noopener">
-	<img style="border:0px;width:213px;" src="/assets/liberapaybutton.png" alt="Bitcoin accepted here" />
+	<img style="border:0px;width:213px;" src="/assets/liberapaybutton.webp" alt="Bitcoin accepted here" />
 </a>
 
 <a href="/contribution/BTC/" >
-	<img style="border:0px;width:213px;" src="/assets/bitcoinbutton.png" alt="Bitcoin accepted here" />
+	<img style="border:0px;width:213px;" src="/assets/bitcoinbutton.webp" alt="Bitcoin accepted here" />
 </a>
 <a href="/contribution/BCH/" >
-	<img style="border:0px;width:213px;" src="/assets/btcashbutton.png" alt="Bitcoin accepted here" />
+	<img style="border:0px;width:213px;" src="/assets/btcashbutton.webp" alt="Bitcoin accepted here" />
 </a>
 <a href="/contribution/ETH/" >
-	<img style="border:0px;width:213px;" src="/assets/etherumbutton.png" alt="Bitcoin accepted here" />
+	<img style="border:0px;width:213px;" src="/assets/etherumbutton.webp" alt="Bitcoin accepted here" />
 </a>

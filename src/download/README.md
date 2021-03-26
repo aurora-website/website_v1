@@ -17,7 +17,7 @@ Download our latest apps here.
 To know more about our apps, click on the app titles!
 :::
 
-## <img class="headerLogo" :src="$withBase('/icons/aurora_store.png')"> [Aurora Store](/download/AuroraStore/)
+## <img class="headerLogo" :src="$withBase('/icons/aurora_store.webp')"> [Aurora Store](/download/AuroraStore/)
 
 The latest stable version of **Aurora Store** was uploaded <ReleaseDate store />.
 
@@ -29,7 +29,7 @@ The latest stable version of **Aurora Store** was uploaded <ReleaseDate store />
 Older versions of **Aurora Store** (Stable & Nightly) can be found [here](https://goolag.store/AuroraStore/).
 :::
 
-## <img class="headerLogo" :src="$withBase('/icons/aurora_droid.png')"> [Aurora Droid](/download/AuroraDroid/)
+## <img class="headerLogo" :src="$withBase('/icons/aurora_droid.webp')"> [Aurora Droid](/download/AuroraDroid/)
 
 The latest stable version of **Aurora Droid** was uploaded <ReleaseDate droid />.
 
@@ -41,7 +41,7 @@ The latest stable version of **Aurora Droid** was uploaded <ReleaseDate droid />
 Older versions of **Aurora Droid** (Stable & Nightly) can be found [here](https://goolag.store/AuroraDroid/).
 :::
 
-## <img class="headerLogo" :src="$withBase('/icons/app_warden.png')"> [App Warden](/download/AppWarden/)
+## <img class="headerLogo" :src="$withBase('/icons/app_warden.webp')"> [App Warden](/download/AppWarden/)
 
 The latest version of **App Warden** was uploaded <ReleaseDate warden />.
 
@@ -54,7 +54,7 @@ Older versions of **App Warden** can be found [here](https://goolag.store/AppWar
 Scripts can be found [here](https://goolag.store/AppWarden/Scripts/)
 :::
 
-## <img class="headerLogo" :src="$withBase('/icons/aurora_wallpapers.png')"> [Aurora Wallpapers](/download/AuroraWallpapers/)
+## <img class="headerLogo" :src="$withBase('/icons/aurora_wallpapers.webp')"> [Aurora Wallpapers](/download/AuroraWallpapers/)
 
 The latest version of **Aurora Wallpapers** was uploaded <ReleaseDate walls />.
 

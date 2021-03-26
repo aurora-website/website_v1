@@ -9,7 +9,7 @@ meta:
   - property: og:description
     content: An open source F-Droid client with modern UI.
   - property: og:image
-    content: /assets/storebanner1200x680.png
+    content: /assets/storebanner1200x680.webp
   - property: og:image:alt
     content: Aurora Droid Banner Image
   - property: og:url
@@ -21,7 +21,7 @@ meta:
 sidebar: false
 ---
 
-# <img class="headerLogo" :src="$withBase('/icons/aurora_droid.png')"> Aurora Droid
+# <img class="headerLogo" :src="$withBase('/icons/aurora_droid.webp')"> Aurora Droid
 
 ## About
 
@@ -29,7 +29,7 @@ Aurora Droid is a FOSS client for F-Droid. It's been redesigned to appeal users 
 
 ## Screenshots
 
-<img class="zoomable" :src="$withBase('/assets/screenshots_store.png')"/>
+<img class="zoomable" :src="$withBase('/assets/screenshots_store.webp')"/>
 
 ## Features:
 
@@ -52,6 +52,6 @@ The developer of this application is not responsible for getting your device mal
 
 <p align="center">
   <a href="tg://resolve?domain=auroradroid" target="_blank" rel="noopener">
-    <img :src="$withBase('/assets/tg-auroradroid-qr.png')" width="175px" style="border-radius: 15px;" />
+    <img :src="$withBase('/assets/tg-auroradroid-qr.webp')" width="175px" style="border-radius: 15px;" />
   </a>
 </p>

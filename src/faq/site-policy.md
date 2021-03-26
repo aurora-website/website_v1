@@ -8,7 +8,7 @@ meta:
   - property: og:description
     content: Privacy Policy for AuroraOSS.com
   - property: og:image
-    content: /icons/policy_icon.png
+    content: /icons/policy_icon.webp
   - property: og:image:alt
     content: AuroraOSS Policy Banner Image
   - property: og:url

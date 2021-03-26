@@ -44,7 +44,7 @@ module.exports = {
 	 * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
 	 */
 	themeConfig: {
-		logo: "/icons/auroralogo.png",
+		logo: "/icons/auroralogo.webp",
 		// repo: "https://gitlab.com/marchingon12/AuroraOSS",
 		// repo: "https://github.com/marchingon12/AuroraOSS",
 		editLinks: false,

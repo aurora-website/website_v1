@@ -8,7 +8,7 @@ meta:
   - property: og:description
     content: An organization that aims to build applications that are easy to use & beautiful to look at. Aurora Apps Open-Source Software. Inspired by you. Built for the community.
   - property: og:image
-    content: /assets/auroraoss_banner1200x680.png
+    content: /assets/auroraoss_banner1200x680.webp
   - property: og:image:alt
     content: AuroraOSS Banner Image
   - property: og:url
@@ -18,7 +18,7 @@ meta:
   - property: twitter:card
     content: summary_large_image
 lang: en-GB
-heroImage: /icons/auroralogo.png
+heroImage: /icons/auroralogo.webp
 downloadText: Downloads
 downloadLink: /download/
 faqText: FAQs
