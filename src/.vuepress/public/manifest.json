@@ -1,40 +1,84 @@
 {
-    "name": "AuroraOSS",
+    "name": "AuroraOSS: Aurora Open Source Software",
     "short_name": "AuroraOSS",
-    "start_url": ".",
-    "display": "standalone",
-    "background_color": "#fff",
+    "scope": "/",
+    "start_url": "/?source=pwa",
+    "display": "fullscreen",
+    "background_color": "#F7F7F7",
     "description": "An app for AuroraOSS software.",
+    "shortcuts": [
+        {
+            "name": "Download Apps",
+            "short_name": "Download",
+            "description": "Download the latest apps from AuroraOSS",
+            "url": "/download/?source=pwa",
+            "icons": [
+                {
+                    "src": "/icons/tabler-icon-download.png",
+                    "sizes": "192x192"
+                }
+            ]
+        },
+        {
+            "name": "Frequently Asked Questions",
+            "short_name": "FAQs",
+            "description": "View weather information for today",
+            "url": "/faq/?source=pwa",
+            "icons": [
+                {
+                    "src": "/icons/tabler-icon-messages.png",
+                    "sizes": "192x192"
+                }
+            ]
+        },
+        {
+            "name": "Contact Us",
+            "short_name": "Contact",
+            "description": "Contact information for AuroraOSS Team",
+            "url": "/contact/?source=pwa",
+            "icons": [
+                {
+                    "src": "/icons/tomorrow.png",
+                    "sizes": "192x192"
+                }
+            ]
+        }
+    ],
     "icons": [
         {
-            "src": "icons/logo48.webp",
+            "src": "icons/maskable_iconx48.png",
             "sizes": "48x48",
-            "type": "image/webp"
+            "type": "image/png"
         },
         {
-            "src": "icons/logo72.webp",
+            "src": "icons/maskable_iconx72.png",
             "sizes": "72x72",
-            "type": "image/webp"
+            "type": "image/png"
         },
         {
-            "src": "icons/logo96.webp",
+            "src": "icons/maskable_iconx96.png",
             "sizes": "96x96",
-            "type": "image/webp"
+            "type": "image/png"
         },
         {
-            "src": "icons/logo144.webp",
-            "sizes": "144x144",
-            "type": "image/webp"
+            "src": "icons/maskable_iconx128.png",
+            "sizes": "128x128",
+            "type": "image/png"
         },
         {
-            "src": "icons/logo168.webp",
-            "sizes": "168x168",
-            "type": "image/webp"
-        },
-        {
-            "src": "icons/log192.webp",
+            "src": "icons/maskable_iconx192.png",
             "sizes": "192x192",
-            "type": "image/webp"
+            "type": "image/png"
+        },
+        {
+            "src": "icons/maskable_iconx384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/maskable_iconx512.png",
+            "sizes": "512x512",
+            "type": "image/png"
         }
     ]
 }
