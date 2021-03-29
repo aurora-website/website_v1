@@ -13,6 +13,10 @@ lang: en-GB
 
 Download our latest apps here.
 
+::: danger LINKS BROKEN
+All of our links are currently broken and the download page itself incomplete. We are trying to acquire a subdomain for files and will bring the file viewer back soon. Have patience dear users!
+:::
+
 ::: c-tip Tip!
 To know more about our apps, click on the app titles!
 :::
