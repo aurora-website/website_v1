@@ -33,7 +33,7 @@ Source code of applications by AuroraOSS.
 
 The repository that hosts this very website you're reading on now.
 
--   [marchingon12/AuroraOSS](https://github.com/marchingon12/AuroraOSS)
+-   [aurora-website/website_v1](https://github.com/aurora-website/website_v1)
 
 ---
 
