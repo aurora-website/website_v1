@@ -1,15 +1,15 @@
 {
-  "name": "auroraoss-website",
+  "name": "aurora-website",
   "version": "1.0.0",
   "description": "The official AuroraOSS website.",
   "main": "index.js",
   "authors": {
     "name": "Austin Hornhead",
-    "email": "augustthegreat.cool@outlook.com"
+    "email": "augustthegreat.cool@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marchingon12/AuroraOSS.git"
+    "url": "git+https://github.com/aurora-website/website_v1.git"
   },
   "scripts": {
     "dev": "vuepress dev src",
@@ -24,7 +24,6 @@
   },
   "homepage": "https://github.com/marchingon12/AuroraOSS#readme",
   "devDependencies": {
-    "@vue/devtools": "^5.3.4",
     "@vuepress/plugin-active-header-links": "^1.8.2",
     "@vuepress/plugin-pwa": "^1.8.2",
     "babel-eslint": "^10.1.0",
