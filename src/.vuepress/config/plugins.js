@@ -12,7 +12,10 @@ module.exports = [
 		"vuepress-plugin-sitemap",
 		{
 			hostname: "https://auroraoss.com",
-		},
+			dateFormatter: val => {
+				return new Date().toISOString()
+			},
+		}
 	],
 	[
 		"vuepress-plugin-robots",
