@@ -49,7 +49,7 @@ module.exports = {
 		// repo: "https://gitlab.com/marchingon12/AuroraOSS",
 		// repo: "https://github.com/marchingon12/AuroraOSS",
 		editLinks: false,
-		docsRepo: "marchingon12/AuroraOSS",
+		docsRepo: "aurora-website/website_v1",
 		docsDir: "src",
 		docsBranch: "source",
 		editLinks: true,
