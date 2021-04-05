@@ -8,7 +8,7 @@ meta:
   - property: og:description
     content: Disclaimer for Aurora Store
   - property: og:image
-    content: /icons/disclaimer_icon.webp
+    content: /icons/disclaimer_icon.png
   - property: og:image:alt
     content: Aurora Store Disclaimer Banner Image
   - property: og:url

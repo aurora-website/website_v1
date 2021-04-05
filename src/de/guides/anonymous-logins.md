@@ -8,7 +8,7 @@ meta:
   - property: og:description
     content: A short explanation on how Anonymous Logins work.
   - property: og:image
-    content: /assets/undraw_authentication.webp
+    content: /assets/undraw_authentication.png
   - property: og:image:alt
     content: Anonymous Logins Banner Image
   - property: og:url

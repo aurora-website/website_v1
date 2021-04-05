@@ -8,7 +8,7 @@ meta:
   - property: og:description
     content: Need help with something? Most of your issues can probably be solved from this page.
   - property: og:image
-    content: /assets/undraw_questions.webp
+    content: /assets/undraw_questions.png
   - property: og:image:alt
     content: FAQs Banner Image
   - property: og:url

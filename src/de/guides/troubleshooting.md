@@ -8,7 +8,7 @@ meta:
   - property: og:description
     content: Troubleshooting for Aurora Apps.
   - property: og:image
-    content: /assets/undraw_troubleshooting.webp
+    content: /assets/undraw_troubleshooting.png
   - property: og:image:alt
     content: Troubleshooting Banner Image
   - property: og:url
