@@ -60,7 +60,7 @@ You can check out the [Roadmap page](/guides/roadmap/) to know more about what h
 
 #### Why do I need to accept the Terms Of Service for Aurora Store?
 
-We deem this necessary, because it is to ensure a minimum safety for AuroraOSS, in case some individual or group wants to harm us in any way by using Aurora Store as leverage. It's also a way to ask users to be aware what they're signing up for, so we urge and encourage you to read it to inform yourselves of what Aurora Store is capable of doing and . If you find anything useful for or strange in our [Terms Of Service](/download/AuroraStore/terms-of-service/), don't hesitate to contact us on [auroraoss.dev@gmail.com](mailto:auroraoss.dev@gmail.com) or our Telegram group.
+We deem this necessary, because it is to ensure a minimum safety for AuroraOSS, in case some individual or group wants to harm us in any way by using Aurora Store as leverage. It's also a way to ask users to be aware what they're signing up for, so we urge and encourage you to read it to inform yourselves of what Aurora Store is capable of doing and . If you find anything useful for or strange in our [Terms Of Service](/download/AuroraStore/terms-of-service/), don't hesitate to contact us on [auroraoss.dev@gmail.com](mailto:auroraoss.dev@gmail.com) or our [Telegram Group](https://t.me/AuroraSupport).
 
 #### What data does Aurora Store send to Google?
 
@@ -217,27 +217,16 @@ Make sure to follow every step through if you want to manually push files to sys
 ::: guide How to push files to /system with TWRP
 1. Go to **Mount** and tick 'System'.
 2. Go back and go to **Advanced** → **Terminal**.
-3. Find the directory where AuroraServices.apk is located (most likely **Internal Storage** → **Download**).
-4. Copy the app-folder/apk-file and paste it in system files:
+3. Find the directory where AuroraServices.apk and privapp-permissions-auroraservices.xml are located (most likely **Internal Storage** → **Download**).
+4. Copy both the files and paste it in your device's system partition like this:
 ```bash
-cp -R /path/to/appFolder /system/priv-app/
-# If the .apk file is located in the internal storage Download folder 
-cp -R /sdcard/Download/AuroraServices/AuroraServices.apk /system/priv-app/
-# If you are currently accessing the Download folder in internal storage
-cd /sdcard/Download/
-mkdir /system/priv-app/AuroraServices/
-cp AuroraServices.apk /system/priv-app/
+install -D filename -m644 /path/to/target/directory/filename
+# Copy AuroraServices.apk to /system/priv-app/AuroraServices/:
+install -D /sdcard/Download/AuroraServices/AuroraServices.apk -m644 /system/priv-app/AuroraServices/AuroraServices.apk
+# Copy privapp-permissions-auroraservices.xml to /system/etc/permissions/:
+install -D /sdcard/Download/privapp-permissions-auroraservices.xml -m644 /system/etc/permissions/privapp-permissions-auroraservices.xml
 ```
-5. Copy the xml file and paste it in system files:
-```bash
-cp /path/to/xmlFile /system/etc/permissions/
-# If the .xml file is located in the internal storage Download folder 
-cp /sdcard/Download/permissions_com.aurora.services.xml /system/etc/permissions/
-# If you are currently accessing the Download folder in internal storage
-cd /sdcard/Download/
-cp permissions_com.aurora.services.xml /system/priv-app/
-```
-6. Reboot to system (reboot the device).
+5. Reboot to system (reboot the device).
 :::
 
 #### Can Aurora Download and install Split or Bundled APKs?
