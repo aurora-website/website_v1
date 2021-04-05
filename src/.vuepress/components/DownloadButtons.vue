@@ -168,7 +168,9 @@ export default {
 					popup: "animate__animated animate__faster animate__zoomOut",
 				},
 			});
-			window.location.assign(this.$data.storeStableDownloadUrl || "https://goolag.store/AuroraStore/Stable");
+			window.location.assign(
+				this.$data.storeStableDownloadUrl || "https://files.auroraoss.com/AuroraStore/Stable"
+			);
 		},
 		downloadStoreNightly() {
 			this.$swal({
@@ -214,7 +216,7 @@ export default {
 						},
 					});
 					window.location.assign(
-						this.$data.storeNightlyDownloadUrl || "https://goolag.store/AuroraStore/Nightly"
+						this.$data.storeNightlyDownloadUrl || "https://files.auroraoss.com/AuroraStore/Nightly"
 					);
 				}
 			});
@@ -235,7 +237,9 @@ export default {
 					popup: "animate__animated animate__faster animate__zoomOut",
 				},
 			});
-			window.location.assign(this.$data.droidStableDownloadUrl || "https://goolag.store/AuroraDroid/Stable");
+			window.location.assign(
+				this.$data.droidStableDownloadUrl || "https://files.auroraoss.com/AuroraDroid/Stable"
+			);
 		},
 		downloadDroidNightly() {
 			this.$swal({
@@ -281,7 +285,7 @@ export default {
 						},
 					});
 					window.location.assign(
-						this.$data.droidNightlyDownloadUrl || "https://goolag.store/AuroraDroid/Nightly"
+						this.$data.droidNightlyDownloadUrl || "https://files.auroraoss.com/AuroraDroid/Nightly"
 					);
 				}
 			});
@@ -302,7 +306,7 @@ export default {
 					popup: "animate__animated animate__faster animate__zoomOut",
 				},
 			});
-			window.location.assign(this.$data.wardenDownloadUrl || "https://goolag.store/Warden/Stable");
+			window.location.assign(this.$data.wardenDownloadUrl || "https://files.auroraoss.com/Warden/Stable");
 		},
 		downloadWalls() {
 			this.$swal({
@@ -320,7 +324,7 @@ export default {
 					popup: "animate__animated animate__faster animate__zoomOut",
 				},
 			});
-			window.location.assign(this.$data.wallsDownloadUrl || "https://goolag.store/Wallpapers");
+			window.location.assign(this.$data.wallsDownloadUrl || "https://files.auroraoss.com/Wallpapers");
 		},
 	},
 };

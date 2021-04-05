@@ -13,10 +13,6 @@ lang: de
 
 Download our latest apps here.
 
-::: danger LINKS BROKEN
-All of our links are currently broken and the download page itself incomplete. We are trying to acquire a subdomain for files and will bring the file viewer back soon. Have patience dear users!
-:::
-
 ::: c-tip Tip!
 To know more about our apps, click on the app titles!
 :::
@@ -30,7 +26,7 @@ The latest stable version of **Aurora Store** was uploaded <ReleaseDate store />
 <AuroraChangelogs store />
 
 ::: c-tip
-Older versions of **Aurora Store** (Stable & Nightly) can be found [here](https://goolag.store/AuroraStore/).
+Older versions of **Aurora Store** (Stable & Nightly) can be found [here](https://files.auroraoss.com/AuroraStore/).
 :::
 
 ## <img class="headerLogo" :src="$withBase('/icons/aurora_droid.webp')"> [Aurora Droid](/download/AuroraDroid/)
@@ -42,7 +38,7 @@ The latest stable version of **Aurora Droid** was uploaded <ReleaseDate droid />
 <AuroraChangelogs droid />
 
 ::: c-tip
-Older versions of **Aurora Droid** (Stable & Nightly) can be found [here](https://goolag.store/AuroraDroid/).
+Older versions of **Aurora Droid** (Stable & Nightly) can be found [here](https://files.auroraoss.com/AuroraDroid/).
 :::
 
 ## <img class="headerLogo" :src="$withBase('/icons/app_warden.webp')"> [App Warden](/download/AppWarden/)
@@ -54,8 +50,8 @@ The latest version of **App Warden** was uploaded <ReleaseDate warden />.
 <AuroraChangelogs warden />
 
 ::: c-tip
-Older versions of **App Warden** can be found [here](https://goolag.store/AppWarden/Stable/). \
-Scripts can be found [here](https://goolag.store/AppWarden/Scripts/)
+Older versions of **App Warden** can be found [here](https://files.auroraoss.com/AppWarden/Stable/). \
+Scripts can be found [here](https://files.auroraoss.com/AppWarden/Scripts/)
 :::
 
 ## <img class="headerLogo" :src="$withBase('/icons/aurora_wallpapers.webp')"> [Aurora Wallpapers](/download/AuroraWallpapers/)
@@ -67,5 +63,5 @@ The latest version of **Aurora Wallpapers** was uploaded <ReleaseDate walls />.
 <AuroraChangelogs walls />
 
 ::: c-tip
-Older versions of **Aurora Wallpapers** can be found [here](https://goolag.store/Wallpapers/).
+Older versions of **Aurora Wallpapers** can be found [here](https://files.auroraoss.com/Wallpapers/).
 :::
