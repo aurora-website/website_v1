@@ -15,7 +15,7 @@ module.exports = [
 			dateFormatter: val => {
 				return new Date().toISOString()
 			},
-		}
+		},
 	],
 	[
 		"vuepress-plugin-robots",
