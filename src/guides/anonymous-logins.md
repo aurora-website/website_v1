@@ -25,13 +25,13 @@ sidebar: true
 
 ## How does it work?
 
-**Anonymous login feature is great for privacy enthusiasts however there are certain things you should know.**
+**The Anonymous login feature is great for privacy enthusiasts; however, there are certain things you should know.**
 
 1. **What is a Token Dispenser?**
 
-	A token dispenser is a web client, that has around 150 real google accounts (inclusive of all servers), it distributes the AuthToken[2] for anyone how makes a request to it in a defined format.
+	A token dispenser is a web client that has around 150 real google accounts (inclusive of all servers). It distributes the AuthToken[2] for anyone who makes a request to it in a defined format.
 
-	So basically all dispensers have the email-password (now aas tokens) pairs on the server, when a user makes a request, the server logs in to google using provided dummy accounts, generates authentication token and this token is given to the user.
+	So basically all dispensers have the email-password (now aas tokens) pairs on the server. When a user makes a request, the server logs in to google using provided dummy accounts, generates an authentication token and this token is given to the user.
 
 	All the dispensers are configured to use dummy device profiles, default : Xiaomi Mi5.
 
