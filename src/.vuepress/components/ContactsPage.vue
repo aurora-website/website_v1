@@ -157,7 +157,7 @@ export default {
 				image: "/assets/sunny.webp",
 				facebook: "",
 				instagram: "",
-				telegram: "https://t.me/sunnyraj",
+				telegram: "https://t.me/CheDuckevara",
 				email: "",
 				gitlab: "",
 				github: "",
