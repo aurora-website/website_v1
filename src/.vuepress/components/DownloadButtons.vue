@@ -104,7 +104,7 @@ export default {
 		try {
 			const { data } = await this.$store.dispatch("getStoreStableReleaseData");
 			const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
-			this.$data.astoreTagNameStable = data.tag_name;
+			this.$data.astoreTagNameStable = apkAsset.tag_name;
 			this.$data.storeStableDownloadUrl = apkAsset.download_url;
 		} catch (e) {
 			console.error(e);
@@ -112,7 +112,7 @@ export default {
 		try {
 			const { data } = await this.$store.dispatch("getStoreNightlyReleaseData");
 			const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
-			this.$data.astoreTagNameNightly = data.tag_name;
+			this.$data.astoreTagNameNightly = apkAsset.tag_name;
 			this.$data.storeNightlyDownloadUrl = apkAsset.download_url;
 		} catch (e) {
 			console.error(e);
@@ -120,7 +120,7 @@ export default {
 		try {
 			const { data } = await this.$store.dispatch("getDroidStableReleaseData");
 			const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
-			this.$data.adroidTagNameStable = data.tag_name;
+			this.$data.adroidTagNameStable = apkAsset.tag_name;
 			this.$data.droidStableDownloadUrl = apkAsset.download_url;
 		} catch (e) {
 			console.error(e);
@@ -128,7 +128,7 @@ export default {
 		try {
 			const { data } = await this.$store.dispatch("getDroidNightlyReleaseData");
 			const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
-			this.$data.adroidTagNameNightly = data.tag_name;
+			this.$data.adroidTagNameNightly = apkAsset.tag_name;
 			this.$data.droidNightlyDownloadUrl = apkAsset.download_url;
 		} catch (e) {
 			console.error(e);
