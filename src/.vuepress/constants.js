@@ -6,19 +6,19 @@
 
 // Server
 // RELEASES
-export const SERVER_STABLE_RELEASE_STORE = "https://auroraoss.com:5555/AuroraStore/Stable/latest/";
-export const SERVER_NIGHTLY_RELEASE_STORE = "https://auroraoss.com:5555/AuroraStore/Nightly/latest/";
-export const SERVER_STABLE_RELEASE_DROID = "https://auroraoss.com:5555/AuroraDroid/Stable/latest/";
-export const SERVER_NIGHTLY_RELEASE_DROID = "https://auroraoss.com:5555/AuroraDroid/Nightly/latest/";
-export const SERVER_STABLE_RELEASE_WARDEN = "https://auroraoss.com:5555/Warden/Stable/latest/";
-export const SERVER_STABLE_RELEASE_WALLS = "https://auroraoss.com:5555/Wallpapers/latest/";
+export const SERVER_STABLE_RELEASE_STORE = "https://api.auroraoss.com/AuroraStore/Stable/Latest/";
+export const SERVER_NIGHTLY_RELEASE_STORE = "https://api.auroraoss.com/AuroraStore/Nightly/Latest/";
+export const SERVER_STABLE_RELEASE_DROID = "https://api.auroraoss.com/AuroraDroid/Stable/Latest/";
+export const SERVER_NIGHTLY_RELEASE_DROID = "https://api.auroraoss.com/AuroraDroid/Nightly/Latest/";
+export const SERVER_STABLE_RELEASE_WARDEN = "https://api.auroraoss.com/Warden/Stable/Latest/";
+export const SERVER_STABLE_RELEASE_WALLS = "https://api.auroraoss.com/Wallpapers/Latest/";
 // APIS
-export const SERVER_STABLE_API_STORE = "https://auroraoss.com:5555/AuroraStore/Stable/";
-export const SERVER_NIGHTLY_API_STORE = "https://auroraoss.com:5555/AuroraStore/Nightly/";
-export const SERVER_STABLE_API_DROID = "https://auroraoss.com:5555/AuroraDroid/Stable/";
-export const SERVER_NIGHTLY_API_DROID = "https://auroraoss.com:5555/AuroraDroid/Nightly/";
-export const SERVER_STABLE_API_WARDEN = "https://auroraoss.com:5555/Warden/Stable/";
-export const SERVER_STABLE_API_WALLS = "https://auroraoss.com:5555/Wallpapers/";
+// export const SERVER_STABLE_API_STORE = "https://api.auroraoss.com/AuroraStore/Stable/";
+// export const SERVER_NIGHTLY_API_STORE = "https://api.auroraoss.com/AuroraStore/Nightly/";
+// export const SERVER_STABLE_API_DROID = "https://api.auroraoss.com/AuroraDroid/Stable/";
+// export const SERVER_NIGHTLY_API_DROID = "https://api.auroraoss.com/AuroraDroid/Nightly/";
+// export const SERVER_STABLE_API_WARDEN = "https://api.auroraoss.com/Warden/Stable/";
+// export const SERVER_STABLE_API_WALLS = "https://api.auroraoss.com/Wallpapers/";
 
 // Gitlab
-// export const GITLAB_STABLE_RELEASE = "https://gitlab.com/api/v4/projects/6922885/releases";
+// export const GITLAB_STABLE_STORE_RELEASE = "https://gitlab.com/api/v4/projects/6922885/releases";
