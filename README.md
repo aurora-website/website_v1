@@ -1,8 +1,17 @@
+/* eslint-disable vue/comment-directive */
 <div>
 	<p align="center">
 		<img src="./src/.vuepress/public/icons/auroralogo.webp" height="100px">
 	</p>
 	<h1 align="center">AuroraOSS Website</h1>
+  <p align="center">
+    <img alt="GitHub" src="https://img.shields.io/github/license/aurora-website/website_v1">
+    <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/aurora-website/website_v1">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/aurora-website/website_v1">
+    <img alt="Website" src="https://img.shields.io/website?url=https%3A%2F%2Fauroraoss.com">
+    <a href="https://www.repostatus.org/#active"><img src="https://www.repostatus.org/badges/latest/active.svg" alt="Project Status: Active – The project has reached a stable, usable state and is being actively developed." /></a>
+    <img alt="Actively Maintained" src="https://img.shields.io/badge/Maintenance%20Level-Actively%20Maintained-green.svg"/>
+  </p>
 
 </div>
 
@@ -19,7 +28,7 @@ Before doing a PR or commit, read the following documents to make sure your PR o
 
 ### Translations
 
-The way translated pages work here is by using submodules in git. This allows a repository to exist within a repository, meaning we can have many content repositories in different languages without having to edit most of the main repo itself. Please read [this](https://gist.github.com/gitaarik/8735255) very well explained git gist on Git Submodules.
+The way translated pages work here is (will be) by using submodules in git. This allows a repository to exist within a repository, meaning we can have many content repositories in different languages without having to edit most of the main repo itself. Please read [this](https://gist.github.com/gitaarik/8735255) very well explained git gist on Git Submodules.
 
 Every translation repo is assigned to a team, consisting of members who maintain the repo and check the content regularly. All changes must correspond with this parent repo.
 
@@ -30,6 +39,24 @@ Every translation repo is assigned to a team, consisting of members who maintain
 - Spanish:
 - Italian:
 - Portuguese:
+
+## Development
+
+Starting development server:
+```bash
+# Using npm 
+npm run dev
+# Using vuepress
+vuepress dev src
+```
+
+Building static files:
+```bash
+# Using npm 
+npm run build
+# Using vuepress
+vuepress build src
+```
 
 
 ## [License](LICENSE.md)
