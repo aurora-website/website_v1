@@ -249,13 +249,20 @@ Language spoofing allow you to change the content language displayed on Aurora S
 
 #### Location
 
-For now, location spoofing can only be done using own Google accounts. It's not possible to use anonymous accounts for location spoofing, as all sessions are generated via our server, so only our server's IP and the account locale will be shown to Google. Using a VPN is sufficient to spoof your location so that Aurora Store can show apps with the IP location you selected. Simply use a VPN client to connect to IP then open Aurora Store and login using Google account.
-
 This is how Google determines the location of your account:
 
 > An IP address (also called Internet address) is assigned to your device by your Internet Service Provider, and is a requirement to use the Internet. IP addresses are used to make the connection between your device and the websites and services that you use. IP addresses are roughly based on geography. This means that any website that you use, including google.com, may get some information about your general area.
 > 
 > ~ Source: [Google Policies](https://policies.google.com/technologies/location-data?hl=en-GB)
+
+By default, all anonymous sessions are generated via our server, so only our server's IP and the account locale will be shown to Google. If you would like to use your own IP, you can do so by enabling the 'Insecure anoynmous session' mode in Aurora Store Settings → Networking.
+
+If ou would like to spoof to another country other than your own IP, using a VPN is sufficient. Simply use a VPN client of your choice to connect to IP then open Aurora Store and login (if Aurora Store was not started anew, please restart it after connecting to the VPN server).
+
+::: c-warning Insecure anonymous session
+Some users may be confused by why you could find apps available in your area with v3 but not with v4. As explained above, instead of using your IP, we will use our server's IP instead. In v3 This "anonymity risk" has been patched in v4.
+
+:::
 
 ## <img class="headerLogo" :src="$withBase('/icons/aurora_droid.webp')"> Aurora Droid
 
