@@ -94,36 +94,36 @@ export default {
 	async mounted() {
 		try {
 			const { data } = await this.$store.dispatch("getStoreStableReleaseData");
-			this.$data.changelogStore = marked(data.body).replace(
+			this.$data.changelogStore = marked(data.changelog.body).replace(
 				/(?<=\(|(, ))@(.*?)(?=\)|(, ))/g,
-				"<a href='https://auroraoss.com/$2' target='_blank' rel='noopener'>@$2</a>"
+				"<a href='https://gitlab.com/$2' target='_blank' rel='noopener'>@$2</a>"
 			);
 		} catch (e) {
 			console.error(e);
 		}
 		try {
 			const { data } = await this.$store.dispatch("getDroidStableReleaseData");
-			this.$data.changelogDroid = marked(data.body).replace(
+			this.$data.changelogDroid = marked(data.changelog.body).replace(
 				/(?<=\(|(, ))@(.*?)(?=\)|(, ))/g,
-				"<a href='https://auroraoss.com/$2' target='_blank' rel='noopener'>@$2</a>"
+				"<a href='https://gitlab.com/$2' target='_blank' rel='noopener'>@$2</a>"
 			);
 		} catch (e) {
 			console.error(e);
 		}
 		try {
 			const { data } = await this.$store.dispatch("getWardenReleaseData");
-			this.$data.changelogWarden = marked(data.body).replace(
+			this.$data.changelogWarden = marked(data.changelog.body).replace(
 				/(?<=\(|(, ))@(.*?)(?=\)|(, ))/g,
-				"<a href='https://auroraoss.com/$2' target='_blank' rel='noopener'>@$2</a>"
+				"<a href='https://gitlab.com/$2' target='_blank' rel='noopener'>@$2</a>"
 			);
 		} catch (e) {
 			console.error(e);
 		}
 		try {
 			const { data } = await this.$store.dispatch("getWallsReleaseData");
-			this.$data.changelogWalls = marked(data.body).replace(
+			this.$data.changelogWalls = marked(data.changelog.body).replace(
 				/(?<=\(|(, ))@(.*?)(?=\)|(, ))/g,
-				"<a href='https://auroraoss.com/$2' target='_blank' rel='noopener'>@$2</a>"
+				"<a href='https://gitlab.com/$2' target='_blank' rel='noopener'>@$2</a>"
 			);
 		} catch (e) {
 			console.error(e);
