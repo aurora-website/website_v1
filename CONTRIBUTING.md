@@ -3,7 +3,7 @@
 ## Getting started 
 
 Before you begin:
-- This site is powered by Vuepress, which uses the latest versions of Vue.js and Node.js. 
+- This site is powered by Vuepress, which uses Vue.js 2 and the latest versions of Node.js. 
 - Have you read the [code of conduct](CODE_OF_CONDUCT.md)?
 - Check out the [existing issues](https://github.com/github/docs/issues) & see if we [accept contributions](#types-of-contributions-memo) for your type of issue.
 
