@@ -20,9 +20,9 @@
   "license": "MIT",
   "private": true,
   "bugs": {
-    "url": "https://github.com/marchingon12/AuroraOSS/issues"
+    "url": "https://github.com/aurora-website/website_v1/issues"
   },
-  "homepage": "https://github.com/marchingon12/AuroraOSS#readme",
+  "homepage": "https://github.com/aurora-website/website_v1#readme",
   "devDependencies": {
     "@vuepress/plugin-active-header-links": "^1.8.2",
     "@vuepress/plugin-pwa": "^1.8.2",
