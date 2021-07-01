@@ -136,7 +136,7 @@ export default {
 		try {
 			const { data } = await this.$store.dispatch("getWardenReleaseData");
 			const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
-			this.$data.awardenTagName = data.tag_name;
+			this.$data.awardenTagName = apkAsset.tag_name;
 			this.$data.wardenDownloadUrl = apkAsset.download_url;
 		} catch (e) {
 			console.error(e);
@@ -144,7 +144,7 @@ export default {
 		try {
 			const { data } = await this.$store.dispatch("getWallsReleaseData");
 			const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
-			this.$data.awallsTagName = data.tag_name;
+			this.$data.awallsTagName = apkAsset.tag_name;
 			this.$data.wallsDownloadUrl = apkAsset.download_url;
 		} catch (e) {
 			console.error(e);
