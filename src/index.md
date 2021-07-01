@@ -35,3 +35,6 @@ features:
     details: Aurora Apps provide a variety of customizations, so that users can tweak the app to meet their personal aesthetic needs. Auto switch between Light & Dark (& Black) themes to make sure all nightowls don't get blinded.
 footer: MIT Licensed | Copyright © 2021-present Austin Hornhead
 ---
+Supported by
+
+[<img src="https://fosshost.org/img/FosshostLogo.png" width="300">](https://fosshost.org/)
