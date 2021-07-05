@@ -8,9 +8,9 @@
     <img alt="GitHub" src="https://img.shields.io/github/license/aurora-website/website_v1">
     <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/aurora-website/website_v1">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/aurora-website/website_v1">
-    <img alt="Website" src="https://img.shields.io/website?url=https%3A%2F%2Fauroraoss.com">
+    <a href="https://auroraoss.com"><img alt="Website" src="https://img.shields.io/website?url=https%3A%2F%2Fauroraoss.com"></a>
     <a href="https://www.repostatus.org/#active"><img src="https://www.repostatus.org/badges/latest/active.svg" alt="Project Status: Active – The project has reached a stable, usable state and is being actively developed." /></a>
-    <img alt="Actively Maintained" src="https://img.shields.io/badge/Maintenance%20Level-Actively%20Maintained-green.svg"/>
+    <img alt="Actively Maintained" src="https://img.shields.io/badge/Maintenance%20Level-Inactively%20Maintained-orange.svg"/>
   </p>
 
 </div>
