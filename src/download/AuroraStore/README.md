@@ -51,7 +51,7 @@ Aurora Store is an open-source alternative Google Play Store frontend client wit
 
 ## Terms Of Service
 
-Every user is required to read and agree to the Terms of Service before being able to use Aurora Store. You can read the Terms Of Service [here](//download/AuroraStore/terms-of-service/).
+Every user is required to read and agree to the Terms of Service before being able to use Aurora Store. You can read the Terms Of Service [here](/download/AuroraStore/terms-of-service/).
 
 ## Policy
 
