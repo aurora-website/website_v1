@@ -257,7 +257,7 @@ This is how Google determines the location of your account:
 
 By default, all anonymous sessions are generated via our server, so only our server's IP and the account locale will be shown to Google. If you would like to use your own IP, you can do so by enabling the 'Insecure anoynmous session' mode in Aurora Store Settings → Networking.
 
-If ou would like to spoof to another country other than your own IP, using a VPN is sufficient. Simply use a VPN client of your choice to connect to IP then open Aurora Store and login (if Aurora Store was not started anew, please restart it after connecting to the VPN server).
+If you would like to spoof to another country other than your own IP, using a VPN is sufficient. Simply use a VPN client of your choice to connect to IP then open Aurora Store and login (if Aurora Store was not started anew, please restart it after connecting to the VPN server).
 
 ::: c-warning Insecure anonymous session
 Some users may be confused by why you could find apps available in your area with v3 but not with v4. As explained above, instead of using your IP, we will use our server's IP instead. In v3 This "anonymity risk" has been patched in v4.
