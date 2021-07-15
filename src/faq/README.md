@@ -60,7 +60,7 @@ You can check out the [Roadmap page](/guides/roadmap/) to know more about what h
 
 #### Why do I need to accept the Terms Of Service for Aurora Store?
 
-We deem this necessary, because it is to ensure a minimum safety for AuroraOSS, in case some individual or group wants to harm us in any way by using Aurora Store as leverage. It's also a way to ask users to be aware what they're signing up for, so we urge and encourage you to read it to inform yourselves of what Aurora Store is capable of doing and . If you find anything useful for or strange in our [Terms Of Service](/download/AuroraStore/terms-of-service/), don't hesitate to contact us on [auroraoss.dev@gmail.com](mailto:auroraoss.dev@gmail.com) or our [Telegram Group](https://t.me/AuroraSupport).
+We deem this necessary, because it is to ensure a minimum safety for AuroraOSS, in case some individual or group wants to harm us in any way by using Aurora Store as leverage. It's also a way to ask users to be aware what they're signing up for, so we urge and encourage you to read it to inform yourselves of what Aurora Store is capable of doing. And if you find anything useful for or strange in our [Terms Of Service](/download/AuroraStore/terms-of-service/), don't hesitate to contact us on [auroraoss.dev@gmail.com](mailto:auroraoss.dev@gmail.com) or our [Telegram Group](https://t.me/AuroraSupport).
 
 #### What data does Aurora Store send to Google?
 
