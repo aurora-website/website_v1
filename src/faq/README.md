@@ -255,7 +255,7 @@ This is how Google determines the location of your account:
 > 
 > ~ Source: [Google Policies](https://policies.google.com/technologies/location-data?hl=en-GB)
 
-By default, all anonymous sessions are generated via our server, so only our server's IP and the account locale will be shown to Google. If you would like to use your own IP, you can do so by enabling the 'Insecure anoynmous session' mode in Aurora Store Settings → Networking.
+By default, all anonymous sessions are generated via our server, so only our server's IP and the account locale will be shown to Google. If you would like to use your own IP, you can do so by enabling the 'Insecure anonymous session' mode in Aurora Store Settings → Networking.
 
 If ou would like to spoof to another country other than your own IP, using a VPN is sufficient. Simply use a VPN client of your choice to connect to IP then open Aurora Store and login (if Aurora Store was not started anew, please restart it after connecting to the VPN server).
 
